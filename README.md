@@ -6,7 +6,7 @@
 - Sempre criar uma <b>branch</b> nova para cada Task;
 - Configurar nome e email para o commit;
 - Tomar cuidado com indexação do código
-- Nunca fazer alterações direto na <b>master</b> ou <b>develop</b>
+- Nunca fazer alterações direto na <b>main</b> ou <b>develop</b>
 ## Fluxo Base
 Diretório Local -> Stage -> Diretório Git
 ## Fluxo Uso
@@ -31,7 +31,7 @@ ex: #25533-Funcionalidade-Geral-Alterando Painel Ociosidade
   - Outro : Usar _ para especificar (ex: Excel_ArquivoRegional)
 - *Descrição* -> Pequena descrição do que realizou
 ## Branchs
-- <b>master</b> -> branch em produção
+- <b>main</b> -> branch em produção
 - <b>develop</b> -> branch final em desenv
 - <b>branch_tasks</b> -> branch criada para cada task
 ## Tag's
