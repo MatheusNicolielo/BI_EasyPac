@@ -1,0 +1,2621 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 12372.689441150062,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 2613.1209716796875
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1.7857142857142847,
+            "y": 2828.6209716796875
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 638,
+            "y": 3084.1209716796875
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 879,
+            "y": 2571.6209716796875
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1144,
+            "y": 2856.6209716796875
+          },
+          "nodeIndex": "ftRealizados_Previstos",
+          "nodeLineageTag": "8881378b-e874-4a39-8ade-d729904f6cc9",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1428,
+            "y": 2893.3709716796875
+          },
+          "nodeIndex": "Medidas Diario",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1132,
+            "y": 3210.1209716796875
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 363,
+            "y": 2918.7459716796875
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1712,
+            "y": 2817.1834716796875
+          },
+          "nodeIndex": "dimLocal",
+          "nodeLineageTag": "d90eee72-5405-4a8b-8700-b1cb198ea419",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1996,
+            "y": 2817.1834716796875
+          },
+          "nodeIndex": "dimNConf",
+          "nodeLineageTag": "35210336-6e4f-4cf2-ac51-2a1865cf8bb7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 2280,
+            "y": 2817.1834716796875
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 2848,
+            "y": 2781.1834716796875
+          },
+          "nodeIndex": "Medidas Pareto Pac",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 3132,
+            "y": 2817.1834716796875
+          },
+          "nodeIndex": "dimStatus",
+          "nodeLineageTag": "ca52e1d0-4236-48e2-9230-717f11ea07a3",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 3416,
+            "y": 2817.1834716796875
+          },
+          "nodeIndex": "dimStatus2",
+          "nodeLineageTag": "1d569bbf-47b9-47bd-a384-2e201fe230e8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 3700,
+            "y": 2731.1834716796875
+          },
+          "nodeIndex": "ftVer_e_Agir",
+          "nodeLineageTag": "b8db28dd-15a1-4175-9fa4-e8002f009034",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 3984,
+            "y": 2750.3397216796875
+          },
+          "nodeIndex": "rankParetoFormularios-painelParetoPac",
+          "nodeLineageTag": "af723cdb-b5fe-45c4-8408-160c003e6c6a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 4268,
+            "y": 2750.3397216796875
+          },
+          "nodeIndex": "rankParetoPac-painelParetoPac",
+          "nodeLineageTag": "497415a8-9a55-4908-9f3c-e4e6c47be450",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 4552,
+            "y": 2644.0740966796875
+          },
+          "nodeIndex": "Medidas - PAC Recorrentes",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4836,
+            "y": 2520.6756591796875
+          },
+          "nodeIndex": "Medidas - painel Local",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5120,
+            "y": 2397.0506591796875
+          },
+          "nodeIndex": "dimPacItens",
+          "nodeLineageTag": "75892ef6-1ca4-404e-bf64-8baef868929b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5404,
+            "y": 2385.0506591796875
+          },
+          "nodeIndex": "ftTempoConformidade",
+          "nodeLineageTag": "8698eb06-0a86-4717-9b6e-147d6f83bf4a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5688,
+            "y": 2385.0506591796875
+          },
+          "nodeIndex": "tbPainelTempo",
+          "nodeLineageTag": "60b3bb2c-da36-4008-a83e-74c0bd36e00e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5972,
+            "y": 2361.0506591796875
+          },
+          "nodeIndex": "Medidas - painel Tempo",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6256,
+            "y": 2385.0506591796875
+          },
+          "nodeIndex": "agrupadorSlicer",
+          "nodeLineageTag": "e6b5cc05-7c27-4e45-82a0-e2ca1e777bc3",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6540,
+            "y": 2385.0506591796875
+          },
+          "nodeIndex": "ImageIcons",
+          "nodeLineageTag": "9e19d7cd-d860-41c6-9073-b60bb57cab48",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6824,
+            "y": 2212.6893310546875
+          },
+          "nodeIndex": "rankLocal-painelLocal",
+          "nodeLineageTag": "15dc6427-6cbd-4dae-8957-e44e0b593d7c",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7108,
+            "y": 1590.9300537109375
+          },
+          "nodeIndex": "Medidas - Filtros",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7960,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - Plano de Acao",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8244,
+            "y": 1389.5721435546875
+          },
+          "nodeIndex": "Medidas - Realizado x Previstos Planilhas",
+          "nodeLineageTag": "26ecdf0d-5584-44e7-a4ea-24c8b1fbc8de",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7686,
+            "y": 1307.5721435546875
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8528,
+            "y": 1305.5721435546875
+          },
+          "nodeIndex": "ftRealizados_Previstos_Planilhas",
+          "nodeLineageTag": "b3d91545-113d-42b7-94c4-adeb316cf1c0",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8812,
+            "y": 1365.5721435546875
+          },
+          "nodeIndex": "Escolha os Valores Planilhas",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9096,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - Realizados x Previstos",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9380,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - PAC_Unidade",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9664,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - NC_Unidade",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9948,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - Pareto_Local",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10232,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - Sustentabilidade",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10516,
+            "y": 1329.5721435546875
+          },
+          "nodeIndex": "Média Folhas Impressas por PAC",
+          "nodeLineageTag": "ee2ff439-a7d4-4172-b99a-4b005ad51101",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10800,
+            "y": 1329.5721435546875
+          },
+          "nodeIndex": "Quantidade de Folhas por Pacote de Papel",
+          "nodeLineageTag": "a7320388-2f6b-4a7a-a29c-d1db6cfb7f70",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11084,
+            "y": 1329.5721435546875
+          },
+          "nodeIndex": "Rendimento Impressão (páginas)",
+          "nodeLineageTag": "b32b775d-eae8-47c7-82bd-1cb840f7233f",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11368,
+            "y": 1341.5721435546875
+          },
+          "nodeIndex": "Medidas - Usuarios",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 11652,
+            "y": 1377.5721435546875
+          },
+          "nodeIndex": "dimTipoLançamento",
+          "nodeLineageTag": "053249ed-7328-409c-95bf-155089eba7d2",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 12220,
+            "y": 1365.5721435546875
+          },
+          "nodeIndex": "rankLocal-painelPareto-Local",
+          "nodeLineageTag": "ae3ea70e-623f-4a3d-b404-bc004c75dcff",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 12504,
+            "y": 1291.5721435546875
+          },
+          "nodeIndex": "ABT3",
+          "nodeLineageTag": "fecdaeb6-ffeb-4b23-85c3-df45dda1e473",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7402,
+            "y": 1281.5721435546875
+          },
+          "nodeIndex": "IN79_REC1",
+          "nodeLineageTag": "f0e69d44-a840-4c9e-ad02-9a56f805f700",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 12788,
+            "y": 1291.5721435546875
+          },
+          "nodeIndex": "IN79_REC3",
+          "nodeLineageTag": "b0a6a568-8eab-42fd-93e1-43c3e67d99b0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 13072,
+            "y": 1291.5721435546875
+          },
+          "nodeIndex": "IN79_REC4",
+          "nodeLineageTag": "16ac27b6-ee22-4d3f-a149-deb55975d686",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 18027.221238753806,
+            "y": 470.07318952384992
+          },
+          "nodeIndex": "Ultima Atualização",
+          "nodeLineageTag": "222c9bb9-ac75-41fb-8e4e-e227f4961212",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 15714.874595627498,
+            "y": 446.07318952384992
+          },
+          "nodeIndex": "rankUsuarios - painelUsuario",
+          "nodeLineageTag": "35088f62-d11b-4666-90d2-94e75e545ae8",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 14173.310166876629,
+            "y": 386.07318952384992
+          },
+          "nodeIndex": "dimNCAC",
+          "nodeLineageTag": "983ab74b-087d-4817-8388-bc61ded37972",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 16100.265702815217,
+            "y": 446.07318952384992
+          },
+          "nodeIndex": "rankAcoesCorretivas - painelUsuario",
+          "nodeLineageTag": "138c90b7-7431-4344-a47e-eb7e9df99bc1",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 16485.656810002933,
+            "y": 446.07318952384992
+          },
+          "nodeIndex": "dimFornecedor",
+          "nodeLineageTag": "83f9f807-da8e-4f41-90f8-e0eef532b879",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 17641.830131566086,
+            "y": 458.07318952384992
+          },
+          "nodeIndex": "dimUsuarioEmpresa",
+          "nodeLineageTag": "fbddb360-dcee-421d-8f94-6a16b55d126d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 13402.527952501192,
+            "y": 372.07318952384992
+          },
+          "nodeIndex": "ftTempoOcioso",
+          "nodeLineageTag": "381f846e-14b8-4898-88a5-600e15050a2e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 13356,
+            "y": 0
+          },
+          "nodeIndex": "dimDispositivo",
+          "nodeLineageTag": "80d36725-abda-44dd-adbb-fe0d83bea734",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 14558.701274064346,
+            "y": 422.07318952384992
+          },
+          "nodeIndex": "Medidas Ociosidade",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 16871.047917190652,
+            "y": 446.07318952384992
+          },
+          "nodeIndex": "rankUnidade - Painel Ociosidade",
+          "nodeLineageTag": "24fff6ba-b8da-4bef-b7dd-18e396502819",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 17256.439024378371,
+            "y": 446.07318952384992
+          },
+          "nodeIndex": "rankPAC - Painel Ociosidade",
+          "nodeLineageTag": "09eca80a-b448-4029-8515-ea9fa64681be",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 14944.092381252063,
+            "y": 434.07318952384992
+          },
+          "nodeIndex": "SlicerPAC- Painel Ociosidade",
+          "nodeLineageTag": "39e82b02-de77-4e40-99f6-283bbc2ce904",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 15329.483488439781,
+            "y": 434.07318952384992
+          },
+          "nodeIndex": "SlicerUnidade- Painel Ociosidade",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 18311.221238753806,
+            "y": 0
+          },
+          "nodeIndex": "Calendario ociosodade",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "rankPac - Unidades",
+          "nodeLineageTag": "d586b3f0-60cf-4d21-a461-92296f38958b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "rankPlanilhas - Unidades",
+          "nodeLineageTag": "e22bad7b-98bd-44ea-91d3-2d8f7faac556",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "rankUnidades - Unidades",
+          "nodeLineageTag": "330e2c7f-74c9-4c15-856c-b98f52a15d2a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "rankPac- PAC - Unidade",
+          "nodeLineageTag": "78682159-eeb3-4852-a539-3703dcee9172",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "rankPlanilhas-PAC - Unidade",
+          "nodeLineageTag": "826f2b5c-ff03-4426-9c71-01a8baeb9231",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "rankUnidade - PAC - Unidade",
+          "nodeLineageTag": "16b836d9-9701-4e4e-9fec-573427882d13",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "dimUnidade",
+          "nodeLineageTag": "ad6ba00c-d128-4529-85b9-4dd69fa057cd",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "FtRegistro_T-Atual",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "ftRealizados_Previstos_T-Atual",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "ftRealizados_Previstos_Planilhas_T-Atual",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 20.585661768321668,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1289,
+            "y": 403
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 183
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 352
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 511
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 779,
+            "y": 0
+          },
+          "nodeIndex": "ftRealizados_Previstos",
+          "nodeLineageTag": "8881378b-e874-4a39-8ade-d729904f6cc9",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 865,
+            "y": 617
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1503,
+            "y": 130
+          },
+          "nodeIndex": "dimLocal",
+          "nodeLineageTag": "d90eee72-5405-4a8b-8700-b1cb198ea419",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1341,
+            "y": 886
+          },
+          "nodeIndex": "dimNConf",
+          "nodeLineageTag": "35210336-6e4f-4cf2-ac51-2a1865cf8bb7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1080,
+            "y": 941
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 578,
+            "y": 926
+          },
+          "nodeIndex": "dimPacItens",
+          "nodeLineageTag": "75892ef6-1ca4-404e-bf64-8baef868929b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Diario",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 2,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 793,
+            "y": 14
+          },
+          "nodeIndex": "ftVer_e_Agir",
+          "nodeLineageTag": "b8db28dd-15a1-4175-9fa4-e8002f009034",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1621,
+            "y": 0
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 944,
+            "y": 777
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1624,
+            "y": 471
+          },
+          "nodeIndex": "dimStatus",
+          "nodeLineageTag": "ca52e1d0-4236-48e2-9230-717f11ea07a3",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1630,
+            "y": 612
+          },
+          "nodeIndex": "dimStatus2",
+          "nodeLineageTag": "1d569bbf-47b9-47bd-a384-2e201fe230e8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 446,
+            "y": 430
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1210,
+            "y": 794
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 79,
+            "y": 278
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 541.16693292817786,
+            "y": 965.24787067846387
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "ftVer_e_Agir",
+      "zoomValue": 63.287087723233995,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 3,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1446,
+            "y": 221
+          },
+          "nodeIndex": "dimLocal",
+          "nodeLineageTag": "d90eee72-5405-4a8b-8700-b1cb198ea419",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 845,
+            "y": 207
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "dimLocal",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 4,
+      "scrollPosition": {
+        "x": 589.5999755859375,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1125,
+            "y": 207
+          },
+          "nodeIndex": "tbPainelTempo",
+          "nodeLineageTag": "60b3bb2c-da36-4008-a83e-74c0bd36e00e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 561,
+            "y": 234
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "painelTempo",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 5,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1386,
+            "y": 535
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 798,
+            "y": 209
+          },
+          "nodeIndex": "ftRealizados_Previstos",
+          "nodeLineageTag": "8881378b-e874-4a39-8ade-d729904f6cc9",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 74.217545021432215,
+            "y": 209.87858392027047
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1029,
+            "y": 825
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1591,
+            "y": 174
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 416.33894219256138,
+            "y": 503.85833530124853
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "ftRealizado_Previstos",
+      "zoomValue": 63.287087723233995,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 6,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1478,
+            "y": 226
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1049,
+            "y": 246
+          },
+          "nodeIndex": "dimLocal",
+          "nodeLineageTag": "d90eee72-5405-4a8b-8700-b1cb198ea419",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 830,
+            "y": 40
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 719,
+            "y": 431
+          },
+          "nodeIndex": "dimTipoLançamento",
+          "nodeLineageTag": "053249ed-7328-409c-95bf-155089eba7d2",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1273,
+            "y": 623
+          },
+          "nodeIndex": "dimNConf",
+          "nodeLineageTag": "35210336-6e4f-4cf2-ac51-2a1865cf8bb7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 797,
+            "y": 674
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 426,
+            "y": 668
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "ftRegistro",
+      "zoomValue": 70.955543900968792,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 7,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1427,
+            "y": 138
+          },
+          "nodeIndex": "ftRealizados_Previstos_Planilhas",
+          "nodeLineageTag": "b3d91545-113d-42b7-94c4-adeb316cf1c0",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 987,
+            "y": 99
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "ftRealizado_Previstos-Planilhas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 8,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1090,
+            "y": 33
+          },
+          "nodeIndex": "IN79_REC1",
+          "nodeLineageTag": "f0e69d44-a840-4c9e-ad02-9a56f805f700",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1501,
+            "y": 42
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 156
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 422
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 677
+          },
+          "nodeIndex": "dimFornecedor",
+          "nodeLineageTag": "83f9f807-da8e-4f41-90f8-e0eef532b879",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 890
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1379,
+            "y": 601
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1355,
+            "y": 868
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "IN79-REC 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 9,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1385,
+            "y": 45
+          },
+          "nodeIndex": "tbPainelTempo",
+          "nodeLineageTag": "60b3bb2c-da36-4008-a83e-74c0bd36e00e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1347,
+            "y": 512
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 738,
+            "y": 255
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "tbPainelTempo",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 10,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 478,
+            "y": 0
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 445,
+            "y": 355
+          },
+          "nodeIndex": "dimLocal",
+          "nodeLineageTag": "d90eee72-5405-4a8b-8700-b1cb198ea419",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 443,
+            "y": 565
+          },
+          "nodeIndex": "dimNConf",
+          "nodeLineageTag": "35210336-6e4f-4cf2-ac51-2a1865cf8bb7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 440,
+            "y": 768
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 846,
+            "y": 0
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1321,
+            "y": 447
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 858,
+            "y": 560
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1755.2998525515941,
+            "y": 422.29581200000007
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Filtros",
+      "zoomValue": 56.447393005377734,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 11,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1553,
+            "y": 122
+          },
+          "nodeIndex": "dimNCAC",
+          "nodeLineageTag": "983ab74b-087d-4817-8388-bc61ded37972",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 835,
+            "y": 138
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "dimNCAC <> FtRegistro",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 12,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1174,
+            "y": 152
+          },
+          "nodeIndex": "IN79_REC3",
+          "nodeLineageTag": "b0a6a568-8eab-42fd-93e1-43c3e67d99b0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1561,
+            "y": 79
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 166
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 432
+          },
+          "nodeIndex": "dimFornecedor",
+          "nodeLineageTag": "83f9f807-da8e-4f41-90f8-e0eef532b879",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 596
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 838
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1613,
+            "y": 661
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1598,
+            "y": 862
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "IN79 - REC 3",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 13,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 936,
+            "y": 0
+          },
+          "nodeIndex": "IN79_REC4",
+          "nodeLineageTag": "16ac27b6-ee22-4d3f-a149-deb55975d686",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1596,
+            "y": 0
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 177
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 444
+          },
+          "nodeIndex": "dimFornecedor",
+          "nodeLineageTag": "83f9f807-da8e-4f41-90f8-e0eef532b879",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 626
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 895
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1476,
+            "y": 443
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1649,
+            "y": 743
+          },
+          "nodeIndex": "dimStatusConformidade",
+          "nodeLineageTag": "cc845062-5304-47f6-9b62-5908c24c74e0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "IN79 - REC 4",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 14,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 860,
+            "y": 0
+          },
+          "nodeIndex": "ABT3",
+          "nodeLineageTag": "fecdaeb6-ffeb-4b23-85c3-df45dda1e473",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1497,
+            "y": 0
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 185
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": -69,
+            "y": 454
+          },
+          "nodeIndex": "dimFornecedor",
+          "nodeLineageTag": "83f9f807-da8e-4f41-90f8-e0eef532b879",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 625
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 344,
+            "y": 806
+          },
+          "nodeIndex": "dimTurno",
+          "nodeLineageTag": "a1132cc8-685b-4b96-a266-42e8d1c6aa92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 728,
+            "y": 755
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "IN79 - ABT 3",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 15,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 820,
+            "y": 54
+          },
+          "nodeIndex": "dimUsuarioEmpresa",
+          "nodeLineageTag": "fbddb360-dcee-421d-8f94-6a16b55d126d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 320,
+            "y": 45
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 838,
+            "y": 382
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "dimUsuarioEmpresa",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 16,
+      "scrollPosition": {
+        "x": 0,
+        "y": 80.343649982141756
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 532.274712150748,
+            "y": 81.288096204063862
+          },
+          "nodeIndex": "ftTempoOcioso",
+          "nodeLineageTag": "381f846e-14b8-4898-88a5-600e15050a2e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1086.7380930960076,
+            "y": 0
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1067.4671617553151,
+            "y": 476.22870487340185
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 433.23299590443605
+          },
+          "nodeIndex": "dimDispositivo",
+          "nodeLineageTag": "80d36725-abda-44dd-adbb-fe0d83bea734",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 569.945386542997,
+            "y": 597.53802660726944
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 235.19308099890674,
+            "y": 654.14900074212153
+          },
+          "nodeIndex": "dimPacAgrupador",
+          "nodeLineageTag": "6d06254b-7998-421e-8d3f-183619cc94fc",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3.0711220692118246,
+            "y": 0
+          },
+          "nodeIndex": "dimLocal",
+          "nodeLineageTag": "d90eee72-5405-4a8b-8700-b1cb198ea419",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 790.14484710626675,
+            "y": 0
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1336.1903428113508,
+            "y": 444.59614770696248
+          },
+          "nodeIndex": "Calendario ociosodade",
+          "nodeLineageTag": "ff65512c-017c-4763-b5a5-cc4c5be5b431",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "TempoOcioso",
+      "zoomValue": 65.1227777641959,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 17,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 903,
+            "y": 13
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 318,
+            "y": 2
+          },
+          "nodeIndex": "dimUnidade",
+          "nodeLineageTag": "ad6ba00c-d128-4529-85b9-4dd69fa057cd",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 636,
+            "y": 261
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 29,
+            "y": 323
+          },
+          "nodeIndex": "ftTempoOcioso",
+          "nodeLineageTag": "381f846e-14b8-4898-88a5-600e15050a2e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Unidade",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 18,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 867,
+            "y": 0
+          },
+          "nodeIndex": "ABT3",
+          "nodeLineageTag": "fecdaeb6-ffeb-4b23-85c3-df45dda1e473",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 485,
+            "y": 0
+          },
+          "nodeIndex": "dimPac",
+          "nodeLineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 2
+          },
+          "nodeIndex": "ftRealizados_Previstos",
+          "nodeLineageTag": "8881378b-e874-4a39-8ade-d729904f6cc9",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 987,
+            "y": 428
+          },
+          "nodeIndex": "ftRegistro",
+          "nodeLineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 274,
+            "y": 438
+          },
+          "nodeIndex": "ftTempoOcioso",
+          "nodeLineageTag": "381f846e-14b8-4898-88a5-600e15050a2e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 518,
+            "y": 452
+          },
+          "nodeIndex": "IN79_REC1",
+          "nodeLineageTag": "f0e69d44-a840-4c9e-ad02-9a56f805f700",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 754,
+            "y": 443
+          },
+          "nodeIndex": "IN79_REC3",
+          "nodeLineageTag": "b0a6a568-8eab-42fd-93e1-43c3e67d99b0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 436
+          },
+          "nodeIndex": "IN79_REC4",
+          "nodeLineageTag": "16ac27b6-ee22-4d3f-a149-deb55975d686",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "dimPac",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "dimPac",
+  "defaultDiagram": "Todas as tabelas"
+}
