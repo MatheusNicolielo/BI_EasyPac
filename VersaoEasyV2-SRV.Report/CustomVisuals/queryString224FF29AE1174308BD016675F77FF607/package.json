@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "author": {
+    "name": "Igor Manfrinato Gorini",
+    "email": "mgigor@hotmail.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/queryString224FF29AE1174308BD016675F77FF607.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "queryString224FF29AE1174308BD016675F77FF607",
+    "name": "queryString",
+    "displayName": "Query String",
+    "version": "1.0.0",
+    "description": "Query String Filter is a Power BI custom visual that allows you to slicer your data using query string into published url.",
+    "supportUrl": "https://github.com/mgigor/QueryStringFilter/issues",
+    "gitHubUrl": "https://github.com/mgigor/QueryStringFilter/",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
