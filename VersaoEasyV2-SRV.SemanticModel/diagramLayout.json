@@ -880,6 +880,33 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "UltimoAcessoEmpresa",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "UltimoAcessoUnidade",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "UltimoAcessoUsuario",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
@@ -2614,8 +2641,101 @@
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
+    },
+    {
+      "ordinal": 19,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1333,
+            "y": 108
+          },
+          "nodeIndex": "UltimoAcessoEmpresa",
+          "nodeLineageTag": "cfab8d53-32dd-4c23-8928-d98cc90d5b9c",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 966,
+            "y": 76
+          },
+          "nodeIndex": "dimEmpresa",
+          "nodeLineageTag": "0c08df8e-2095-4ca9-8dcb-39bb0a1c2cbf",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1346,
+            "y": 342
+          },
+          "nodeIndex": "UltimoAcessoUnidade",
+          "nodeLineageTag": "a4e39a59-f747-4cc0-ac9b-e429ddd014e8",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 960,
+            "y": 370
+          },
+          "nodeIndex": "dimUnidade",
+          "nodeLineageTag": "ad6ba00c-d128-4529-85b9-4dd69fa057cd",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 871,
+            "y": 633
+          },
+          "nodeIndex": "dimUsuario",
+          "nodeLineageTag": "bce79b66-0c1e-4fd7-a77f-f7380244d0c5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1345,
+            "y": 600
+          },
+          "nodeIndex": "UltimoAcessoUsuario",
+          "nodeLineageTag": "bcfc77ce-1bb5-4068-92f6-dc9332efad42",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "UltimoAcesso",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
     }
   ],
-  "selectedDiagram": "dimPac",
+  "selectedDiagram": "UltimoAcesso",
   "defaultDiagram": "Todas as tabelas"
 }
