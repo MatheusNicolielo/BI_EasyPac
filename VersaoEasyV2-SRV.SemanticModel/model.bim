@@ -54497,7 +54497,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)#(tab)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)#(tab)reg.DATA_HORA,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)#(tab)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)#(tab)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54519,7 +54519,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54541,7 +54541,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54563,7 +54563,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54585,7 +54585,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54607,7 +54607,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"]),",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"]),",
           "    #\"Linhas Classificadas\" = Table.Sort(Fonte,{{\"data_base\", Order.Descending}})",
           "in",
           "    #\"Linhas Classificadas\""
@@ -54630,7 +54630,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54652,7 +54652,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54674,7 +54674,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54696,7 +54696,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54718,7 +54718,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54740,7 +54740,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 38, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 38, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0)-1#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)data_hora_persistencia,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -56101,6 +56101,38 @@
         "fromTable": "dimUsuario",
         "toColumn": "id_usuario",
         "toTable": "UltimoAcessoUsuario"
+      },
+      {
+        "name": "2d3501b8-e829-4278-86fe-861d4b8bf98a",
+        "fromColumn": "dataRecebimento",
+        "fromTable": "FtRegistro_T-Atual",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_921f4876-bed8-4e18-a3d3-3ce0535f82b4"
+      },
+      {
+        "name": "9ccbe72d-10a1-49fb-bcfa-2833764d4509",
+        "fromColumn": "dataRecebimento",
+        "fromTable": "ftRegistro",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_c50b053b-2ba5-4095-a571-e32f8621cbb8"
+      },
+      {
+        "name": "d1024f21-0347-494b-9772-b99b8fb261df",
+        "fromColumn": "dataInicio",
+        "fromTable": "ftTempoOcioso",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_79d6f7f2-77c5-41aa-8033-ed5c5726a206"
+      },
+      {
+        "name": "90c71312-8040-4114-a2e1-acdfcbc5fcd3",
+        "fromColumn": "dataRecebimento",
+        "fromTable": "ftTempoOcioso",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_1b070ceb-dcf0-4fc0-ac24-20b91b56f6f6"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -56462,10 +56494,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56759,6 +56787,31 @@
             "lineageTag": "26e8fc80-6f6b-4d95-bcb2-2aa19eda5f56",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "dataRecebimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "c33127af-3387-4cea-bcef-ee0375f4c730",
+            "sourceColumn": "dataRecebimento",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_c50b053b-2ba5-4095-a571-e32f8621cbb8"
+                },
+                "isDefault": true,
+                "relationship": "9ccbe72d-10a1-49fb-bcfa-2833764d4509"
+              }
+            ]
           }
         ],
         "lineageTag": "6e6570e1-0ea0-49c2-a704-2629c0e5d5af",
@@ -56789,10 +56842,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -67093,6 +67142,86 @@
             "lineageTag": "77a562e6-9c8f-4f77-8178-f3c6ddbb53a3",
             "sourceColumn": "chavePac",
             "summarizeBy": "none"
+          },
+          {
+            "name": "dataInicio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "05392fbd-feeb-497d-bb3c-fae2a92ff976",
+            "sourceColumn": "dataInicio",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_79d6f7f2-77c5-41aa-8033-ed5c5726a206"
+                },
+                "isDefault": true,
+                "relationship": "d1024f21-0347-494b-9772-b99b8fb261df"
+              }
+            ]
+          },
+          {
+            "name": "dataRecebimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "37b93db6-2a40-4da7-a8c7-9a958a3ba925",
+            "sourceColumn": "dataRecebimento",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_1b070ceb-dcf0-4fc0-ac24-20b91b56f6f6"
+                },
+                "isDefault": true,
+                "relationship": "90c71312-8040-4114-a2e1-acdfcbc5fcd3"
+              }
+            ]
+          },
+          {
+            "name": "DataHora Inicio Formatada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(ftTempoOcioso[dataInicio],\"dd/mm/yyyy - HH:MM\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "4c63da7d-fa1d-4f49-9485-dcf0eb43741f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "DataRecebimento Formatada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "FORMAT(ftTempoOcioso[dataRecebimento],\"dd/mm/yyyy - HH:MM\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "620742fd-521a-4a1a-b670-e8f026df828c",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "381f846e-14b8-4898-88a5-600e15050a2e",
@@ -67131,6 +67260,26 @@
               ")"
             ],
             "lineageTag": "fd4be940-0fa5-404a-a69a-ffcbd2b2628e"
+          },
+          {
+            "name": "dataInicio - Calculada",
+            "expression": [
+              "",
+              "var maximo = MAX(ftTempoOcioso[maior_tempo_ocioso])",
+              "return",
+              "CALCULATE(MAX(ftTempoOcioso[DataHora Inicio Formatada]),FILTER(ftTempoOcioso,ftTempoOcioso[maior_tempo_ocioso]=maximo))"
+            ],
+            "lineageTag": "5631d0c2-9d13-41f6-baa0-44b172f773d2"
+          },
+          {
+            "name": "dataRecebimento - Calculada",
+            "expression": [
+              "",
+              "var maximo = MAX(ftTempoOcioso[maior_tempo_ocioso])",
+              "return",
+              "CALCULATE(MAX(ftTempoOcioso[DataRecebimento Formatada]),FILTER(ftTempoOcioso,ftTempoOcioso[maior_tempo_ocioso]=maximo))"
+            ],
+            "lineageTag": "21effea6-6cea-4e0a-a19a-35778fec3513"
           }
         ],
         "partitions": [
@@ -67141,7 +67290,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_agrupador,#(lf)    max(ocioso) maior_tempo_ocioso#(lf)FROM (#(lf)    SELECT C.id_pac,#(lf)        a.cod_pac,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)        c.data,#(lf)        CONVERT(VARCHAR(02), r.data_hora, 108) AS hora,#(lf)        DATEDIFF(MINUTE, r.DATA_HORA, r.DATA_HORA_PERSISTENCIA) OCIOSO,#(lf)        D.ID AS id_dispositivo,#(lf)        R.VERSAO_APP,#(lf)        r.id_usuario,#(lf)        IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,R.id_empresa) AS id_empresa,#(lf)#(tab)#(tab)R.id_empresa AS COD_UNIDADE,#(lf)        IT.id_local,#(lf)        p.ID_AGRUPADOR AS id_pac_Agrupador#(lf)    FROM TBREGISTROCAB C WITH(NOLOCK)#(lf)    INNER JOIN TBPAC p WITH(NOLOCK) ON p.id = c.ID_PAC#(lf)    INNER JOIN tbpacitem it WITH(NOLOCK) ON p.id = it.id_pac#(lf)    INNER JOIN TBREGISTRO R WITH(NOLOCK) ON C.ID = R.ID_CAB AND R.ID_PAC_ITEM = IT.ID#(lf)    INNER JOIN TBDISPOSITIVOS D WITH(NOLOCK) ON D.UID = R.UUID_DEVICE#(lf)    INNER JOIN TBUSUARIO U WITH(NOLOCK) ON U.ID = R.ID_USUARIO#(lf)    INNER JOIN TBEMPRESA E WITH(NOLOCK) ON E.ID = R.ID_EMPRESA#(lf)    INNER JOIN TBPACAGRUPADOR a WITH(NOLOCK) ON a.ID = p.ID_AGRUPADOR#(lf)    --WHERE DATA_HORA_ENVIO IS NOT NULL and p.cod_pac = 'EVLN-PLANILHAATIVA'#(lf)    ) Lista #(lf)WHERE DATA >= DATEADD(MONTH, - 3, GETDATE()) /* buscar apenas últimos 90 dias conforme proposta*/#(lf)#(lf)GROUP BY id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_Agrupador\"]),",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_agrupador,#(lf)    max(ocioso) maior_tempo_ocioso,#(lf)#(tab)max(dataInicio) as dataInicio,#(lf)#(tab)max(dataRecebimento) as dataRecebimento#(lf)FROM (#(lf)    SELECT C.id_pac,#(lf)        a.cod_pac,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)        c.data,#(lf)        CONVERT(VARCHAR(02), r.data_hora, 108) AS hora,#(lf)        DATEDIFF(MINUTE, r.DATA_HORA, r.DATA_HORA_PERSISTENCIA) OCIOSO,#(lf)        D.ID AS id_dispositivo,#(lf)        R.VERSAO_APP,#(lf)        r.id_usuario,#(lf)        IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,R.id_empresa) AS id_empresa,#(lf)#(tab)#(tab)R.id_empresa AS COD_UNIDADE,#(lf)        IT.id_local,#(lf)        p.ID_AGRUPADOR AS id_pac_Agrupador,#(lf)#(tab)#(tab)r.data_hora as dataInicio,#(lf)#(tab)#(tab)r.data_hora_persistencia as dataRecebimento#(lf)    FROM TBREGISTROCAB C WITH(NOLOCK)#(lf)    INNER JOIN TBPAC p WITH(NOLOCK) ON p.id = c.ID_PAC#(lf)    INNER JOIN tbpacitem it WITH(NOLOCK) ON p.id = it.id_pac#(lf)    INNER JOIN TBREGISTRO R WITH(NOLOCK) ON C.ID = R.ID_CAB AND R.ID_PAC_ITEM = IT.ID#(lf)    INNER JOIN TBDISPOSITIVOS D WITH(NOLOCK) ON D.UID = R.UUID_DEVICE#(lf)    INNER JOIN TBUSUARIO U WITH(NOLOCK) ON U.ID = R.ID_USUARIO#(lf)    INNER JOIN TBEMPRESA E WITH(NOLOCK) ON E.ID = R.ID_EMPRESA#(lf)    INNER JOIN TBPACAGRUPADOR a WITH(NOLOCK) ON a.ID = p.ID_AGRUPADOR#(lf)    --WHERE DATA_HORA_ENVIO IS NOT NULL and p.cod_pac = 'EVLN-PLANILHAATIVA'#(lf)    ) Lista #(lf)WHERE DATA >= DATEADD(MONTH, - 3, GETDATE()) /* buscar apenas últimos 90 dias conforme proposta*/#(lf)#(lf)GROUP BY id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_Agrupador\"]),",
                 "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each [data] >= RangeStart and [data] <= RangeEnd)",
                 "in",
                 "    #\"Linhas Filtradas\""
@@ -67159,7 +67308,7 @@
           "rollingWindowPeriods": 90,
           "sourceExpression": [
             "let",
-            "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_agrupador,#(lf)    max(ocioso) maior_tempo_ocioso#(lf)FROM (#(lf)    SELECT C.id_pac,#(lf)        a.cod_pac,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)        c.data,#(lf)        CONVERT(VARCHAR(02), r.data_hora, 108) AS hora,#(lf)        DATEDIFF(MINUTE, r.DATA_HORA, r.DATA_HORA_PERSISTENCIA) OCIOSO,#(lf)        D.ID AS id_dispositivo,#(lf)        R.VERSAO_APP,#(lf)        r.id_usuario,#(lf)        IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,R.id_empresa) AS id_empresa,#(lf)#(tab)#(tab)R.id_empresa AS COD_UNIDADE,#(lf)        IT.id_local,#(lf)        p.ID_AGRUPADOR AS id_pac_Agrupador#(lf)    FROM TBREGISTROCAB C WITH(NOLOCK)#(lf)    INNER JOIN TBPAC p WITH(NOLOCK) ON p.id = c.ID_PAC#(lf)    INNER JOIN tbpacitem it WITH(NOLOCK) ON p.id = it.id_pac#(lf)    INNER JOIN TBREGISTRO R WITH(NOLOCK) ON C.ID = R.ID_CAB AND R.ID_PAC_ITEM = IT.ID#(lf)    INNER JOIN TBDISPOSITIVOS D WITH(NOLOCK) ON D.UID = R.UUID_DEVICE#(lf)    INNER JOIN TBUSUARIO U WITH(NOLOCK) ON U.ID = R.ID_USUARIO#(lf)    INNER JOIN TBEMPRESA E WITH(NOLOCK) ON E.ID = R.ID_EMPRESA#(lf)    INNER JOIN TBPACAGRUPADOR a WITH(NOLOCK) ON a.ID = p.ID_AGRUPADOR#(lf)    --WHERE DATA_HORA_ENVIO IS NOT NULL and p.cod_pac = 'EVLN-PLANILHAATIVA'#(lf)    ) Lista #(lf)WHERE DATA >= DATEADD(MONTH, - 3, GETDATE()) /* buscar apenas últimos 90 dias conforme proposta*/#(lf)#(lf)GROUP BY id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_Agrupador\"]),",
+            "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_agrupador,#(lf)    max(ocioso) maior_tempo_ocioso,#(lf)#(tab)max(dataInicio) as dataInicio,#(lf)#(tab)max(dataRecebimento) as dataRecebimento#(lf)FROM (#(lf)    SELECT C.id_pac,#(lf)        a.cod_pac,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)        c.data,#(lf)        CONVERT(VARCHAR(02), r.data_hora, 108) AS hora,#(lf)        DATEDIFF(MINUTE, r.DATA_HORA, r.DATA_HORA_PERSISTENCIA) OCIOSO,#(lf)        D.ID AS id_dispositivo,#(lf)        R.VERSAO_APP,#(lf)        r.id_usuario,#(lf)        IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,R.id_empresa) AS id_empresa,#(lf)#(tab)#(tab)R.id_empresa AS COD_UNIDADE,#(lf)        IT.id_local,#(lf)        p.ID_AGRUPADOR AS id_pac_Agrupador,#(lf)#(tab)#(tab)r.data_hora as dataInicio,#(lf)#(tab)#(tab)r.data_hora_persistencia as dataRecebimento#(lf)    FROM TBREGISTROCAB C WITH(NOLOCK)#(lf)    INNER JOIN TBPAC p WITH(NOLOCK) ON p.id = c.ID_PAC#(lf)    INNER JOIN tbpacitem it WITH(NOLOCK) ON p.id = it.id_pac#(lf)    INNER JOIN TBREGISTRO R WITH(NOLOCK) ON C.ID = R.ID_CAB AND R.ID_PAC_ITEM = IT.ID#(lf)    INNER JOIN TBDISPOSITIVOS D WITH(NOLOCK) ON D.UID = R.UUID_DEVICE#(lf)    INNER JOIN TBUSUARIO U WITH(NOLOCK) ON U.ID = R.ID_USUARIO#(lf)    INNER JOIN TBEMPRESA E WITH(NOLOCK) ON E.ID = R.ID_EMPRESA#(lf)    INNER JOIN TBPACAGRUPADOR a WITH(NOLOCK) ON a.ID = p.ID_AGRUPADOR#(lf)    --WHERE DATA_HORA_ENVIO IS NOT NULL and p.cod_pac = 'EVLN-PLANILHAATIVA'#(lf)    ) Lista #(lf)WHERE DATA >= DATEADD(MONTH, - 3, GETDATE()) /* buscar apenas últimos 90 dias conforme proposta*/#(lf)#(lf)GROUP BY id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_Agrupador\"]),",
             "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each [data] >= RangeStart and [data] <= RangeEnd)",
             "in",
             "    #\"Linhas Filtradas\""
@@ -69498,10 +69647,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -69787,6 +69932,31 @@
                 "relationship": "f2e77303-0edf-4b8b-b99d-7389d35e290e"
               }
             ]
+          },
+          {
+            "name": "dataRecebimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "1e14a598-84cf-4820-91c8-b03f7bfed2d8",
+            "sourceColumn": "dataRecebimento",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_921f4876-bed8-4e18-a3d3-3ce0535f82b4"
+                },
+                "isDefault": true,
+                "relationship": "2d3501b8-e829-4278-86fe-861d4b8bf98a"
+              }
+            ]
           }
         ],
         "lineageTag": "d1654e2f-ca5f-4ee1-a41a-68ab23c8d07d",
@@ -69798,7 +69968,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)#(tab)reg.DATA_HORA,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)    and GETDATE()#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)data_base,#(lf)#(tab)reg.DATA_HORA,#(lf)#(tab)data_hora_persistencia as dataRecebimento,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)    and GETDATE()#(lf)#(tab)AND (STATUS <= 4) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)reg.DATA_HORA,#(lf)#(tab)data_hora_persistencia,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
                 "in",
                 "    Fonte"
               ],
@@ -72525,6 +72695,810 @@
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(Year(MIN('UltimoAcessoUsuario'[UltimoAcessoUsuario])), 1, 1), Date(Year(MAX('UltimoAcessoUsuario'[UltimoAcessoUsuario])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_921f4876-bed8-4e18-a3d3-3ce0535f82b4",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "4602c9cf-4edc-4e97-b973-b7ec83ba2a6c",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "1068c853-301a-4ba0-9d1f-8b283ada4a15",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "2b63daeb-fb2c-403a-9197-a3eb83b12473",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "ec96e44c-32a0-480e-8dbe-d2ce1da51ed6",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "4239080b-ca07-42b5-817a-0f3833286ce5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "aaed7281-b64a-4038-834d-d76200b4863a",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "d6408909-d413-40ff-96b4-dbd78f68d759",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "9785c792-a636-4d84-bde2-4fe8f0e5113b",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "b37ba7e5-1af9-4347-a0d2-52fd55c30b05",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "8b304761-8108-4722-93e9-6a56def0a162",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "d535d86e-6dea-405a-a2f1-ef601c261899",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "4147bcf6-2a00-46e3-9aa2-41b23f74f7fc"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "58194e03-ccd3-4977-b9ad-fdbedda4735b",
+        "partitions": [
+          {
+            "name": "LocalDateTable_921f4876-bed8-4e18-a3d3-3ce0535f82b4",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('FtRegistro_T-Atual'[dataRecebimento])), 1, 1), Date(Year(MAX('FtRegistro_T-Atual'[dataRecebimento])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_c50b053b-2ba5-4095-a571-e32f8621cbb8",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "825450ce-b47c-45ce-89e6-9e7cdd7e1c18",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "17a1cd1c-59ff-4561-8937-ade9e6025a3d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "990c70ec-4992-4f98-a13f-90c27f3532f7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "23a2bc3d-bfae-4252-9fb8-a0409eeab625",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "7192ce46-48e7-400c-b8ee-84a8bbb16cd1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "6166df62-ec5a-43dc-8ffd-b6eae153115d",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "efa21766-6bab-4395-ad05-9c8376542cd6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "327af66b-077a-4fb7-8c40-d24a711e4c94",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "70d01015-6d64-4151-87f9-aa23b1861c1d",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "6854d5b3-e3ef-4e80-bd45-5ebdf8894cc5",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "61e1ed78-f02d-4f33-b6d8-44374f4c6915",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "fea3d85b-8cf7-444e-b332-71eb7d80c342"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "49adb55f-13d5-49db-888e-a689293cef3a",
+        "partitions": [
+          {
+            "name": "LocalDateTable_c50b053b-2ba5-4095-a571-e32f8621cbb8",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('ftRegistro'[dataRecebimento])), 1, 1), Date(Year(MAX('ftRegistro'[dataRecebimento])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_79d6f7f2-77c5-41aa-8033-ed5c5726a206",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "6b458423-4f4c-4361-b2c2-652aa0c71a8e",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "42bbddd6-b169-4eb4-8231-77a2a03507c1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "66cd68f1-c0f9-4252-bbc3-250f0559af48",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "ae0df44b-6960-45f5-a7cd-16d3b10492a1",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "ad999f83-55e7-40d6-a396-bed2209e02c1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "a87a9f85-d951-4608-9d96-495694591fd5",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "9a336b8f-8bdb-4272-813b-1530d125dac0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "f0d35c42-cff4-457a-9da9-d4056fdeda2e",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "9253b680-73e0-4ce1-9971-8cea689c9556",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "2e712bbc-37f7-498f-acf3-7b2ace9d9a04",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "2fc89315-3df4-4707-9555-dab5a3bca59a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "1cf3a565-5c26-4e10-8bbf-5ee8046ef89b"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "4996e876-8d74-4eb6-b9db-dc13cdb7dc28",
+        "partitions": [
+          {
+            "name": "LocalDateTable_79d6f7f2-77c5-41aa-8033-ed5c5726a206",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('ftTempoOcioso'[dataInicio])), 1, 1), Date(Year(MAX('ftTempoOcioso'[dataInicio])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_1b070ceb-dcf0-4fc0-ac24-20b91b56f6f6",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "a99e1e14-b942-4db9-b00e-95ac861d4624",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "1fc8471b-1489-4d3a-b6db-39e8ecdda85d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "7d4d708f-7699-4d34-aad0-6651d4134bb4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "43429381-e4c6-458a-a18d-215e489e6ee5",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "04b7c94f-ead2-4957-ba0b-13eabf46af82",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "d5efea37-a193-4b0c-a4d2-e8c3c80e3802",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "1fc99e2c-bac2-4651-ae2b-9749f0a446ff",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "708a81f8-eb1d-461f-bdc6-b518e0dca230",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "414fb3af-7a95-43f3-861b-d67eef7818c7",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "efc030a9-d9cb-478c-a4fd-bd9e65d83938",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "6d0d0ce5-bea4-4cec-9ed4-90ea276457e8",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "654fb286-baef-48f6-9d89-a643db94171f"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "be9850ca-0fd7-4175-9830-0f823ee48db7",
+        "partitions": [
+          {
+            "name": "LocalDateTable_1b070ceb-dcf0-4fc0-ac24-20b91b56f6f6",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('ftTempoOcioso'[dataRecebimento])), 1, 1), Date(Year(MAX('ftTempoOcioso'[dataRecebimento])), 12, 31))",
               "type": "calculated"
             }
           }
