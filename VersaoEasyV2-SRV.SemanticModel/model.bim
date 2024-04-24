@@ -56478,10 +56478,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Exception"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56805,10 +56801,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -59361,10 +59353,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -66121,7 +66109,7 @@
               "",
               "var ano = \"2024\"",
               "var mes = \"04\"",
-              "var dia = \"22\"",
+              "var dia = \"24\"",
               "var sprint = \"229\"",
               "var dados  = \"P\"",
               "return",
@@ -69618,10 +69606,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
