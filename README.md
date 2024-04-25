@@ -3,82 +3,43 @@
 - Curso: https://www.youtube.com/watch?v=ts-H3W1uLMM
 - Recomendado Utilizar uma interface para controle, como:
     - Sourcetree
-- Sempre criar uma <b>branch</b> nova para cada Task;
-- Configurar nome e email para o commit;
-- Tomar cuidado com indexação do código
-- Nunca fazer alterações direto na <b>main</b> ou <b>develop</b>
+>
 ## Fluxo Base
 Diretório Local -> Stage -> Diretório Git
 ## Fluxo Uso
-1. No Diretório Local criar uma nova branch
-2. Realizar os Ajustes
-3. Adicionar tudo na área de Stage
-4. Realizar um commit na branch utilizada
-## Nome Commit
-*Task*-*Tipo*-*OndeFeito*-*Descrição*
-ex: #25533-Funcionalidade-Geral-Alterando Painel Ociosidade
-- *Task* -> Número da Task
-- *Tipo* -> Foco Principal, sendo:
-  - Refatoracao
-  - Bug
-  - Funcionalidade
-- *OndeFeito* -> Onde foi feito os ajustes da task
-    Caso queira especificar o local _
-  - Geral
-  - Visual
-  - Medidas
-  - Query
-  - Outro : Usar _ para especificar (ex: Excel_ArquivoRegional)
-- *Descrição* -> Pequena descrição do que realizou
+1. No Diretório Local criar uma nova Branch (git checkout)
+1. Realizar os devidos ajustes
+1. Adicionar na área de Staging (git add)
+1. Realizar um commit no repositório local (git commit)
+1. Enviar este commit para o repositório remoto (git push)
+1. Criar um Merge Request para juntar suas alterações com a branch develop
+1. Após o processo do MR, atualizar sua branch develop do repositório local (git pull)
+## Nome\MSG Commit
+1. <b>Task</b> -> Código completo da Task (#30580)
+1. <b>Local do Ajuste</b> -> Onde realizou os ajustes no BI ou demais arquivos:
+   1. Geral;
+   2. Visual;
+   3. Medidas;
+    1. Query;
+    1. Outro, especificar (Ex. Outro_ExcelRegional)
+1. <b>Descrição</b> -> Pequena descrição para detalhar o que foi realizado e facilitar a busca por onde validar, testar, etc.
+
+<b>Ex :  #30888-Geral-Adicionado Data Inicio e Recebimento e Alterado Último Acesso</b>
 ## Branchs
 - <b>main</b> -> branch em produção
 - <b>develop</b> -> branch final em desenv
 - <b>branch_tasks</b> -> branch criada para cada task
 ## Tag's
 Utilizado para marcar um ponto específico, bom para quando for lançar versão, etc.
-## Comando Básicos
-### git add
-    Adiciona os arquivos ao Stage
-    - Modos de utilizar:
-      - *git add .* -> adiciona todos os arquivos ao Stage
-      - *git add index.html* -> adiciona somente o(s) arquivos listados na área de Stage
-      - *git add .css* -> adiciona todos da extesão X para a área de Stage
-### git status
-    Mostra o Status dos arquivos atuais da branch, o que foi modificado, o que subiu ao stage, etc.
-### git reset
-    Tira mudanças do Stage sem alterar mudanças realizadas na área de trabalho
-    - É possivel utilizar também para voltar commit's e HEAD
-### git restore
-    -> Reverte uma mudança que já subiu para o Stage, commit ou HEAD
-### git diff
-    Diferença do Stage para o arquivo modificado
-### git commit
-    Confirma as mudanças, cria uma 'foto' do código no momento do commit
-    *-m* -> Título
-    *-a* -> Faz o commit sem passar pelo Stage (Não é muito ideal)
-    *-amend* -> Mudar o último commit (Último Caso)
-### git log
-    Status geral da Branch
-    - *-x* -> x numero de logs que deseja ver, a partir do último
-    - *graph*
-    - *--author*
-### git shortlog
-    Versão otimizada do log
-### git reflog
-    Mudanças realizadas no repositório
-### git checkout
-    Troca para a Branch especificada
-### git merge
-    Move as alterações de Branch's
-    Quando da conflito:
-        *--abort*
-        *--continue*
-### git stash
-    Cria uma 'branch' temporária com as mudanças feitas
-    *pop* aplica as mudanças no stash na branch desejada
-
-
-
-
-
+## Boas Práticas
+1. Nunca fazer alterações direto na main ou develop;
+1. Caso ocorrer, migrá-las para uma nova branch.
+1. Sempre criar uma nova branch para realizar as alterações, idealmente com o nome do número da task;
+1. Tomar cuidado com indexação ou formatação de código.
+1. Não guardar arquivos binários no projeto (PDF, Imagens, etc.)
+   1. Uma alternativa que não pesa o projeto é colocar a imagem em algum link externo e por meio de um Markdown File mostra-la.
+   2. <b>.gitignore</b>
+1. Commits devem possuir poucas mudanças, em geral. Ou seja: commite constantemente
+1. Manter readme ou outro arquivo .md com a versão, regras, etc.
+1. Preferencialmente não aprove seu Merge Request
 
