@@ -56478,6 +56478,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56800,7 +56804,7 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Table"
+            "value": "Exception"
           },
           {
             "name": "PBI_NavigationStepName",
@@ -57047,7 +57051,6 @@
             "summarizeBy": "none"
           }
         ],
-        "excludeFromModelRefresh": true,
         "lineageTag": "8881378b-e874-4a39-8ade-d729904f6cc9",
         "measures": [
           {
@@ -60234,10 +60237,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -60366,7 +60365,6 @@
             "summarizeBy": "sum"
           }
         ],
-        "excludeFromModelRefresh": true,
         "lineageTag": "b3d91545-113d-42b7-94c4-adeb316cf1c0",
         "partitions": [
           {
