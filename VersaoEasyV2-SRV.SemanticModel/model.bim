@@ -54607,10 +54607,9 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)data_base,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)MAX(REG.DATA_HORA) AS data_hora,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0)-1#(lf)#(tab)AND (STATUS <= @StatusP) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"]),",
-          "    #\"Linhas Classificadas\" = Table.Sort(Fonte,{{\"data_base\", Order.Descending}})",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)data_base,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)MAX(REG.DATA_HORA) AS data_hora,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0) #(lf)    and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0)-1#(lf)#(tab)AND (STATUS <= @StatusP) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY data_base,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)p.id,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)#(tab)order by DATA_BASE desc#(lf)\"])",
           "in",
-          "    #\"Linhas Classificadas\""
+          "    Fonte"
         ],
         "kind": "m",
         "lineageTag": "37402f2a-98ca-468f-aa7c-184141283068",
@@ -56804,7 +56803,7 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Exception"
+            "value": "Table"
           },
           {
             "name": "PBI_NavigationStepName",
@@ -60237,6 +60236,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -69407,6 +69410,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -69919,6 +69926,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -70297,6 +70308,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
