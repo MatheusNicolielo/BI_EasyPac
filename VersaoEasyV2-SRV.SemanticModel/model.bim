@@ -56477,6 +56477,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -57127,31 +57131,46 @@
                 "value": "{\"isDecimal\":true}"
               }
             ],
-            "expression": "(SUM(ftRealizados_Previstos[previstos]))",
+            "expression": [
+              "",
+              "( SUM ( ftRealizados_Previstos[previstos] ) )"
+            ],
             "formatString": "#,0",
             "lineageTag": "50c3e458-2563-41cb-a919-8e7f4ab6b265"
           },
           {
             "name": "Valor Realizado",
-            "expression": "CALCULATE(SUM(ftRealizados_Previstos[realizados]))",
+            "expression": [
+              "",
+              "CALCULATE ( SUM ( ftRealizados_Previstos[realizados] ) )"
+            ],
             "formatString": "#,0",
             "lineageTag": "e07c8c60-3365-4775-a816-b2d32e9940ce"
           },
           {
             "name": "Apontamentos Previsto",
-            "expression": "Sum(ftRealizados_Previstos[previstos])",
+            "expression": [
+              "",
+              "SUM ( ftRealizados_Previstos[previstos] )"
+            ],
             "formatString": "0",
             "lineageTag": "c5021370-0e20-4039-a879-ce694e5cde99"
           },
           {
             "name": "%ApontamentosMed",
-            "expression": "[Valor Previsto] * 0.75",
+            "expression": [
+              "",
+              "[Valor Previsto] * 0.75"
+            ],
             "formatString": "#,0.00",
             "lineageTag": "ef0bf247-4125-4c64-8275-1ccb78c6540f"
           },
           {
             "name": "%ApontamentosMin",
-            "expression": "[Valor Previsto] * 0.25",
+            "expression": [
+              "",
+              "[Valor Previsto] * 0.25"
+            ],
             "formatString": "#,0.00",
             "lineageTag": "f0b38f6f-06ea-45b3-a557-c7f2efb05809"
           },
@@ -57159,8 +57178,10 @@
             "name": "Total Nao Conformidades",
             "expression": [
               "",
-              "             CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
-              ""
+              "CALCULATE (",
+              "    SUM ( ftRegistro[QTde] ),",
+              "    FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              ")"
             ],
             "formatString": "#,0",
             "lineageTag": "0d0d00c7-c200-407d-b3d6-469739f5cde5"
@@ -57169,24 +57190,29 @@
             "name": "Apontamentos Realizados Monitoramento",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Realizados],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[tipo_Registro] = 1",
-              "))"
+              "CALCULATE ( [Realizados], FILTER ( ftRegistro, ftRegistro[tipo_Registro] = 1 ) )"
             ],
             "formatString": "#,0",
             "lineageTag": "86cf26d6-9531-407b-abdc-742b12fcee4f"
           },
           {
             "name": "Realizados",
-            "expression": "SUM(ftRegistro[QTde])",
+            "expression": [
+              "",
+              "SUM ( ftRegistro[QTde] )"
+            ],
             "formatString": "#,0",
             "lineageTag": "6131f391-7339-4ae2-9fdd-176f89437452"
           },
           {
             "name": "%NãoConformidadesMonitoramento",
-            "expression": "IFERROR([Total Não Conformidades Monitoramento] /[Apontamentos Realizados Monitoramento],0)",
+            "expression": [
+              "",
+              "IFERROR (",
+              "    [Total Não Conformidades Monitoramento] / [Apontamentos Realizados Monitoramento],",
+              "    0",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "676a78dd-475e-4755-9c1b-2904d10a22f0"
           },
@@ -57194,12 +57220,10 @@
             "name": "Total Não Conformidades Monitoramento",
             "expression": [
               "",
-              "    CALCULATE(",
-              "        [Total Nao Conformidades],",
-              "        FILTER(",
-              "            ftRegistro,",
-              "            ftRegistro[tipo_Registro] = 1)",
-              "    )"
+              "CALCULATE (",
+              "    [Total Nao Conformidades],",
+              "    FILTER ( ftRegistro, ftRegistro[tipo_Registro] = 1 )",
+              ")"
             ],
             "formatString": "#,0",
             "lineageTag": "9c3dc081-e76c-41eb-b7d8-6797ebd4ae92"
@@ -57208,24 +57232,29 @@
             "name": "Apontamentos Realizados Verificacao",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Realizados],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[tipo_Registro] = 2",
-              "))"
+              "CALCULATE ( [Realizados], FILTER ( ftRegistro, ftRegistro[tipo_Registro] = 2 ) )"
             ],
             "formatString": "#,0",
             "lineageTag": "152ef33e-e9e2-4b9f-9b06-f53412c18df5"
           },
           {
             "name": "%ApontamentoAtual",
-            "expression": "IFERROR([Realizados]/[Valor Previsto],BLANK())",
+            "expression": [
+              "",
+              "IFERROR ( [Realizados] / [Valor Previsto], BLANK () )"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "469a73b9-e15b-4d43-b93d-bb4d0facfa14"
           },
           {
             "name": "FT Valor Previsto - Tabela",
-            "expression": "CALCULATE(SUM(ftRealizados_Previstos[previstos]),USERELATIONSHIP(ftRegistro[id_cab],ftRealizados_Previstos[id_cab]))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    SUM ( ftRealizados_Previstos[previstos] ),",
+              "    USERELATIONSHIP ( ftRegistro[id_cab], ftRealizados_Previstos[id_cab] )",
+              ")"
+            ],
             "formatString": "#,0",
             "lineageTag": "461b3e27-53a9-49b6-ae4d-61ab99f165f1"
           },
@@ -57233,28 +57262,45 @@
             "name": "DataSelecionada",
             "expression": [
               "",
-              "var dataMin = MIN(Calendario[Date])",
-              "var dataMax = MAX(Calendario[Date])",
-              "return ",
-              "CONCATENATE(\"Data Selecionada: \",CONCATENATE(CONVERT(dataMin,STRING),CONCATENATE(\" à \",CONVERT(dataMax,STRING))))"
+              "VAR dataMin =",
+              "    MIN ( Calendario[Date] )",
+              "VAR dataMax =",
+              "    MAX ( Calendario[Date] )",
+              "RETURN",
+              "    CONCATENATE (",
+              "        \"Data Selecionada: \",",
+              "        CONCATENATE (",
+              "            CONVERT ( dataMin, STRING ),",
+              "            CONCATENATE ( \" à \", CONVERT ( dataMax, STRING ) )",
+              "        )",
+              "    )"
             ],
             "lineageTag": "e81e9129-fbef-4b30-9f17-0cae88ac6d78"
           },
           {
             "name": "% Realizado Monit",
-            "expression": "DIVIDE([Apontamentos Realizados Monitoramento],[Monit Previstos])",
+            "expression": [
+              "",
+              "DIVIDE ( [Apontamentos Realizados Monitoramento], [Monit Previstos] )"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "294128aa-ecf7-467b-a078-0fe7a857332c"
           },
           {
             "name": "zero",
-            "expression": "0",
+            "expression": [
+              "",
+              "0"
+            ],
             "formatString": "0",
             "lineageTag": "294df3e8-69e5-4167-8a26-fc79174780cf"
           },
           {
             "name": "Faltante",
-            "expression": "[Valor Previsto]-[Valor Realizado]",
+            "expression": [
+              "",
+              "[Valor Previsto] - [Valor Realizado]"
+            ],
             "formatString": "#,0",
             "lineageTag": "4bc9a344-93d3-4461-a2f9-ef0fafde3383"
           },
@@ -57262,12 +57308,10 @@
             "name": "Total Não Conformidades Verificação",
             "expression": [
               "",
-              "    CALCULATE(",
-              "        [Total Nao Conformidades],",
-              "        FILTER(",
-              "            ftRegistro,",
-              "            ftRegistro[tipo_registro] = 2)",
-              "    )"
+              "CALCULATE (",
+              "    [Total Nao Conformidades],",
+              "    FILTER ( ftRegistro, ftRegistro[tipo_registro] = 2 )",
+              ")"
             ],
             "formatString": "0",
             "lineageTag": "3e94a838-ec87-4b78-b933-e97c766ddedf"
@@ -57276,10 +57320,15 @@
             "name": "Total Nao Conformidades mês",
             "expression": [
               "",
-              "            var dia = CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
-              "            var util = VALUES(Calendario[ehDiaUtil])",
-              "            RETURN  ",
-              "            if(dia <> BLANK() && util == 1, dia, BLANK())"
+              "VAR dia =",
+              "    CALCULATE (",
+              "        SUM ( ftRegistro[QTde] ),",
+              "        FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              "    )",
+              "VAR util =",
+              "    VALUES ( Calendario[ehDiaUtil] )",
+              "RETURN",
+              "    IF ( dia <> BLANK () && util == 1, dia, BLANK () )"
             ],
             "formatString": "0",
             "lineageTag": "cec20274-0474-4d23-a642-730da72f06bf"
@@ -57292,18 +57341,30 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "[Valor Previsto] * 1.25",
+            "expression": [
+              "",
+              "[Valor Previsto] * 1.25"
+            ],
             "lineageTag": "d19aabe0-ca32-4ed2-8f95-f3648c3b8ab3"
           },
           {
             "name": "%NãoConformidadesVerif",
-            "expression": "IFERROR([Total Não Conformidades Verificação] /[Apontamentos Realizados Verificacao],0)",
+            "expression": [
+              "",
+              "IFERROR (",
+              "    [Total Não Conformidades Verificação] / [Apontamentos Realizados Verificacao],",
+              "    0",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "82f8b708-de7f-4f3c-923e-cdbe0099eddd"
           },
           {
             "name": "Total NC - Diario - Tabela",
-            "expression": "[Total Não Conformidades Monitoramento]+[Total Não Conformidades Verificação]",
+            "expression": [
+              "",
+              "[Total Não Conformidades Monitoramento] + [Total Não Conformidades Verificação]"
+            ],
             "formatString": "0",
             "lineageTag": "1791eacd-a086-44e3-9d74-6fcf0e4eaf3c"
           },
@@ -57311,9 +57372,9 @@
             "name": "Monit Previstos",
             "expression": [
               "",
-              "CALCULATE(",
+              "CALCULATE (",
               "    [FT Valor Previsto - Tabela],",
-              "    ftRealizados_Previstos[TIPO_REGISTRO]=1",
+              "    ftRealizados_Previstos[TIPO_REGISTRO] = 1",
               ")"
             ],
             "formatString": "#,0",
@@ -57323,9 +57384,9 @@
             "name": "Verif Previstos",
             "expression": [
               "",
-              "CALCULATE(",
+              "CALCULATE (",
               "    [FT Valor Previsto - Tabela],",
-              "    ftRealizados_Previstos[TIPO_REGISTRO]=2",
+              "    ftRealizados_Previstos[TIPO_REGISTRO] = 2",
               ")"
             ],
             "formatString": "#,0",
@@ -57333,13 +57394,19 @@
           },
           {
             "name": "% Realizado Verif",
-            "expression": "DIVIDE([Apontamentos Realizados Verificacao],[Verif Previstos])",
+            "expression": [
+              "",
+              "DIVIDE ( [Apontamentos Realizados Verificacao], [Verif Previstos] )"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "7baea4e5-909b-4eb7-9b86-d4c476694e08"
           },
           {
             "name": "TestePrevistosValue",
-            "expression": "[FT Valor Previsto - Tabela]",
+            "expression": [
+              "",
+              "[FT Valor Previsto - Tabela]"
+            ],
             "formatString": "0",
             "lineageTag": "199cbfd3-e950-4be3-93a8-4892f7ed7227"
           }
@@ -58091,7 +58158,10 @@
         "measures": [
           {
             "name": "Qtde PACs",
-            "expression": "DISTINCTCOUNT(ftRegistro[cod_agrupador])",
+            "expression": [
+              "",
+              "DISTINCTCOUNT ( ftRegistro[cod_agrupador] )"
+            ],
             "formatString": "0",
             "lineageTag": "6af8ec04-1ee3-4f4f-9c92-d183cdcef995"
           },
@@ -58099,11 +58169,11 @@
             "name": "Pac com NC",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Qtde PACs],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[id_lancamento] = 1 // STATUS CONFORMIDADE",
-              "))"
+              "CALCULATE (",
+              "    [Qtde PACs],",
+              "    FILTER ( ftRegistro, ftRegistro[id_lancamento] = 1 // STATUS CONFORMIDADE",
+              "        )",
+              ")"
             ],
             "formatString": "0",
             "lineageTag": "0f7cd571-551b-4ef3-ad2a-c8b58287b481"
@@ -58112,14 +58182,17 @@
             "name": "PCT Pareto",
             "expression": [
               "",
-              "    DIVIDE([Pac com NC], [Qtde PACs] ,0)"
+              "DIVIDE ( [Pac com NC], [Qtde PACs], 0 )"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "ad9bc698-6052-4f46-a55c-f2afac92a73e"
           },
           {
             "name": "Qtde Planilhas",
-            "expression": "DISTINCTCOUNT(ftRegistro[cod_Pac])",
+            "expression": [
+              "",
+              "DISTINCTCOUNT ( ftRegistro[cod_Pac] )"
+            ],
             "formatString": "0",
             "lineageTag": "51f85f59-d1f3-4eea-8214-3aad603a26b2"
           },
@@ -58127,11 +58200,11 @@
             "name": "Planilhas com NC",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Qtde Planilhas],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[id_lancamento] = 1 // STATUS CONFORMIDADE",
-              "))"
+              "CALCULATE (",
+              "    [Qtde Planilhas],",
+              "    FILTER ( ftRegistro, ftRegistro[id_lancamento] = 1 // STATUS CONFORMIDADE",
+              "        )",
+              ")"
             ],
             "formatString": "0",
             "lineageTag": "0f8fe25f-85e6-4c1b-b8ec-d69c9145d3a7"
@@ -58140,7 +58213,7 @@
             "name": "PCT Pareto Planilhas",
             "expression": [
               "",
-              "   DIVIDE([Planilhas com NC], [Qtde Planilhas] ,0)"
+              "DIVIDE ( [Planilhas com NC], [Qtde Planilhas], 0 )"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "f442c66b-dce2-426c-b5bc-92314303f7b5"
@@ -58155,17 +58228,22 @@
             "name": "Pareto_Agru",
             "expression": [
               "",
-              "   VAR TotalVendas = CALCULATE([Total Nao Conformidades - Pareto PAC], ALLSELECTED(ftRegistro))",
-              "   VAR TotalAtual  = [Total Nao Conformidades - Pareto PAC]",
-              "   VAR tbResumo =",
-              "       SUMMARIZE(",
-              "            ALLSELECTED(ftRegistro),",
-              "            ftRegistro[cod_agrupador],",
-              "            \"Total\", [Total Nao Conformidades - Pareto PAC]",
-              "       )",
-              "   VAR TotalAcumulado =",
-              "      SUMX(FILTER(tbResumo, [Total Nao Conformidades - Pareto PAC] >= TotalAtual), [Total Nao Conformidades - Pareto PAC])",
-              "RETURN TotalAcumulado / TotalVendas"
+              "VAR TotalVendas =",
+              "    CALCULATE ( [Total Nao Conformidades - Pareto PAC], ALLSELECTED ( ftRegistro ) )",
+              "VAR TotalAtual = [Total Nao Conformidades - Pareto PAC]",
+              "VAR tbResumo =",
+              "    SUMMARIZE (",
+              "        ALLSELECTED ( ftRegistro ),",
+              "        ftRegistro[cod_agrupador],",
+              "        \"Total\", [Total Nao Conformidades - Pareto PAC]",
+              "    )",
+              "VAR TotalAcumulado =",
+              "    SUMX (",
+              "        FILTER ( tbResumo, [Total Nao Conformidades - Pareto PAC] >= TotalAtual ),",
+              "        [Total Nao Conformidades - Pareto PAC]",
+              "    )",
+              "RETURN",
+              "    TotalAcumulado / TotalVendas"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "e25e8d15-8e6c-48d7-8bac-9f3d6202bb5a"
@@ -58174,17 +58252,22 @@
             "name": "Pareto_PAC",
             "expression": [
               "",
-              "   VAR TotalVendas = CALCULATE([Total Nao Conformidades - Pareto PAC], ALLSELECTED(ftRegistro))",
-              "   VAR TotalAtual  = [Total Nao Conformidades - Pareto PAC]",
-              "   VAR tbResumo =",
-              "       SUMMARIZE(",
-              "            ALLSELECTED(ftRegistro),",
-              "            ftRegistro[cod_Pac],",
-              "            \"Total\", [Total Nao Conformidades - Pareto PAC]",
-              "       )",
-              "   VAR TotalAcumulado =",
-              "      SUMX(FILTER(tbResumo, [Total Nao Conformidades - Pareto PAC] >= TotalAtual), [Total Nao Conformidades - Pareto PAC])",
-              "RETURN TotalAcumulado / TotalVendas"
+              "VAR TotalVendas =",
+              "    CALCULATE ( [Total Nao Conformidades - Pareto PAC], ALLSELECTED ( ftRegistro ) )",
+              "VAR TotalAtual = [Total Nao Conformidades - Pareto PAC]",
+              "VAR tbResumo =",
+              "    SUMMARIZE (",
+              "        ALLSELECTED ( ftRegistro ),",
+              "        ftRegistro[cod_Pac],",
+              "        \"Total\", [Total Nao Conformidades - Pareto PAC]",
+              "    )",
+              "VAR TotalAcumulado =",
+              "    SUMX (",
+              "        FILTER ( tbResumo, [Total Nao Conformidades - Pareto PAC] >= TotalAtual ),",
+              "        [Total Nao Conformidades - Pareto PAC]",
+              "    )",
+              "RETURN",
+              "    TotalAcumulado / TotalVendas"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "1f97d91e-1871-4c1c-8969-c7185dd6c518"
@@ -58193,9 +58276,16 @@
             "name": "Rank ftRegistro - Pareto PAC",
             "expression": [
               "",
-              "var ranque = RANKX(ALL(ftRegistro),[Total Nao Conformidades - Pareto PAC],,DESC, Dense)",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - Pareto PAC])), ranque)"
+              "VAR ranque =",
+              "    RANKX (",
+              "        ALL ( ftRegistro ),",
+              "        [Total Nao Conformidades - Pareto PAC],",
+              "        ,",
+              "        DESC,",
+              "        DENSE",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - Pareto PAC] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "29e460b7-7997-406a-bd38-948aaa7764ef"
@@ -58215,14 +58305,17 @@
             "name": "Rank ftRegistro_codPac - Pareto PAC",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(ftRegistro[cod_Pac]),",
-              "    ORDERBY([Total Nao Conformidades - Pareto PAC],DESC,ftRegistro[cod_pac],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - Pareto PAC])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( ftRegistro[cod_Pac] ),",
+              "        ORDERBY (",
+              "            [Total Nao Conformidades - Pareto PAC], DESC,",
+              "            ftRegistro[cod_pac], ASC",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - Pareto PAC] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "70d9791c-d827-4d8a-9aca-7bf1b80f0b76"
@@ -58242,14 +58335,17 @@
             "name": "Rank ftRegistro_codAgrupador - Pareto PAC",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(ftRegistro[cod_agrupador]),",
-              "    ORDERBY([Total Nao Conformidades - Pareto PAC],DESC,ftRegistro[cod_agrupador],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - Pareto PAC])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( ftRegistro[cod_agrupador] ),",
+              "        ORDERBY (",
+              "            [Total Nao Conformidades - Pareto PAC], DESC,",
+              "            ftRegistro[cod_agrupador], ASC",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - Pareto PAC] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "0fd711eb-dfc3-4c32-9339-20eac41ee9d7"
@@ -58274,17 +58370,20 @@
             "name": "AcumuladoParetoPAC",
             "expression": [
               "",
-              "VAR TotalAtual  = [Total Nao Conformidades - Pareto PAC]",
-              "   VAR tbResumo =",
-              "       SUMMARIZE(",
-              "            ALLSELECTED(ftRegistro),",
-              "            ftRegistro[cod_agrupador],",
-              "            \"Total\", [Total Nao Conformidades - Pareto PAC]",
-              "       )",
-              "   VAR TotalAcumulado =",
-              "      SUMX(FILTER(tbResumo, [Total Nao Conformidades - Pareto PAC] >= TotalAtual), [Total Nao Conformidades - Pareto PAC])",
-              "return",
-              "TotalAcumulado"
+              "VAR TotalAtual = [Total Nao Conformidades - Pareto PAC]",
+              "VAR tbResumo =",
+              "    SUMMARIZE (",
+              "        ALLSELECTED ( ftRegistro ),",
+              "        ftRegistro[cod_agrupador],",
+              "        \"Total\", [Total Nao Conformidades - Pareto PAC]",
+              "    )",
+              "VAR TotalAcumulado =",
+              "    SUMX (",
+              "        FILTER ( tbResumo, [Total Nao Conformidades - Pareto PAC] >= TotalAtual ),",
+              "        [Total Nao Conformidades - Pareto PAC]",
+              "    )",
+              "RETURN",
+              "    TotalAcumulado"
             ],
             "formatString": "0",
             "lineageTag": "8fb81288-072b-4687-b634-d5c8085cb8be"
@@ -58754,25 +58853,37 @@
         "measures": [
           {
             "name": "Qtde Planilhas - PAC Recorrentes",
-            "expression": "DISTINCTCOUNT(ftRegistro[cod_pac])",
+            "expression": [
+              "",
+              "DISTINCTCOUNT ( ftRegistro[cod_pac] )"
+            ],
             "formatString": "#,0",
             "lineageTag": "f6e37120-af58-4185-ab0d-27ab07f54c47"
           },
           {
             "name": "Qtde Itens - PAC Recorrentes",
-            "expression": "distinctcount(ftRegistro[id_pac_item])",
+            "expression": [
+              "",
+              "DISTINCTCOUNT ( ftRegistro[id_pac_item] )"
+            ],
             "formatString": "#,0",
             "lineageTag": "82203d36-15a6-4145-8593-c35ae773acc9"
           },
           {
             "name": "Qtde Monitores - PAC Recorrentes",
-            "expression": "DISTINCTCOUNT(ftRegistro[id_usuario])",
+            "expression": [
+              "",
+              "DISTINCTCOUNT ( ftRegistro[id_usuario] )"
+            ],
             "formatString": "#,0",
             "lineageTag": "8fdd682f-8267-4f8a-86de-4ff047c15a59"
           },
           {
             "name": "Realizados - PAC Recorrentes",
-            "expression": "SUM(ftRegistro[QTde])",
+            "expression": [
+              "",
+              "SUM ( ftRegistro[QTde] )"
+            ],
             "formatString": "0",
             "lineageTag": "a2a9bc43-3e4f-47eb-bf3f-7246d3c2e96b"
           },
@@ -58780,11 +58891,10 @@
             "name": "Apontamentos Realizados Monitoramento - PAC Recorrentes",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Realizados - PAC Recorrentes],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[tipo_registro] = 1",
-              "))"
+              "CALCULATE (",
+              "    [Realizados - PAC Recorrentes],",
+              "    FILTER ( ftRegistro, ftRegistro[tipo_registro] = 1 )",
+              ")"
             ],
             "formatString": "#,0",
             "lineageTag": "c698c9a8-b706-480e-9264-16b8f5a07017"
@@ -58793,24 +58903,35 @@
             "name": "Apontamentos Realizados Verificacao - PAC Recorrentes",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Realizados - PAC Recorrentes],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[tipo_registro] = 2",
-              "))"
+              "CALCULATE (",
+              "    [Realizados - PAC Recorrentes],",
+              "    FILTER ( ftRegistro, ftRegistro[tipo_registro] = 2 )",
+              ")"
             ],
             "formatString": "#,0",
             "lineageTag": "4c09950e-26f0-43d0-bd2b-f1ffdff0db33"
           },
           {
             "name": "%NãoConformidades",
-            "expression": "IFERROR([Total Nao Conformidades - PAC Recorrentes]/[Realizados - PAC Recorrentes],0)",
+            "expression": [
+              "",
+              "IFERROR (",
+              "    [Total Nao Conformidades - PAC Recorrentes] / [Realizados - PAC Recorrentes],",
+              "    0",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "de7c3570-c9a6-4b3e-867f-22da95b2d68c"
           },
           {
             "name": "Total Nao Conformidades - PAC Recorrentes",
-            "expression": "CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    SUM ( ftRegistro[QTde] ),",
+              "    FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              ")"
+            ],
             "formatString": "#,0",
             "lineageTag": "064f6d09-0475-46fe-87d3-81f328e00f96"
           },
@@ -58818,13 +58939,17 @@
             "name": "%MoM_NaoConformidades - PAC Recorrentes",
             "expression": [
               "",
-              "VAR vPM = ",
-              "CALCULATE(",
-              "   [Total Nao Conformidades - PAC Recorrentes],",
-              "    PREVIOUSMONTH(Calendario[Date])",
-              ")",
+              "VAR vPM =",
+              "    CALCULATE (",
+              "        [Total Nao Conformidades - PAC Recorrentes],",
+              "        PREVIOUSMONTH ( Calendario[Date] )",
+              "    )",
               "RETURN",
-              "IF(ISBLANK([Total Nao Conformidades - PAC Recorrentes]),BLANK(),DIVIDE([Total Nao Conformidades - PAC Recorrentes] - vPM, ABS(vPM)))"
+              "    IF (",
+              "        ISBLANK ( [Total Nao Conformidades - PAC Recorrentes] ),",
+              "        BLANK (),",
+              "        DIVIDE ( [Total Nao Conformidades - PAC Recorrentes] - vPM, ABS ( vPM ) )",
+              "    )"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "7036c3d5-0a70-44d8-8f30-8bd8e9cc8d0a"
@@ -58833,13 +58958,10 @@
             "name": "AV",
             "expression": [
               "",
-              "VAR vConformidades = ",
-              "CALCULATE(",
-              "    [Total Nao Conformidades - PAC Recorrentes],",
-              "       ALL(ftRegistro)",
-              ")",
+              "VAR vConformidades =",
+              "    CALCULATE ( [Total Nao Conformidades - PAC Recorrentes], ALL ( ftRegistro ) )",
               "RETURN",
-              "DIVIDE([Realizados - PAC Recorrentes], vConformidades)"
+              "    DIVIDE ( [Realizados - PAC Recorrentes], vConformidades )"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "b10ef6c9-3a47-4182-863e-54a728f454f2"
@@ -58892,7 +59014,13 @@
         "measures": [
           {
             "name": "Total Nao Conformidades - painelLocal",
-            "expression": "CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    SUM ( ftRegistro[QTde] ),",
+              "    FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              ")"
+            ],
             "formatString": "#,0",
             "lineageTag": "ded6ec3b-76c0-451f-8192-a9dc0a7f8f20"
           },
@@ -58900,9 +59028,12 @@
             "name": "Rank Nao Conformidade Local",
             "expression": [
               "",
-              "\tRANKX(",
-              "\t\tALLSELECTED(dimLocal),",
-              "\t\t[Total Nao Conformidades - painelLocal],,DESC,Dense",
+              "RANKX (",
+              "    ALLSELECTED ( dimLocal ),",
+              "    [Total Nao Conformidades - painelLocal],",
+              "    ,",
+              "    DESC,",
+              "    DENSE",
               ")"
             ],
             "formatString": "0",
@@ -58912,17 +59043,19 @@
             "name": "RANK ACUM NAO CONFORMIDADE Local",
             "expression": [
               "",
-              "var total = CALCULATE([Total Nao Conformidades - painelLocal], ALLSELECTED(dimLocal))",
-              "var totalAtual = [Total Nao Conformidades - painelLocal]",
-              "var tbResumo = ",
-              "    SUMMARIZE(",
-              "        ALLSELECTED(ftRegistro),",
-              "            dimLocal[nome_local],",
-              "            \"Total\", [Total Nao Conformidades - painelLocal]",
-              "        )",
-              "var TotalAcumulado = ",
-              "    SUMX(FILTER(tbResumo, [Total] >= totalAtual), [Total])",
-              "return TotalAcumulado"
+              "VAR total =",
+              "    CALCULATE ( [Total Nao Conformidades - painelLocal], ALLSELECTED ( dimLocal ) )",
+              "VAR totalAtual = [Total Nao Conformidades - painelLocal]",
+              "VAR tbResumo =",
+              "    SUMMARIZE (",
+              "        ALLSELECTED ( ftRegistro ),",
+              "        dimLocal[nome_local],",
+              "        \"Total\", [Total Nao Conformidades - painelLocal]",
+              "    )",
+              "VAR TotalAcumulado =",
+              "    SUMX ( FILTER ( tbResumo, [Total] >= totalAtual ), [Total] )",
+              "RETURN",
+              "    TotalAcumulado"
             ],
             "formatString": "0",
             "lineageTag": "93723161-8200-4d0f-8ef9-df0d492847ff"
@@ -58931,11 +59064,16 @@
             "name": "RANK PCT ACUM NAO CONFORMIDADE Local",
             "expression": [
               "",
-              "VAR vTotalNC  = CALCULATE([Total Nao Conformidades - painelLocal],ALLSELECTED(dimLocal[nome_local]))",
-              "VAR vRankAcum = CALCULATE([RANK ACUM NAO CONFORMIDADE Local])",
-              "VAR vResultado = vRankAcum/vTotalNC",
+              "VAR vTotalNC =",
+              "    CALCULATE (",
+              "        [Total Nao Conformidades - painelLocal],",
+              "        ALLSELECTED ( dimLocal[nome_local] )",
+              "    )",
+              "VAR vRankAcum =",
+              "    CALCULATE ( [RANK ACUM NAO CONFORMIDADE Local] )",
+              "VAR vResultado = vRankAcum / vTotalNC",
               "RETURN",
-              "\tvResultado"
+              "    vResultado"
             ],
             "formatString": "#,0.00%;-#,0.00%;#,0.00%",
             "lineageTag": "ce5741b2-5538-464b-b338-1bf399a9f4e7"
@@ -58944,14 +59082,17 @@
             "name": "Rank dimLocal - painelLocal",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(dimLocal[nome_local]),",
-              "    ORDERBY([Total Nao Conformidades - painelLocal],DESC,dimLocal[nome_local],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - painelLocal])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( dimLocal[nome_local] ),",
+              "        ORDERBY (",
+              "            [Total Nao Conformidades - painelLocal], DESC,",
+              "            dimLocal[nome_local], ASC",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - painelLocal] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "e812c8a6-c5ec-46a7-bc7e-a3b5897f119c"
@@ -58960,9 +59101,14 @@
             "name": "rankLocal - painelLocal",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankLocal-painelLocal'[idRankLocal]),SELECTEDVALUE('rankLocal-painelLocal'[RankLocal]),21)",
-              "return ",
-              "IF([Rank dimLocal - painelLocal]<rankCalc,1,0)"
+              "VAR rankCalc =",
+              "    IF (",
+              "        HASONEVALUE ( 'rankLocal-painelLocal'[idRankLocal] ),",
+              "        SELECTEDVALUE ( 'rankLocal-painelLocal'[RankLocal] ),",
+              "        21",
+              "    )",
+              "RETURN",
+              "    IF ( [Rank dimLocal - painelLocal] < rankCalc, 1, 0 )"
             ],
             "formatString": "0",
             "lineageTag": "01e8a084-6421-4d51-9421-aeea6e09cbc7"
@@ -58971,14 +59117,17 @@
             "name": "Rank dimPacItens - painelLocal",
             "expression": [
               "",
-              "var ranque =",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(dimPacItens[descPacItem]),",
-              "    ORDERBY([Total Nao Conformidades - painelLocal],DESC,dimPacItens[descPacItem],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - painelLocal])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( dimPacItens[descPacItem] ),",
+              "        ORDERBY (",
+              "            [Total Nao Conformidades - painelLocal], DESC,",
+              "            dimPacItens[descPacItem], ASC",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - painelLocal] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "b13baf52-3869-4773-84ab-12c6153e13fb"
@@ -58987,9 +59136,14 @@
             "name": "rankItens - painelLocal",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankLocal-painelLocal'[idRankLocal]),SELECTEDVALUE('rankLocal-painelLocal'[RankLocal]),21)",
-              "return ",
-              "IF([Rank dimPacItens - painelLocal]<rankCalc,1,0)"
+              "VAR rankCalc =",
+              "    IF (",
+              "        HASONEVALUE ( 'rankLocal-painelLocal'[idRankLocal] ),",
+              "        SELECTEDVALUE ( 'rankLocal-painelLocal'[RankLocal] ),",
+              "        21",
+              "    )",
+              "RETURN",
+              "    IF ( [Rank dimPacItens - painelLocal] < rankCalc, 1, 0 )"
             ],
             "formatString": "0",
             "lineageTag": "a1017864-f818-426c-b5c3-72e635141f92"
@@ -59632,20 +59786,20 @@
             "name": "Pac - Filtro",
             "expression": [
               "",
-              "var saida = ",
-              "    CALCULATE(CONCATENATEX(",
-              "        CALCULATETABLE(dimPacAgrupador,",
-              "            FILTERS(dimPacAgrupador[cod_Pac])",
-              "        ),",
-              "        dimPacAgrupador[cod_Pac],\";\"",
-              "    ))",
-              "return ",
-              "IF(HASONEFILTER(dimPacAgrupador[cod_Pac]),",
-              "    MAX(dimPacAgrupador[cod_Pac]),",
-              "    IF(ISFILTERED(dimPacAgrupador[cod_Pac]),",
-              "        saida,",
-              "        \" \"    ",
-              "))"
+              "VAR saida =",
+              "    CALCULATE (",
+              "        CONCATENATEX (",
+              "            CALCULATETABLE ( dimPacAgrupador, FILTERS ( dimPacAgrupador[cod_Pac] ) ),",
+              "            dimPacAgrupador[cod_Pac],",
+              "            \";\"",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimPacAgrupador[cod_Pac] ),",
+              "        MAX ( dimPacAgrupador[cod_Pac] ),",
+              "        IF ( ISFILTERED ( dimPacAgrupador[cod_Pac] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "ffd085d0-941d-4e56-bad3-4dc1028af1a1"
           },
@@ -59653,20 +59807,23 @@
             "name": "Status Conformidade - Filtro",
             "expression": [
               "",
-              "var saida = ",
-              "    CALCULATE(CONCATENATEX(",
-              "        CALCULATETABLE(dimStatusConformidade,",
-              "            FILTERS(dimStatusConformidade[descricaoConformidade])",
-              "        ),",
-              "        dimStatusConformidade[descricaoConformidade],\";\"",
-              "    ))",
-              "return ",
-              "IF(HASONEFILTER(dimStatusConformidade[descricaoConformidade]),",
-              "    MAX(dimStatusConformidade[descricaoConformidade]),",
-              "    IF(ISFILTERED(dimStatusConformidade[descricaoConformidade]),",
-              "        saida,",
-              "        \" \"    ",
-              "))"
+              "VAR saida =",
+              "    CALCULATE (",
+              "        CONCATENATEX (",
+              "            CALCULATETABLE (",
+              "                dimStatusConformidade,",
+              "                FILTERS ( dimStatusConformidade[descricaoConformidade] )",
+              "            ),",
+              "            dimStatusConformidade[descricaoConformidade],",
+              "            \";\"",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimStatusConformidade[descricaoConformidade] ),",
+              "        MAX ( dimStatusConformidade[descricaoConformidade] ),",
+              "        IF ( ISFILTERED ( dimStatusConformidade[descricaoConformidade] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "1a135a60-7b09-4a6a-b3a0-b8fa0d337245"
           },
@@ -59674,20 +59831,20 @@
             "name": "Turno - Filtro",
             "expression": [
               "",
-              "var saida = ",
-              "    CALCULATE(CONCATENATEX(",
-              "        CALCULATETABLE(dimTurno,",
-              "            FILTERS(dimTurno[desc_Turno])",
-              "        ),",
-              "        dimTurno[desc_Turno],\";\"",
-              "    ))",
-              "return ",
-              "IF(HASONEFILTER(dimTurno[desc_Turno]),",
-              "    MAX(dimTurno[desc_Turno]),",
-              "    IF(ISFILTERED(dimTurno[desc_Turno]),",
-              "        saida,",
-              "        \" \"    ",
-              "))"
+              "VAR saida =",
+              "    CALCULATE (",
+              "        CONCATENATEX (",
+              "            CALCULATETABLE ( dimTurno, FILTERS ( dimTurno[desc_Turno] ) ),",
+              "            dimTurno[desc_Turno],",
+              "            \";\"",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimTurno[desc_Turno] ),",
+              "        MAX ( dimTurno[desc_Turno] ),",
+              "        IF ( ISFILTERED ( dimTurno[desc_Turno] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "fa092519-b496-4d02-a57a-61da8d426409"
           },
@@ -59695,20 +59852,20 @@
             "name": "Usuario - Filtro",
             "expression": [
               "",
-              "var saida = ",
-              "    CALCULATE(CONCATENATEX(",
-              "        CALCULATETABLE(dimUsuario,",
-              "            FILTERS(dimUsuario[nome_Usuario])",
-              "        ),",
-              "        dimUsuario[nome_Usuario],\";\"",
-              "    ))",
-              "return ",
-              "IF(HASONEFILTER(dimUsuario[nome_Usuario]),",
-              "    MAX(dimUsuario[nome_Usuario]),",
-              "    IF(ISFILTERED(dimUsuario[nome_Usuario]),",
-              "        saida,",
-              "        \" \"    ",
-              "))"
+              "VAR saida =",
+              "    CALCULATE (",
+              "        CONCATENATEX (",
+              "            CALCULATETABLE ( dimUsuario, FILTERS ( dimUsuario[nome_Usuario] ) ),",
+              "            dimUsuario[nome_Usuario],",
+              "            \";\"",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimUsuario[nome_Usuario] ),",
+              "        MAX ( dimUsuario[nome_Usuario] ),",
+              "        IF ( ISFILTERED ( dimUsuario[nome_Usuario] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "52a4e29b-fef5-428e-bf8d-8a4483a95eed"
           },
@@ -59716,9 +59873,18 @@
             "name": "Regional - Filtro",
             "expression": [
               "",
-              "var saida = CONCATENATEX(CALCULATETABLE(dimEmpresa,FILTERS(dimEmpresa[Regional])),dimEmpresa[Regional],\";\")",
-              "return ",
-              "IF(HASONEFILTER(dimEmpresa[Regional]),MAX(dimEmpresa[Regional]),IF(ISFILTERED(dimEmpresa[Regional]),saida,\" \"))"
+              "VAR saida =",
+              "    CONCATENATEX (",
+              "        CALCULATETABLE ( dimEmpresa, FILTERS ( dimEmpresa[Regional] ) ),",
+              "        dimEmpresa[Regional],",
+              "        \";\"",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimEmpresa[Regional] ),",
+              "        MAX ( dimEmpresa[Regional] ),",
+              "        IF ( ISFILTERED ( dimEmpresa[Regional] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "4a34f55f-53bd-4de6-b3ef-fde47a6ee819"
           },
@@ -59791,9 +59957,14 @@
             "name": "TotalEmCriacao",
             "expression": [
               "",
-              "var quantidade= CALCULATE(COUNT(ftVer_e_Agir[id_Status_Ver]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) , ftVer_e_Agir[id_Status_Ver] = 3)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        COUNT ( ftVer_e_Agir[id_Status_Ver] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        ftVer_e_Agir[id_Status_Ver] = 3",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "f0c92228-7297-4a14-8676-12241bc5f268"
@@ -59802,9 +59973,14 @@
             "name": "TotalEmAvaliacao",
             "expression": [
               "",
-              "var quantidade= CALCULATE(DISTINCTCOUNT(FTVER_E_AGIR[id_ver_agir]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) ,FTVER_E_AGIR[id_status_ver] = 2)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        DISTINCTCOUNT ( FTVER_E_AGIR[id_ver_agir] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        FTVER_E_AGIR[id_status_ver] = 2",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "18513426-c440-4a62-a29f-64da499cbd64"
@@ -59813,9 +59989,14 @@
             "name": "TotalCancelado",
             "expression": [
               "",
-              "var quantidade= CALCULATE(DISTINCTCOUNT(FTVER_E_AGIR[id_ver_agir]), USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) ,FTVER_E_AGIR[id_status_ver] = 9)",
-              "return",
-              "  quantidade"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        DISTINCTCOUNT ( FTVER_E_AGIR[id_ver_agir] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        FTVER_E_AGIR[id_status_ver] = 9",
+              "    )",
+              "RETURN",
+              "    quantidade"
             ],
             "formatString": "#,0",
             "lineageTag": "7296faa4-9fb1-4dde-8747-71e1ac3ba099"
@@ -59824,7 +60005,7 @@
             "name": "TotalCancelado_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalCancelado]),0,[TotalCancelado])"
+              "IF ( ISBLANK ( [TotalCancelado] ), 0, [TotalCancelado] )"
             ],
             "formatString": "#,0",
             "lineageTag": "5dcc29d6-5f0c-4785-a579-1ef4baa066cd"
@@ -59833,9 +60014,14 @@
             "name": "TotalAtraso",
             "expression": [
               "",
-              "var quantidade= CALCULATE(DISTINCTCOUNT(FTVER_E_AGIR[id_ver_agir]), USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) ,FTVER_E_AGIR[id_status_ver] = 10)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        DISTINCTCOUNT ( FTVER_E_AGIR[id_ver_agir] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        FTVER_E_AGIR[id_status_ver] = 10",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "ccd73dfe-fa34-4cea-86c9-e3b8380223af"
@@ -59844,9 +60030,15 @@
             "name": "TotalAprovado",
             "expression": [
               "",
-              "var quantidade= CALCULATE(COUNT(FTVER_E_AGIR[id_ver_agir]), USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) ,ftVer_e_Agir[id_Status_Ver] = 6 || ftVer_e_Agir[id_Status_Ver] = 8 )",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        COUNT ( FTVER_E_AGIR[id_ver_agir] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        ftVer_e_Agir[id_Status_Ver] = 6",
+              "            || ftVer_e_Agir[id_Status_Ver] = 8",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "a9eb8dbb-698e-4c02-a6a5-4fb0659cf051"
@@ -59855,9 +60047,15 @@
             "name": "TotalReprovado",
             "expression": [
               "",
-              "var quantidade= CALCULATE(COUNT(ftVer_e_Agir[id_Status_Ver]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]),ftVer_e_Agir[id_Status_Ver] = 4 || ftVer_e_Agir[id_Status_Ver] = 9 )",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        COUNT ( ftVer_e_Agir[id_Status_Ver] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        ftVer_e_Agir[id_Status_Ver] = 4",
+              "            || ftVer_e_Agir[id_Status_Ver] = 9",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "54320f92-4ac1-4d36-8cf8-42eb64267b6b"
@@ -59866,9 +60064,14 @@
             "name": "TotalEmAnálise",
             "expression": [
               "",
-              "var quantidade= CALCULATE(DISTINCTCOUNT(FTVER_E_AGIR[id_ver_agir]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) ,FTVER_E_AGIR[id_status_ver] = 7)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        DISTINCTCOUNT ( FTVER_E_AGIR[id_ver_agir] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        FTVER_E_AGIR[id_status_ver] = 7",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "9eddb825-a59c-45b1-af4b-c24693ee6449"
@@ -59886,9 +60089,14 @@
             "name": "TotalFinalizado",
             "expression": [
               "",
-              "var quantidade= CALCULATE(DISTINCTCOUNT(FTVER_E_AGIR[id_ver_agir]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) ,FTVER_E_AGIR[id_status_ver] = 8)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        DISTINCTCOUNT ( FTVER_E_AGIR[id_ver_agir] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        FTVER_E_AGIR[id_status_ver] = 8",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "bc973c2b-d943-496a-802d-9787c2e2e8b1"
@@ -59897,7 +60105,7 @@
             "name": "TotalFinalizado_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalFinalizado]),0,[TotalFinalizado])"
+              "IF ( ISBLANK ( [TotalFinalizado] ), 0, [TotalFinalizado] )"
             ],
             "formatString": "#,0",
             "lineageTag": "3b163572-c4b7-4e5a-8f47-dbe7efd7746b"
@@ -59906,7 +60114,7 @@
             "name": "TotalEmCriacaoTarefa_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalEmCriacaoTarefa]),0,[TotalEmCriacaoTarefa])"
+              "IF ( ISBLANK ( [TotalEmCriacaoTarefa] ), 0, [TotalEmCriacaoTarefa] )"
             ],
             "formatString": "#,0",
             "lineageTag": "496bed8f-6481-46ae-b551-3ea6d5bbc69e"
@@ -59915,9 +60123,14 @@
             "name": "TotalEmCriacaoTarefa",
             "expression": [
               "",
-              "var quantidade= CALCULATE(COUNT(ftVer_e_Agir[id_Status_Ver]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) , ftVer_e_Agir[id_Status_Ver] = 3)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        COUNT ( ftVer_e_Agir[id_Status_Ver] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        ftVer_e_Agir[id_Status_Ver] = 3",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "7476cfba-cabf-48c7-b292-9358d2b0bcb9"
@@ -59926,7 +60139,7 @@
             "name": "TotalEmCriacao_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalEmCriacao]),0,[TotalEmCriacao])"
+              "IF ( ISBLANK ( [TotalEmCriacao] ), 0, [TotalEmCriacao] )"
             ],
             "formatString": "#,0",
             "lineageTag": "bcad66c0-10f2-45c8-8e2e-33e2510627eb"
@@ -59935,7 +60148,7 @@
             "name": "TotalEmAvaliacao_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalEmAvaliacao]),0,[TotalEmAvaliacao])"
+              "IF ( ISBLANK ( [TotalEmAvaliacao] ), 0, [TotalEmAvaliacao] )"
             ],
             "formatString": "#,0",
             "lineageTag": "b2b2213a-8390-4c66-9716-af07f1470a85"
@@ -59944,7 +60157,7 @@
             "name": "TotalAtraso_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalAtraso]),0,[TotalAtraso])"
+              "IF ( ISBLANK ( [TotalAtraso] ), 0, [TotalAtraso] )"
             ],
             "formatString": "#,0",
             "lineageTag": "dca73845-4d9a-4825-97de-3e90144b9765"
@@ -59953,9 +60166,14 @@
             "name": "TotalEmExecucao",
             "expression": [
               "",
-              "var quantidade= CALCULATE(COUNT(ftVer_e_Agir[id_Status_Ver]),USERELATIONSHIP(Calendario[Date],FTVER_E_AGIR[data_monitoramento]) , ftVer_e_Agir[id_Status_Ver] = 2)",
-              "return",
-              "IF(ISBLANK(quantidade),BLANK(),quantidade)"
+              "VAR quantidade =",
+              "    CALCULATE (",
+              "        COUNT ( ftVer_e_Agir[id_Status_Ver] ),",
+              "        USERELATIONSHIP ( Calendario[Date], FTVER_E_AGIR[data_monitoramento] ),",
+              "        ftVer_e_Agir[id_Status_Ver] = 2",
+              "    )",
+              "RETURN",
+              "    IF ( ISBLANK ( quantidade ), BLANK (), quantidade )"
             ],
             "formatString": "#,0",
             "lineageTag": "78a88a7e-cdf4-4ef1-ad72-77de01d449f1"
@@ -59964,7 +60182,7 @@
             "name": "TotalEmExecucao_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalEmExecucao]),0,[TotalEmExecucao])"
+              "IF ( ISBLANK ( [TotalEmExecucao] ), 0, [TotalEmExecucao] )"
             ],
             "formatString": "#,0",
             "lineageTag": "1c309bfb-9ec1-4bde-b3b4-324195f75b4f"
@@ -59973,7 +60191,7 @@
             "name": "TotalAprovado_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalAprovado]),0,[TotalAprovado])"
+              "IF ( ISBLANK ( [TotalAprovado] ), 0, [TotalAprovado] )"
             ],
             "formatString": "#,0",
             "lineageTag": "25cbd7b3-1e35-47c7-b36f-0ffbd61fda24"
@@ -59982,7 +60200,7 @@
             "name": "TotalReprovado_Visual",
             "expression": [
               "",
-              "IF(ISBLANK([TotalReprovado]),0,[TotalReprovado])"
+              "IF ( ISBLANK ( [TotalReprovado] ), 0, [TotalReprovado] )"
             ],
             "formatString": "#,0",
             "lineageTag": "d64c76d3-8c5d-44e3-a9cf-1100755d3038"
@@ -60032,21 +60250,30 @@
         "measures": [
           {
             "name": "Planilhas_Faltantes",
-            "expression": "[Planilhas_Previstas] - [Planilhas_Realizadas]",
+            "expression": [
+              "",
+              "[Planilhas_Previstas] - [Planilhas_Realizadas]"
+            ],
             "formatString": "#,0",
             "lineageTag": "d1436d19-c53d-4d86-9979-e09b7abf4b9d"
           },
           {
             "name": "Planilhas_Previstas",
-            "expression": "COUNT(ftRealizados_Previstos_Planilhas[ID_PAC])",
+            "expression": [
+              "",
+              "COUNT ( ftRealizados_Previstos_Planilhas[ID_PAC] )"
+            ],
             "formatString": "#,0",
             "lineageTag": "68b65026-df5d-452a-be7b-210c09da656e"
           },
           {
             "name": "Planilhas_Realizadas",
             "expression": [
-              "CALCULATE(COUNT(ftRealizados_Previstos_Planilhas[ID_PAC]),",
-              "ftRealizados_Previstos_Planilhas[Id_Cab]>0)"
+              "",
+              "CALCULATE (",
+              "    COUNT ( ftRealizados_Previstos_Planilhas[ID_PAC] ),",
+              "    ftRealizados_Previstos_Planilhas[Id_Cab] > 0",
+              ")"
             ],
             "formatString": "#,0",
             "lineageTag": "05bcdafa-2442-4a5d-86f6-cfb09c50411c"
@@ -60876,31 +61103,55 @@
         "measures": [
           {
             "name": "Total Nao Conformidades - NC_Unidade",
-            "expression": "CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    SUM ( ftRegistro[QTde] ),",
+              "    FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              ")"
+            ],
             "formatString": "0",
             "lineageTag": "472b2d72-8e9f-4599-b8b2-f2792aab8747"
           },
           {
             "name": "Realizados - NC_Unidade",
-            "expression": "SUM(ftRegistro[QTde])",
+            "expression": [
+              "",
+              "SUM ( ftRegistro[QTde] )"
+            ],
             "formatString": "0",
             "lineageTag": "91efe004-54e2-4ec8-915b-58e2efd3ed1b"
           },
           {
             "name": "%NãoConformidades - NC_Unidade",
-            "expression": "IFERROR([Total Nao Conformidades - NC_Unidade]/[Realizados - NC_Unidade],0)",
+            "expression": [
+              "",
+              "IFERROR (",
+              "    [Total Nao Conformidades - NC_Unidade] / [Realizados - NC_Unidade],",
+              "    0",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "9fd2e5b8-c491-43f6-aa1f-c10eb4fd2553"
           },
           {
             "name": "Qtde PACs Prenchidas",
-            "expression": "CALCULATE(COUNTROWS(ftRegistro),GROUPBY(ftRegistro,dimPacAgrupador[cod_Pac]))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    COUNTROWS ( ftRegistro ),",
+              "    GROUPBY ( ftRegistro, dimPacAgrupador[cod_Pac] )",
+              ")"
+            ],
             "formatString": "0",
             "lineageTag": "baa34eae-cd66-4132-a937-1513be06ef2d"
           },
           {
             "name": "% Tabela NC-Unidade",
-            "expression": "IFERROR([Total Nao Conformidades - NC_Unidade]/[Qtde PACs Prenchidas],0)",
+            "expression": [
+              "",
+              "IFERROR ( [Total Nao Conformidades - NC_Unidade] / [Qtde PACs Prenchidas], 0 )"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "f080009e-1960-4487-aa4c-d764ef8842fc"
           }
@@ -60952,31 +61203,52 @@
         "measures": [
           {
             "name": "Total Nao Conformidades - Pareto_Local",
-            "expression": "CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    SUM ( ftRegistro[QTde] ),",
+              "    FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              ")"
+            ],
             "formatString": "0",
             "lineageTag": "36324333-99c8-447f-870b-307a51f16e73"
           },
           {
             "name": "Total Não Conformidades NConf",
-            "expression": "COUNT(ftRegistro[id_nconf])",
+            "expression": [
+              "",
+              "COUNT ( ftRegistro[id_nconf] )"
+            ],
             "formatString": "0",
             "lineageTag": "180315d4-09fa-4a17-a036-b9498dc547c9"
           },
           {
             "name": "Total Não Conformidades NConf Total",
-            "expression": "CALCULATE(COUNT(ftRegistro[id_nconf]),ALLSELECTED(ftRegistro))",
+            "expression": [
+              "",
+              "CALCULATE ( COUNT ( ftRegistro[id_nconf] ), ALLSELECTED ( ftRegistro ) )"
+            ],
             "formatString": "0",
             "lineageTag": "c95ebba0-2250-484a-889e-a4399245bb68"
           },
           {
             "name": "%NãoConformidades NConf",
-            "expression": "IFERROR([Total Não Conformidades NConf]/[Total Não Conformidades NConf Total],0)",
+            "expression": [
+              "",
+              "IFERROR (",
+              "    [Total Não Conformidades NConf] / [Total Não Conformidades NConf Total],",
+              "    0",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "8951f2dd-ae07-4105-a1e2-177eeae4d111"
           },
           {
             "name": "Realizados - Pareto_Local",
-            "expression": "SUM(ftRegistro[QTde])",
+            "expression": [
+              "",
+              "SUM ( ftRegistro[QTde] )"
+            ],
             "formatString": "0",
             "lineageTag": "43eecabf-9368-40eb-bf31-e81013ddcd10"
           },
@@ -60984,9 +61256,12 @@
             "name": "Rank Nao Conformidade - Pareto_Local",
             "expression": [
               "",
-              "\tRANKX(",
-              "\t\tALLSELECTED(dimLocal),",
-              "\t\t[Total Nao Conformidades - Pareto_Local],,DESC,Dense",
+              "RANKX (",
+              "    ALLSELECTED ( dimLocal ),",
+              "    [Total Nao Conformidades - Pareto_Local],",
+              "    ,",
+              "    DESC,",
+              "    DENSE",
               ")"
             ],
             "formatString": "0",
@@ -60996,9 +61271,14 @@
             "name": "rankLocal - painelPareto-Local",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankLocal-painelPareto-Local'[idRankPareto-Local]),SELECTEDVALUE('rankLocal-painelPareto-Local'[RankPareto-Local]),21)",
-              "return ",
-              "IF([Rank dimLocal - painelPareto-Local]<rankCalc,1,0)"
+              "VAR rankCalc =",
+              "    IF (",
+              "        HASONEVALUE ( 'rankLocal-painelPareto-Local'[idRankPareto-Local] ),",
+              "        SELECTEDVALUE ( 'rankLocal-painelPareto-Local'[RankPareto-Local] ),",
+              "        21",
+              "    )",
+              "RETURN",
+              "    IF ( [Rank dimLocal - painelPareto-Local] < rankCalc, 1, 0 )"
             ],
             "formatString": "0",
             "lineageTag": "da9dd1b7-5f22-4809-803d-71af393dfa0a"
@@ -61007,14 +61287,17 @@
             "name": "Rank dimLocal - painelPareto-Local",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(dimLocal[nome_local]),",
-              "    ORDERBY([Total Nao Conformidades - Pareto_Local],DESC,dimLocal[nome_local],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - Pareto_Local])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( dimLocal[nome_local] ),",
+              "        ORDERBY (",
+              "            [Total Nao Conformidades - Pareto_Local], DESC,",
+              "            dimLocal[nome_local], ASC",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - Pareto_Local] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "41fc55cc-2128-487d-be52-0125b5650b05"
@@ -61023,14 +61306,14 @@
             "name": "Rank Nconf - painelPareto-Local",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(dimNConf[desc_NConf]),",
-              "    ORDERBY([Total Não Conformidades NConf],DESC,dimNConf[desc_NConf],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Não Conformidades NConf])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( dimNConf[desc_NConf] ),",
+              "        ORDERBY ( [Total Não Conformidades NConf], DESC, dimNConf[desc_NConf], ASC )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Não Conformidades NConf] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "0433f701-ae56-4822-8bb5-bbfb41de8337"
@@ -61039,9 +61322,14 @@
             "name": "rankLocal - painelPareto-Local - Nconf",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankLocal-painelPareto-Local'[idRankPareto-Local]),SELECTEDVALUE('rankLocal-painelPareto-Local'[RankPareto-Local]),21)",
-              "return ",
-              "IF([Rank Nconf - painelPareto-Local]<rankCalc,1,0)"
+              "VAR rankCalc =",
+              "    IF (",
+              "        HASONEVALUE ( 'rankLocal-painelPareto-Local'[idRankPareto-Local] ),",
+              "        SELECTEDVALUE ( 'rankLocal-painelPareto-Local'[RankPareto-Local] ),",
+              "        21",
+              "    )",
+              "RETURN",
+              "    IF ( [Rank Nconf - painelPareto-Local] < rankCalc, 1, 0 )"
             ],
             "formatString": "0",
             "lineageTag": "38aa0f58-c815-43f2-91d3-b695d452b880"
@@ -61050,12 +61338,13 @@
             "name": "RANK ACUM NAO CONFORMIDADE NCONF",
             "expression": [
               "",
-              "CALCULATE(",
-              "\t[Total Não Conformidades NConf],",
-              "\tTOPN(",
-              "\t\t[Rank Nconf - painelPareto-Local],",
-              "\t\tALLSELECTED(dimNConf),",
-              "\t\t[Total Não Conformidades NConf],DESC)",
+              "CALCULATE (",
+              "    [Total Não Conformidades NConf],",
+              "    TOPN (",
+              "        [Rank Nconf - painelPareto-Local],",
+              "        ALLSELECTED ( dimNConf ),",
+              "        [Total Não Conformidades NConf], DESC",
+              "    )",
               ")"
             ],
             "formatString": "0",
@@ -61065,11 +61354,17 @@
             "name": "RANK PCT ACUM NAO CONFORMIDADE NConf",
             "expression": [
               "",
-              "VAR vTotalNC  = CALCULATE([Total Não Conformidades NConf],ALLSELECTED(dimNConf[desc_NConf]))",
-              "VAR vRankAcum = CALCULATE([RANK ACUM NAO CONFORMIDADE NCONF])",
-              "VAR vResultado = DIVIDE(vRankAcum,vTotalNC)",
+              "VAR vTotalNC =",
+              "    CALCULATE (",
+              "        [Total Não Conformidades NConf],",
+              "        ALLSELECTED ( dimNConf[desc_NConf] )",
+              "    )",
+              "VAR vRankAcum =",
+              "    CALCULATE ( [RANK ACUM NAO CONFORMIDADE NCONF] )",
+              "VAR vResultado =",
+              "    DIVIDE ( vRankAcum, vTotalNC )",
               "RETURN",
-              "\tvResultado"
+              "    vResultado"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "d2b93c81-5c4c-4b16-bfa3-3c066f452a68"
@@ -61122,7 +61417,13 @@
         "measures": [
           {
             "name": "Contagem PID",
-            "expression": "CALCULATE(DISTINCTCOUNT(ftRegistro[cod_pac]),GROUPBY(ftRegistro,ftRegistro[cod_pac],ftRegistro[data_base]))",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    DISTINCTCOUNT ( ftRegistro[cod_pac] ),",
+              "    GROUPBY ( ftRegistro, ftRegistro[cod_pac], ftRegistro[data_base] )",
+              ")"
+            ],
             "formatString": "0",
             "lineageTag": "5d4138b6-a0b8-4311-b26b-0f8376b40ca2"
           },
@@ -61130,9 +61431,7 @@
             "name": "Primeira Data Base",
             "expression": [
               "",
-              "var data = MIN(ftRegistro[data_base])",
-              "return",
-              "data"
+              "VAR data = MIN ( ftRegistro[data_base] ) RETURN data"
             ],
             "formatString": "General Date",
             "lineageTag": "47d200fd-1bc7-4f7a-b3f4-363d66b264db"
@@ -61141,17 +61440,20 @@
             "name": "Ultima Data Base",
             "expression": [
               "",
-              "var data = MAX(ftRegistro[data_base])",
-              "return",
-              "IF(ISBLANK(DATA),BLANK(),DATA)",
-              ""
+              "VAR data =",
+              "    MAX ( ftRegistro[data_base] )",
+              "RETURN",
+              "    IF ( ISBLANK ( DATA ), BLANK (), DATA )"
             ],
             "formatString": "General Date",
             "lineageTag": "22a68ff7-dbbc-4835-bff4-5ca2fc1b6ba0"
           },
           {
             "name": "Diff Data Base",
-            "expression": "DATEDIFF([Primeira Data Base],[Ultima Data Base],DAY)+1",
+            "expression": [
+              "",
+              "DATEDIFF ( [Primeira Data Base], [Ultima Data Base], DAY ) + 1"
+            ],
             "formatString": "0",
             "lineageTag": "ec6c6ed3-5d2a-4c4d-a721-a986959770e1"
           },
@@ -61165,7 +61467,7 @@
             ],
             "expression": [
               "",
-              "  ([Contagem PID] * [Valor Média Folhas Impressas por PAC] / [Valor Quantidade de Folhas por Pacote de Papel]) * [Diff Data Base]"
+              "( [Contagem PID] * [Valor Média Folhas Impressas por PAC] / [Valor Quantidade de Folhas por Pacote de Papel] ) * [Diff Data Base]"
             ],
             "lineageTag": "10a71b64-4e02-4e2d-a12b-c6b3cc6e707c"
           },
@@ -61177,7 +61479,10 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "[Media de Resmas]  / 20",
+            "expression": [
+              "",
+              "[Media de Resmas] / 20"
+            ],
             "lineageTag": "1e97d40d-a9de-4a05-a2b3-967e506fc5e2"
           },
           {
@@ -61188,12 +61493,18 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "[Media Arvores]*10000 /500 * [Valor Rendimento Impressão (páginas)]",
+            "expression": [
+              "",
+              "[Media Arvores] * 10000 / 500 * [Valor Rendimento Impressão (páginas)]"
+            ],
             "lineageTag": "c962ee98-1ffb-411b-85ff-495b1a10f11b"
           },
           {
             "name": "Total Água",
-            "expression": "([Contagem PID] * [Valor Média Folhas Impressas por PAC] * 10)*[Diff Data Base]",
+            "expression": [
+              "",
+              "( [Contagem PID] * [Valor Média Folhas Impressas por PAC] * 10 ) * [Diff Data Base]"
+            ],
             "formatString": "#,0",
             "lineageTag": "d300da02-e1bc-4ee5-9b9f-b7fcb30c0897"
           }
@@ -61415,9 +61726,13 @@
             "name": "Total Nao Conformidades - Usuarios",
             "expression": [
               "",
-              "var calc = CALCULATE(sum(ftRegistro[QTde]),FILTER(ftRegistro,[id_lancamento]=1))",
-              "return",
-              "calc"
+              "VAR calc =",
+              "    CALCULATE (",
+              "        SUM ( ftRegistro[QTde] ),",
+              "        FILTER ( ftRegistro, [id_lancamento] = 1 )",
+              "    )",
+              "RETURN",
+              "    calc"
             ],
             "formatString": "#,0",
             "lineageTag": "2727d68d-2b04-43f3-94c9-ef45dd49425e"
@@ -61426,22 +61741,35 @@
             "name": "Rank Usuarios por Total NC",
             "expression": [
               "",
-              "var ranque = RANKX(ALLSELECTED(dimUsuario[nome_Usuario]),[Total Nao Conformidades - Usuarios],,DESC, Dense)",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - Usuarios])), ranque)"
+              "VAR ranque =",
+              "    RANKX (",
+              "        ALLSELECTED ( dimUsuario[nome_Usuario] ),",
+              "        [Total Nao Conformidades - Usuarios],",
+              "        ,",
+              "        DESC,",
+              "        DENSE",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - Usuarios] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "406168f0-383f-4524-8d34-678f064fc338"
           },
           {
             "name": "Qtde Lancamentos por tipo de acordo com a FtRegistro",
-            "expression": "COUNTROWS(ftRegistro)",
+            "expression": [
+              "",
+              "COUNTROWS ( ftRegistro )"
+            ],
             "formatString": "#,0",
             "lineageTag": "27cec68d-adce-4f94-a00e-0cd42447e046"
           },
           {
             "name": "Realizados - Usuarios",
-            "expression": "SUM(ftRegistro[QTde])",
+            "expression": [
+              "",
+              "SUM ( ftRegistro[QTde] )"
+            ],
             "formatString": "0",
             "lineageTag": "a3c6cc6c-059d-48e0-a02d-835e57dff4d1"
           },
@@ -61449,11 +61777,10 @@
             "name": "Apontamentos Realizados Verificacao - Usuarios",
             "expression": [
               "",
-              "   CALCULATE(",
-              "        [Realizados - Usuarios],",
-              "           FILTER(ftRegistro,",
-              "                   ftRegistro[tipo_registro] = 2",
-              "))"
+              "CALCULATE (",
+              "    [Realizados - Usuarios],",
+              "    FILTER ( ftRegistro, ftRegistro[tipo_registro] = 2 )",
+              ")"
             ],
             "formatString": "0",
             "lineageTag": "5e7d512e-50b5-4aae-88f0-37d70272a710"
@@ -61462,20 +61789,23 @@
             "name": "Total Não Conformidades Verificação - Usuarios",
             "expression": [
               "",
-              "    CALCULATE(",
-              "        [Total Nao Conformidades - Usuarios],",
-              "        FILTER(",
-              "            ftRegistro,",
-              "            ftRegistro[tipo_registro] = 2)",
-              "    )",
-              ""
+              "CALCULATE (",
+              "    [Total Nao Conformidades - Usuarios],",
+              "    FILTER ( ftRegistro, ftRegistro[tipo_registro] = 2 )",
+              ")"
             ],
             "formatString": "0",
             "lineageTag": "06ea5ca9-2fcd-4816-b3aa-c0dfd4fb2a63"
           },
           {
             "name": "%NãoConformidadesVerificacao",
-            "expression": "IFERROR([Total Não Conformidades Verificação - Usuarios]/[Apontamentos Realizados Verificacao - Usuarios],0)",
+            "expression": [
+              "",
+              "IFERROR (",
+              "    [Total Não Conformidades Verificação - Usuarios] / [Apontamentos Realizados Verificacao - Usuarios],",
+              "    0",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "6e5875de-d3b3-42d9-895f-4c61b957a76b"
           },
@@ -61483,17 +61813,19 @@
             "name": "RANK ACUM NAO CONFORMIDADE Usuario",
             "expression": [
               "",
-              "var total = CALCULATE([Total Nao Conformidades - Usuarios], ALLSELECTED(dimUsuario))",
-              "var totalAtual = [Total Nao Conformidades - Usuarios]",
-              "var tbResumo = ",
-              "    SUMMARIZE(",
-              "        ALLSELECTED(ftRegistro),",
-              "            dimUsuario[nome_Usuario],",
-              "            \"Total\", [Total Nao Conformidades - Usuarios]",
-              "        )",
-              "var TotalAcumulado = ",
-              "    SUMX(FILTER(tbResumo, [Total] >= totalAtual), [Total])",
-              "return TotalAcumulado"
+              "VAR total =",
+              "    CALCULATE ( [Total Nao Conformidades - Usuarios], ALLSELECTED ( dimUsuario ) )",
+              "VAR totalAtual = [Total Nao Conformidades - Usuarios]",
+              "VAR tbResumo =",
+              "    SUMMARIZE (",
+              "        ALLSELECTED ( ftRegistro ),",
+              "        dimUsuario[nome_Usuario],",
+              "        \"Total\", [Total Nao Conformidades - Usuarios]",
+              "    )",
+              "VAR TotalAcumulado =",
+              "    SUMX ( FILTER ( tbResumo, [Total] >= totalAtual ), [Total] )",
+              "RETURN",
+              "    TotalAcumulado"
             ],
             "formatString": "0",
             "lineageTag": "148ed119-b0dd-4278-a42e-c02eaee383dd"
@@ -61502,11 +61834,16 @@
             "name": "RANK PCT ACUM NAO CONFORMIDADE Usuario",
             "expression": [
               "",
-              "VAR vTotalNC  = CALCULATE([Total Nao Conformidades - Usuarios],ALLSELECTED(dimUsuario[nome_Usuario]))",
-              "VAR vRankAcum = CALCULATE([RANK ACUM NAO CONFORMIDADE Usuario])",
-              "VAR vResultado = vRankAcum/vTotalNC",
+              "VAR vTotalNC =",
+              "    CALCULATE (",
+              "        [Total Nao Conformidades - Usuarios],",
+              "        ALLSELECTED ( dimUsuario[nome_Usuario] )",
+              "    )",
+              "VAR vRankAcum =",
+              "    CALCULATE ( [RANK ACUM NAO CONFORMIDADE Usuario] )",
+              "VAR vResultado = vRankAcum / vTotalNC",
               "RETURN",
-              "\tvResultado"
+              "    vResultado"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "bbf4886f-151f-41bd-a2d2-ca37d03ac43b"
@@ -61515,9 +61852,14 @@
             "name": "rankUsuario - painelUsuario",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankUsuarios - painelUsuario'[idRankUsuario]),SELECTEDVALUE('rankUsuarios - painelUsuario'[rankUsuario]),21)",
-              "return ",
-              "IF([Rank dimUsuario - painelUsuario]<rankCalc,1,0)"
+              "VAR rankCalc =",
+              "    IF (",
+              "        HASONEVALUE ( 'rankUsuarios - painelUsuario'[idRankUsuario] ),",
+              "        SELECTEDVALUE ( 'rankUsuarios - painelUsuario'[rankUsuario] ),",
+              "        21",
+              "    )",
+              "RETURN",
+              "    IF ( [Rank dimUsuario - painelUsuario] < rankCalc, 1, 0 )"
             ],
             "formatString": "0",
             "lineageTag": "3d489916-5e78-4e0c-8485-d26872ae1f6b"
@@ -61526,27 +61868,39 @@
             "name": "Rank dimUsuario - painelUsuario",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(dimUsuario[nome_Usuario]),",
-              "    ORDERBY([Total Nao Conformidades - Usuarios],DESC,dimUsuario[nome_Usuario],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Total Nao Conformidades - Usuarios])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( dimUsuario[nome_Usuario] ),",
+              "        ORDERBY (",
+              "            [Total Nao Conformidades - Usuarios], DESC,",
+              "            dimUsuario[nome_Usuario], ASC",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Total Nao Conformidades - Usuarios] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "5cddd31d-e905-4cf2-b38c-759c848a9b80"
           },
           {
             "name": "% NC - Usuarios",
-            "expression": "DIVIDE([Total Nao Conformidades - Usuarios], CALCULATE([Total Nao Conformidades - Usuarios],ALLSELECTED(dimNCAC)))",
+            "expression": [
+              "",
+              "DIVIDE (",
+              "    [Total Nao Conformidades - Usuarios],",
+              "    CALCULATE ( [Total Nao Conformidades - Usuarios], ALLSELECTED ( dimNCAC ) )",
+              ")"
+            ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "ea873163-6f7e-4682-8124-5e62dcda3070"
           },
           {
             "name": "Contagem de Chave dimNAC",
-            "expression": "DISTINCTCOUNT(dimNCAC[id_nconf])",
+            "expression": [
+              "",
+              "DISTINCTCOUNT ( dimNCAC[id_nconf] )"
+            ],
             "formatString": "0",
             "lineageTag": "3ea7b8ea-5213-4c2b-a9df-5d99c3d8c4f4"
           },
@@ -61554,14 +61908,14 @@
             "name": "Rank Acoes Corretivar por Total NC",
             "expression": [
               "",
-              "var ranque = ",
-              "RANK(",
-              "    Dense,",
-              "    ALLSELECTED(dimNCAC[DESCRICAO_RESUMIDA]),",
-              "    ORDERBY([Contagem de Chave dimNAC],DESC,dimNCAC[DESCRICAO_RESUMIDA],ASC)",
-              ")",
-              "return",
-              "IF(NOT(ISBLANK([Contagem de Chave dimNAC])), ranque)"
+              "VAR ranque =",
+              "    RANK (",
+              "        Dense,",
+              "        ALLSELECTED ( dimNCAC[DESCRICAO_RESUMIDA] ),",
+              "        ORDERBY ( [Contagem de Chave dimNAC], DESC, dimNCAC[DESCRICAO_RESUMIDA], ASC )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ( ISBLANK ( [Contagem de Chave dimNAC] ) ), ranque )"
             ],
             "formatString": "0",
             "lineageTag": "05e047e9-6bef-494a-ae50-4c59939266d2"
@@ -61570,9 +61924,14 @@
             "name": "rankAcoesCorretivar - painelUsuario",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankAcoesCorretivas - painelUsuario'[idRankUsuario]),SELECTEDVALUE('rankAcoesCorretivas - painelUsuario'[rankUsuario]),21)",
-              "return ",
-              "IF([Rank Acoes Corretivar por Total NC]<rankCalc,1,0)"
+              "VAR rankCalc =",
+              "    IF (",
+              "        HASONEVALUE ( 'rankAcoesCorretivas - painelUsuario'[idRankUsuario] ),",
+              "        SELECTEDVALUE ( 'rankAcoesCorretivas - painelUsuario'[rankUsuario] ),",
+              "        21",
+              "    )",
+              "RETURN",
+              "    IF ( [Rank Acoes Corretivar por Total NC] < rankCalc, 1, 0 )"
             ],
             "formatString": "0",
             "lineageTag": "f2b95054-eb5a-41a6-b04d-1045a3005958"
@@ -69420,6 +69779,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -70098,7 +70461,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)R.ID_USUARIO AS id_usuario,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)((IIF(P.MODO_MONITORA = 1, E.TURNOS,1)))*((IIF(c.id = maxCab.maximo,((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))),0))) PREVISTOS,#(lf)#(tab)#(tab)maxCab.maximo#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)DATA,#(lf)#(tab)#(tab)#(tab)ID_PAC,#(lf)#(tab)#(tab)#(tab)MAX(ID) maximo#(lf)#(tab)#(tab)FROM TBREGISTROCAB#(lf)#(tab)#(tab)GROUP BY DATA, ID_PAC#(lf)#(tab)) maxCab on maxCab.ID_PAC = P.ID AND C.DATA = maxCab.DATA#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)#(tab)#(tab)and GETDATE()#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)maxCab.maximo,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.MODO_MONITORA,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB\"])",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)R.ID_USUARIO AS id_usuario,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))*((IIF(c.id = maxCab.maximo,((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))),0))) PREVISTOS,#(lf)#(tab)#(tab)maxCab.maximo#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)DATA,#(lf)#(tab)#(tab)#(tab)ID_PAC,#(lf)#(tab)#(tab)#(tab)MAX(ID) maximo#(lf)#(tab)#(tab)FROM TBREGISTROCAB#(lf)#(tab)#(tab)GROUP BY DATA, ID_PAC#(lf)#(tab)) maxCab on maxCab.ID_PAC = P.ID AND C.DATA = maxCab.DATA#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)#(tab)#(tab)and GETDATE()#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)maxCab.maximo,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
                 "in",
                 "    Fonte"
               ],
