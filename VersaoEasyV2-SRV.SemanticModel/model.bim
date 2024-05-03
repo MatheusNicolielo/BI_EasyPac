@@ -56477,10 +56477,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56929,7 +56925,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "double",
+            "dataType": "int64",
             "formatString": "0",
             "lineageTag": "634b9804-3017-4494-96b0-662cef8c0182",
             "sourceColumn": "id_cab",
@@ -57030,7 +57026,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "double",
+            "dataType": "int64",
             "formatString": "0",
             "lineageTag": "dcfbc807-75a3-4e28-9e50-1c468cb5ffb8",
             "sourceColumn": "TIPO_REGISTRO",
@@ -57080,7 +57076,7 @@
               "expression": [
                 "let",
                 "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT ''\"]),",
-                "    #\"Consulta Acrescentada\" = Table.Combine({Fonte, #\"ftRealizados_Previstos_T-Atual\", ftRealizados_Previstos_T1, ftRealizados_Previstos_T2, ftRealizados_Previstos_T3, ftRealizados_Previstos_T4, ftRealizados_Previstos_T5, ftRealizados_Previstos_T6, ftRealizados_Previstos_T7, ftRealizados_Previstos_T8, ftRealizados_Previstos_T9, ftRealizados_Previstos_T10, ftRealizados_Previstos_T11, ftRealizados_Previstos_T12}),",
+                "    #\"Consulta Acrescentada\" = Table.Combine({Fonte, #\"ftRealizados_Previstos_T-Atual\"}),",
                 "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Consulta Acrescentada\",{\"\"}),",
                 "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Colunas Removidas\", each [id_cab] <> null and [id_cab] <> \"\"),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Linhas Filtradas\",{{\"data\", type date}})",
@@ -59575,9 +59571,18 @@
             "name": "Empresa - Filtro",
             "expression": [
               "",
-              "var saida = CONCATENATEX(CALCULATETABLE(dimEmpresa,FILTERS(dimEmpresa[nome_Empresa])),dimEmpresa[nome_Empresa],\";\")",
-              "return ",
-              "IF(HASONEFILTER(dimEmpresa[nome_Empresa]),MAX(dimEmpresa[nome_Empresa]),IF(ISFILTERED(dimEmpresa[nome_Empresa]),saida,\" \"))"
+              "VAR saida =",
+              "    CONCATENATEX (",
+              "        CALCULATETABLE ( dimEmpresa, FILTERS ( dimEmpresa[nome_Empresa] ) ),",
+              "        dimEmpresa[nome_Empresa],",
+              "        \";\"",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimEmpresa[nome_Empresa] ),",
+              "        MAX ( dimEmpresa[nome_Empresa] ),",
+              "        IF ( ISFILTERED ( dimEmpresa[nome_Empresa] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "ec471c29-0e29-49e7-8eb4-aacce7e309aa"
           },
@@ -59585,20 +59590,20 @@
             "name": "Local - Filtro",
             "expression": [
               "",
-              "var saida = ",
-              "    CALCULATE(CONCATENATEX(",
-              "        CALCULATETABLE(dimLocal,",
-              "            FILTERS(dimLocal[nome_local])",
-              "        ),",
-              "        dimLocal[nome_local],\";\"",
-              "    ))",
-              "return ",
-              "IF(HASONEFILTER(dimLocal[nome_local]),",
-              "    MAX(dimLocal[nome_local]),",
-              "    IF(ISFILTERED(dimLocal[nome_local]),",
-              "        saida,",
-              "        \" \"    ",
-              "))"
+              "VAR saida =",
+              "    CALCULATE (",
+              "        CONCATENATEX (",
+              "            CALCULATETABLE ( dimLocal, FILTERS ( dimLocal[nome_local] ) ),",
+              "            dimLocal[nome_local],",
+              "            \";\"",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimLocal[nome_local] ),",
+              "        MAX ( dimLocal[nome_local] ),",
+              "        IF ( ISFILTERED ( dimLocal[nome_local] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "03ce8193-cdab-48d3-bda3-967a1ada008f"
           },
@@ -59606,20 +59611,20 @@
             "name": "NConf - Filtro",
             "expression": [
               "",
-              "var saida = ",
-              "    CALCULATE(CONCATENATEX(",
-              "        CALCULATETABLE(dimNConf,",
-              "            FILTERS(dimNConf[desc_NConf])",
-              "        ),",
-              "        dimNConf[desc_NConf],\";\"",
-              "    ))",
-              "return ",
-              "IF(HASONEFILTER(DimNConf[desc_NConf]),",
-              "    MAX(DimNConf[desc_NConf]),",
-              "    IF(ISFILTERED(DimNConf[desc_NConf]),",
-              "        saida,",
-              "        \" \"    ",
-              "))"
+              "VAR saida =",
+              "    CALCULATE (",
+              "        CONCATENATEX (",
+              "            CALCULATETABLE ( dimNConf, FILTERS ( dimNConf[desc_NConf] ) ),",
+              "            dimNConf[desc_NConf],",
+              "            \";\"",
+              "        )",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( DimNConf[desc_NConf] ),",
+              "        MAX ( DimNConf[desc_NConf] ),",
+              "        IF ( ISFILTERED ( DimNConf[desc_NConf] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "a41a891d-1cee-48db-bd1a-1c5cfcc7c03c"
           },
@@ -59721,9 +59726,18 @@
             "name": "Formularios - Filtro",
             "expression": [
               "",
-              "var saida = CONCATENATEX(CALCULATETABLE(dimPac,FILTERS(dimPac[cod_Pac])),dimPac[cod_Pac],\";\")",
-              "return ",
-              "IF(HASONEFILTER(dimPac[cod_Pac]),MAX(dimPac[cod_Pac]),IF(ISFILTERED(dimPac[cod_Pac]),saida,\" \"))"
+              "VAR saida =",
+              "    CONCATENATEX (",
+              "        CALCULATETABLE ( dimPac, FILTERS ( dimPac[cod_Pac] ) ),",
+              "        dimPac[cod_Pac],",
+              "        \";\"",
+              "    )",
+              "RETURN",
+              "    IF (",
+              "        HASONEFILTER ( dimPac[cod_Pac] ),",
+              "        MAX ( dimPac[cod_Pac] ),",
+              "        IF ( ISFILTERED ( dimPac[cod_Pac] ), saida, \" \" )",
+              "    )"
             ],
             "lineageTag": "95a09dd7-66ad-4ff4-8004-b2216fa6c14e"
           }
@@ -60236,10 +60250,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -65912,9 +65922,9 @@
             "expression": [
               "",
               "var ano = \"2024\"",
-              "var mes = \"04\"",
-              "var dia = \"25\"",
-              "var sprint = \"229\"",
+              "var mes = \"05\"",
+              "var dia = \"03\"",
+              "var sprint = \"230\"",
               "var dados  = \"P\"",
               "return",
               "\"Versão Atual: \"& ano & \".\" & mes & \".\" & dia & \".\" & sprint & \"-\" & dados",
@@ -69410,10 +69420,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -70092,7 +70098,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)R.ID_USUARIO AS id_usuario,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)((IIF(P.MODO_MONITORA = 2,E.TURNOS,1)))*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) PREVISTOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)#(tab)#(tab)and GETDATE()#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.MODO_MONITORA,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB\"])",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)R.ID_USUARIO AS id_usuario,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)R.ID_USUARIO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)X.ID_USUARIO,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)((IIF(P.MODO_MONITORA = 1, E.TURNOS,1)))*((IIF(c.id = maxCab.maximo,((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))),0))) PREVISTOS,#(lf)#(tab)#(tab)maxCab.maximo#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)DATA,#(lf)#(tab)#(tab)#(tab)ID_PAC,#(lf)#(tab)#(tab)#(tab)MAX(ID) maximo#(lf)#(tab)#(tab)FROM TBREGISTROCAB#(lf)#(tab)#(tab)GROUP BY DATA, ID_PAC#(lf)#(tab)) maxCab on maxCab.ID_PAC = P.ID AND C.DATA = maxCab.DATA#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)#(tab)#(tab)and GETDATE()#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)maxCab.maximo,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.MODO_MONITORA,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB\"])",
                 "in",
                 "    Fonte"
               ],
@@ -70308,10 +70314,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
