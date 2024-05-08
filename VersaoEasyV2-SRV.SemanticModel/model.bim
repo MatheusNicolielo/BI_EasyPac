@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.128.1177.0 (24.04)"
+        "value": "2.128.1380.0 (24.04)"
       },
       {
         "name": "PBI_ProTooling",
@@ -56477,10 +56477,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56804,10 +56800,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56900,10 +56892,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -66282,8 +66270,8 @@
               "",
               "var ano = \"2024\"",
               "var mes = \"05\"",
-              "var dia = \"03\"",
-              "var sprint = \"230\"",
+              "var dia = \"08\"",
+              "var sprint = \"231\"",
               "var dados  = \"P\"",
               "return",
               "\"Versão Atual: \"& ano & \".\" & mes & \".\" & dia & \".\" & sprint & \"-\" & dados",
@@ -69779,10 +69767,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -70295,10 +70279,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
