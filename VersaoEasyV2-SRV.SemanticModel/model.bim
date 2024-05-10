@@ -56830,10 +56830,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -58240,7 +58236,7 @@
             "name": "rankParetoPareto - PAC",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankParetoPac-painelParetoPac'[idRankParetoPac]),SELECTEDVALUE('rankParetoPac-painelParetoPac'[rankParetoPac]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankParetoPac-painelParetoPac'[idRankParetoPac]),SELECTEDVALUE('rankParetoPac-painelParetoPac'[rankParetoPac]),11)",
               "return ",
               "IF([Rank ftRegistro_codAgrupador - Pareto PAC]<rankCalc,1,0)"
             ],
@@ -60393,10 +60389,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -61195,7 +61187,7 @@
               "    IF (",
               "        HASONEVALUE ( 'rankLocal-painelPareto-Local'[idRankPareto-Local] ),",
               "        SELECTEDVALUE ( 'rankLocal-painelPareto-Local'[RankPareto-Local] ),",
-              "        21",
+              "        11",
               "    )",
               "RETURN",
               "    IF ( [Rank dimLocal - painelPareto-Local] < rankCalc, 1, 0 )"
@@ -61246,7 +61238,7 @@
               "    IF (",
               "        HASONEVALUE ( 'rankLocal-painelPareto-Local'[idRankPareto-Local] ),",
               "        SELECTEDVALUE ( 'rankLocal-painelPareto-Local'[RankPareto-Local] ),",
-              "        21",
+              "        11",
               "    )",
               "RETURN",
               "    IF ( [Rank Nconf - painelPareto-Local] < rankCalc, 1, 0 )"
@@ -61776,7 +61768,7 @@
               "    IF (",
               "        HASONEVALUE ( 'rankUsuarios - painelUsuario'[idRankUsuario] ),",
               "        SELECTEDVALUE ( 'rankUsuarios - painelUsuario'[rankUsuario] ),",
-              "        21",
+              "        11",
               "    )",
               "RETURN",
               "    IF ( [Rank dimUsuario - painelUsuario] < rankCalc, 1, 0 )"
@@ -61848,7 +61840,7 @@
               "    IF (",
               "        HASONEVALUE ( 'rankAcoesCorretivas - painelUsuario'[idRankUsuario] ),",
               "        SELECTEDVALUE ( 'rankAcoesCorretivas - painelUsuario'[rankUsuario] ),",
-              "        21",
+              "        11",
               "    )",
               "RETURN",
               "    IF ( [Rank Acoes Corretivar por Total NC] < rankCalc, 1, 0 )"
@@ -67350,22 +67342,7 @@
               "type": "m"
             }
           }
-        ],
-        "refreshPolicy": {
-          "incrementalGranularity": "day",
-          "incrementalPeriods": 2,
-          "policyType": "basic",
-          "pollingExpression": "let Maxdata = List.Max(ftTempoOcioso[data]), accountForNull = if Maxdata = null then #datetime(1901, 01, 01, 00, 00, 00) else Maxdata in accountForNull",
-          "rollingWindowGranularity": "day",
-          "rollingWindowPeriods": 90,
-          "sourceExpression": [
-            "let",
-            "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT #(lf)#(tab)id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_agrupador,#(lf)    max(ocioso) maior_tempo_ocioso,#(lf)#(tab)max(dataInicio) as dataInicio,#(lf)#(tab)max(dataRecebimento) as dataRecebimento#(lf)FROM (#(lf)    SELECT C.id_pac,#(lf)        a.cod_pac,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)        c.data,#(lf)        CONVERT(VARCHAR(02), r.data_hora, 108) AS hora,#(lf)        DATEDIFF(MINUTE, r.DATA_HORA, r.DATA_HORA_PERSISTENCIA) OCIOSO,#(lf)        D.ID AS id_dispositivo,#(lf)        R.VERSAO_APP,#(lf)        r.id_usuario,#(lf)        IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,R.id_empresa) AS id_empresa,#(lf)#(tab)#(tab)R.id_empresa AS COD_UNIDADE,#(lf)        IT.id_local,#(lf)        p.ID_AGRUPADOR AS id_pac_Agrupador,#(lf)#(tab)#(tab)r.data_hora as dataInicio,#(lf)#(tab)#(tab)r.data_hora_persistencia as dataRecebimento#(lf)    FROM TBREGISTROCAB C WITH(NOLOCK)#(lf)    INNER JOIN TBPAC p WITH(NOLOCK) ON p.id = c.ID_PAC#(lf)    INNER JOIN tbpacitem it WITH(NOLOCK) ON p.id = it.id_pac#(lf)    INNER JOIN TBREGISTRO R WITH(NOLOCK) ON C.ID = R.ID_CAB AND R.ID_PAC_ITEM = IT.ID#(lf)    INNER JOIN TBDISPOSITIVOS D WITH(NOLOCK) ON D.UID = R.UUID_DEVICE#(lf)    INNER JOIN TBUSUARIO U WITH(NOLOCK) ON U.ID = R.ID_USUARIO#(lf)    INNER JOIN TBEMPRESA E WITH(NOLOCK) ON E.ID = R.ID_EMPRESA#(lf)    INNER JOIN TBPACAGRUPADOR a WITH(NOLOCK) ON a.ID = p.ID_AGRUPADOR#(lf)    --WHERE DATA_HORA_ENVIO IS NOT NULL and p.cod_pac = 'EVLN-PLANILHAATIVA'#(lf)    ) Lista #(lf)WHERE DATA >= DATEADD(MONTH, - 3, GETDATE()) /* buscar apenas últimos 90 dias conforme proposta*/#(lf)#(lf)GROUP BY id_pac,#(lf)    cod_pac,#(lf)#(tab)chavePac,#(lf)    data,#(lf)    hora,#(lf)    id_dispositivo,#(lf)    versao_app,#(lf)    id_usuario,#(lf)    id_empresa,#(lf)#(tab)COD_UNIDADE,#(lf)    id_local,#(lf)    id_pac_Agrupador\"]),",
-            "    #\"Linhas Filtradas\" = Table.SelectRows(Fonte, each [data] >= RangeStart and [data] <= RangeEnd)",
-            "in",
-            "    #\"Linhas Filtradas\""
-          ]
-        }
+        ]
       },
       {
         "name": "dimDispositivo",
@@ -69160,7 +69137,7 @@
             "name": "rankUnidade - painelUnidades",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankUnidades - Unidades'[idRankUnidades]),SELECTEDVALUE('rankUnidades - Unidades'[RankUnidades]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankUnidades - Unidades'[idRankUnidades]),SELECTEDVALUE('rankUnidades - Unidades'[RankUnidades]),11)",
               "return ",
               "IF([Rank dimEmpresa - painelUnidades]<rankCalc,1,0)"
             ],
@@ -69261,7 +69238,7 @@
             "name": "rankPacAgrupador - painelUnidades",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankPac - Unidades'[idRankPac]),SELECTEDVALUE('rankPac - Unidades'[RankPac]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankPac - Unidades'[idRankPac]),SELECTEDVALUE('rankPac - Unidades'[RankPac]),11)",
               "return ",
               "IF([Rank dimPacAgrupador - painelUnidades]<rankCalc,1,0)"
             ],
@@ -69362,7 +69339,7 @@
             "name": "rankPlanilhas - painelUnidades",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankPlanilhas - Unidades'[idRankPlanilhas]),SELECTEDVALUE('rankPlanilhas - Unidades'[RankPlanilhas]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankPlanilhas - Unidades'[idRankPlanilhas]),SELECTEDVALUE('rankPlanilhas - Unidades'[RankPlanilhas]),11)",
               "return ",
               "IF([Rank dimPacs - painelUnidades]<rankCalc,1,0)"
             ],
@@ -69463,7 +69440,7 @@
             "name": "rankEmpresa - painelPac-Unidade",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankUnidade - PAC - Unidade'[idRankUnidade_PacUnidade]),SELECTEDVALUE('rankUnidade - PAC - Unidade'[RankUnidade_PacUnidade]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankUnidade - PAC - Unidade'[idRankUnidade_PacUnidade]),SELECTEDVALUE('rankUnidade - PAC - Unidade'[RankUnidade_PacUnidade]),11)",
               "return ",
               "IF([Rank dimEmpresa - painelPac-Unidade]<rankCalc,1,0)"
             ],
@@ -69564,7 +69541,7 @@
             "name": "rankPacAgrupador - painelPac-Unidade",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankPac- PAC - Unidade'[idRankPAC_PacUnidade]),SELECTEDVALUE('rankPac- PAC - Unidade'[RankPAC_PacUnidade]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankPac- PAC - Unidade'[idRankPAC_PacUnidade]),SELECTEDVALUE('rankPac- PAC - Unidade'[RankPAC_PacUnidade]),11)",
               "return ",
               "IF([Rank dimPacAgrupador - painelPac-Unidade]<rankCalc,1,0)"
             ],
@@ -69665,7 +69642,7 @@
             "name": "rankPlanilhas - painelPac-Unidade",
             "expression": [
               "",
-              "var rankCalc = IF(HASONEVALUE('rankPlanilhas-PAC - Unidade'[idRankPlanilhas_PacUnidade]),SELECTEDVALUE('rankPlanilhas-PAC - Unidade'[RankPlanilhas_PacUnidade]),21)",
+              "var rankCalc = IF(HASONEVALUE('rankPlanilhas-PAC - Unidade'[idRankPlanilhas_PacUnidade]),SELECTEDVALUE('rankPlanilhas-PAC - Unidade'[RankPlanilhas_PacUnidade]),11)",
               "return ",
               "IF([Rank dimPlanilhas - painelPac-Unidade]<rankCalc,1,0)"
             ],
@@ -70215,10 +70192,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
