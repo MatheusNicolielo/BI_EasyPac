@@ -56826,10 +56826,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -66194,7 +66190,7 @@
               "",
               "var ano = \"2024\"",
               "var mes = \"05\"",
-              "var dia = \"15\"",
+              "var dia = \"16\"",
               "var sprint = \"231\"",
               "var dados  = \"P\"",
               "return",
