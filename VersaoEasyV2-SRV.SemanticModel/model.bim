@@ -66513,6 +66513,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -66634,7 +66638,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)) AS chave,#(lf)#(tab)tbnc.id AS id_nconf,#(lf)#(tab)tbnc.DESCRICAO AS nome_nc,#(lf)#(tab)ACC.ID AS ID_ACAO,#(lf)#(tab)ACC.DESCRICAO_RESUMIDA,#(lf)#(tab)ACC.TIPO_ACAO,#(lf)#(tab)ac.DESCRICAO,#(lf)#(tab)ac.sigla#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON c.id = reg.id_cab#(lf)INNER JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)INNER JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)LEFT JOIN TBACAOCORRETIVALANCAMENTO acl WITH (NOLOCK) ON acl.ID_REGISTRONCONF = nc.ID#(lf)LEFT JOIN TBACAOCORRETIVA acc WITH(NOLOCK) ON ACL.ID_ACAO_CORRETIVA = ACC.ID#(lf)LEFT JOIN tbacao ac WITH (NOLOCK) ON ACC.TIPO = ac.id#(lf)WHERE c.data >= '01/01/2023' AND (STATUS <= 4) AND tipo_registro IN (1, 2)#(lf)\"]),",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)) AS chave,#(lf)#(tab)tbnc.id AS id_nconf,#(lf)#(tab)tbnc.DESCRICAO AS nome_nc,#(lf)#(tab)ACC.ID AS ID_ACAO,#(lf)#(tab)ACC.DESCRICAO_RESUMIDA,#(lf)#(tab)ACC.TIPO_ACAO,#(lf)#(tab)ac.DESCRICAO,#(lf)#(tab)ac.sigla#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON c.id = reg.id_cab#(lf)INNER JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)INNER JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)LEFT JOIN TBACAOCORRETIVALANCAMENTO acl WITH (NOLOCK) ON acl.ID_REGISTRONCONF = nc.ID#(lf)LEFT JOIN TBACAOCORRETIVA acc WITH(NOLOCK) ON ACL.ID_ACAO_CORRETIVA = ACC.ID#(lf)LEFT JOIN tbacao ac WITH (NOLOCK) ON ACC.TIPO = ac.id#(lf)WHERE c.data >= '01/01/2023' AND (STATUS <= 2) AND tipo_registro IN (1, 2)#(lf)\"]),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"chave\", Int64.Type}})",
                 "in",
                 "    #\"Tipo Alterado\""
@@ -69672,10 +69676,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -70188,10 +70188,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
