@@ -56030,13 +56030,6 @@
         "fromTable": "dimEmpresa",
         "toColumn": "id_empresa",
         "toTable": "UltimoAcessoEmpresa"
-      },
-      {
-        "name": "087ebc02-1fcf-49f2-4f59-b7d5bbc1cf72",
-        "fromColumn": "AtualDia",
-        "fromTable": "Calendario",
-        "toColumn": "descSlicer-FiltroDiario",
-        "toTable": "Slicer-FiltroDiario"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -57628,26 +57621,6 @@
             "formatString": "General Date",
             "isDataTypeInferred": true,
             "lineageTag": "edd492d6-d581-42e0-86dc-100d34c292e8",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "AtualDia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "expression": [
-              "",
-              "VAR dataAtual = DATEVALUE(NOW())",
-              "return",
-              "IF(Calendario[Date] = dataAtual-1 , \"Último Dia\", \"Todos os Outros Dias\")"
-            ],
-            "isDataTypeInferred": true,
-            "lineageTag": "ef51e87b-c1be-4962-bfad-0d781a452b88",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -69246,6 +69219,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "columns": [
@@ -69758,10 +69735,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -72872,10 +72845,6 @@
         "name": "Slicer-FiltroDiario",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
@@ -72893,7 +72862,7 @@
             "formatString": "0",
             "lineageTag": "cbda87c8-c9c8-4d47-9054-9dfc958c1cbc",
             "sourceColumn": "idSlicer-FiltroDiario",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "descSlicer-FiltroDiario",
