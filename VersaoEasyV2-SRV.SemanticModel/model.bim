@@ -60299,6 +60299,21 @@
             "lineageTag": "7560258e-1a8e-4df2-8694-aaa524287a42",
             "sourceColumn": "quando_verifica_Ciclo",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Cod_Pac - Nome Pac",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "dimPac[cod_Pac] & \" - \" & dimPac[nome_Pac]",
+            "isDataTypeInferred": true,
+            "lineageTag": "9136d2c7-1dda-44b1-bec8-243d2a678094",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
