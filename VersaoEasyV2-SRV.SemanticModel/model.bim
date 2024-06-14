@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"dimUsuario\",\"dimStatus2\",\"dimTipoLançamento\",\"dimPacAgrupador\",\"dimStatus\",\"dimLocal\",\"dimPacItens\",\"dimTurno\",\"dimNCAC\",\"dimNConf\",\"dimEmpresa\",\"dimStatusConformidade\",\"dimPac\",\"dimUsuarioEmpresa\",\"dimFornecedor\",\"Banco\",\"Base\",\"agrupadorSlicer\",\"ImageIcons\",\"Ultima Atualização\",\"RangeStart\",\"RangeEnd\",\"tbPainelTempo\",\"ftRegistro\",\"ftRealizados_Previstos_Planilhas\",\"ftRealizados_Previstos\",\"ftTempoConformidade\",\"ftVer_e_Agir\",\"IN79_REC1\",\"ABT3\",\"IN79_REC3\",\"IN79_REC4\",\"Medidas Diario\",\"Medidas - Realizado x Previstos Planilhas\",\"rankLocal-painelLocal\",\"rankParetoFormularios-painelParetoPac\",\"rankAcoesCorretivas - painelUsuario\",\"rankUsuarios - painelUsuario\",\"rankLocal-painelPareto-Local\",\"rankParetoPac-painelParetoPac\",\"ftTempoOcioso\",\"dimDispositivo\",\"rankUnidade - Painel Ociosidade\",\"rankPAC - Painel Ociosidade\",\"SlicerPAC- Painel Ociosidade\",\"SlicerUnidade- Painel Ociosidade\",\"rankUnidades - Unidades\",\"rankPac - Unidades\",\"rankPlanilhas - Unidades\",\"rankUnidade - PAC - Unidade\",\"rankPac- PAC - Unidade\",\"rankPlanilhas-PAC - Unidade\",\"FtRegistro_T-Atual\",\"ftRealizados_Previstos_T-Atual\",\"ftRealizados_Previstos_Planilhas_T-Atual\",\"dimUnidade\",\"FtRegistro_T01\",\"FtRegistro_T02\",\"FtRegistro_T03\",\"FtRegistro_T04\",\"FtRegistro_T05\",\"FtRegistro_T06\",\"FtRegistro_T07\",\"FtRegistro_T08\",\"FtRegistro_T09\",\"FtRegistro_T10\",\"FtRegistro_T11\",\"FtRegistro_T12\",\"ftRealizados_Previstos_T1\",\"ftRealizados_Previstos_T2\",\"ftRealizados_Previstos_T3\",\"ftRealizados_Previstos_T4\",\"ftRealizados_Previstos_T5\",\"ftRealizados_Previstos_T6\",\"ftRealizados_Previstos_T7\",\"ftRealizados_Previstos_T8\",\"ftRealizados_Previstos_T9\",\"ftRealizados_Previstos_T10\",\"ftRealizados_Previstos_T11\",\"ftRealizados_Previstos_T12\",\"ftRealizados_Previstos_Planilhas_T1\",\"ftRealizados_Previstos_Planilhas_T2\",\"ftRealizados_Previstos_Planilhas_T3\",\"ftRealizados_Previstos_Planilhas_T4\",\"ftRealizados_Previstos_Planilhas_T5\",\"ftRealizados_Previstos_Planilhas_T6\",\"ftRealizados_Previstos_Planilhas_T7\",\"ftRealizados_Previstos_Planilhas_T8\",\"ftRealizados_Previstos_Planilhas_T9\",\"ftRealizados_Previstos_Planilhas_T10\",\"ftRealizados_Previstos_Planilhas_T11\",\"ftRealizados_Previstos_Planilhas_T12\"]"
+        "value": "[\"dimUsuario\",\"dimStatus2\",\"dimTipoLançamento\",\"dimPacAgrupador\",\"dimStatus\",\"dimLocal\",\"dimPacItens\",\"dimTurno\",\"dimNCAC\",\"dimNConf\",\"dimEmpresa\",\"dimStatusConformidade\",\"dimPac\",\"dimUsuarioEmpresa\",\"dimFornecedor\",\"Banco\",\"Base\",\"agrupadorSlicer\",\"ImageIcons\",\"Ultima Atualização\",\"RangeStart\",\"RangeEnd\",\"tbPainelTempo\",\"ftRegistro\",\"ftRealizados_Previstos_Planilhas\",\"ftRealizados_Previstos\",\"ftTempoConformidade\",\"ftVer_e_Agir\",\"IN79_REC1\",\"ABT3\",\"IN79_REC3\",\"IN79_REC4\",\"Medidas Diario\",\"Medidas - Realizado x Previstos Planilhas\",\"rankLocal-painelLocal\",\"rankParetoFormularios-painelParetoPac\",\"rankAcoesCorretivas - painelUsuario\",\"rankUsuarios - painelUsuario\",\"rankLocal-painelPareto-Local\",\"rankParetoPac-painelParetoPac\",\"ftTempoOcioso\",\"dimDispositivo\",\"rankUnidade - Painel Ociosidade\",\"rankPAC - Painel Ociosidade\",\"SlicerPAC- Painel Ociosidade\",\"SlicerUnidade- Painel Ociosidade\",\"rankUnidades - Unidades\",\"rankPac - Unidades\",\"rankPlanilhas - Unidades\",\"rankUnidade - PAC - Unidade\",\"rankPac- PAC - Unidade\",\"rankPlanilhas-PAC - Unidade\",\"FtRegistro_T-Atual\",\"ftRealizados_Previstos_T-Atual\",\"ftRealizados_Previstos_Planilhas_T-Atual\",\"dimUnidade\",\"FtRegistro_T01\",\"FtRegistro_T02\",\"FtRegistro_T03\",\"FtRegistro_T04\",\"FtRegistro_T05\",\"FtRegistro_T06\",\"FtRegistro_T07\",\"FtRegistro_T08\",\"FtRegistro_T09\",\"FtRegistro_T10\",\"FtRegistro_T11\",\"FtRegistro_T12\",\"ftRealizados_Previstos_T1\",\"ftRealizados_Previstos_T2\",\"ftRealizados_Previstos_T3\",\"ftRealizados_Previstos_T4\",\"ftRealizados_Previstos_T5\",\"ftRealizados_Previstos_T6\",\"ftRealizados_Previstos_T7\",\"ftRealizados_Previstos_T8\",\"ftRealizados_Previstos_T9\",\"ftRealizados_Previstos_T10\",\"ftRealizados_Previstos_T11\",\"ftRealizados_Previstos_T12\",\"ftRealizados_Previstos_Planilhas_T1\",\"ftRealizados_Previstos_Planilhas_T2\",\"ftRealizados_Previstos_Planilhas_T3\",\"ftRealizados_Previstos_Planilhas_T4\",\"ftRealizados_Previstos_Planilhas_T5\",\"ftRealizados_Previstos_Planilhas_T6\",\"ftRealizados_Previstos_Planilhas_T7\",\"ftRealizados_Previstos_Planilhas_T8\",\"ftRealizados_Previstos_Planilhas_T9\",\"ftRealizados_Previstos_Planilhas_T10\",\"ftRealizados_Previstos_Planilhas_T11\",\"ftRealizados_Previstos_Planilhas_T12\",\"Slicer-FiltroDiario\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.128.1380.0 (24.04)"
+        "value": "2.130.754.0 (24.06)"
       },
       {
         "name": "PBI_ProTooling",
@@ -55614,14 +55614,6 @@
         "toTable": "dimUsuario"
       },
       {
-        "name": "c3dbbce3-0131-4214-ba78-1d5e2cb6a1fc",
-        "fromColumn": "Date",
-        "fromTable": "Calendario",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_a3644b65-477d-436b-8626-869131112441"
-      },
-      {
         "name": "d3599004-8e09-4ba3-9e92-a43781a904d4",
         "fromColumn": "data_base",
         "fromTable": "ftRegistro",
@@ -55678,14 +55670,6 @@
         "isActive": false,
         "toColumn": "id_Usuario",
         "toTable": "dimUsuario"
-      },
-      {
-        "name": "1c37577d-4f81-4912-8c76-300d078d17f9",
-        "fromColumn": "Dia_ultimolancamento",
-        "fromTable": "Calendario",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f"
       },
       {
         "name": "f8b367e2-6b92-493d-b92e-cedda2a26221",
@@ -56046,6 +56030,13 @@
         "fromTable": "dimEmpresa",
         "toColumn": "id_empresa",
         "toTable": "UltimoAcessoEmpresa"
+      },
+      {
+        "name": "087ebc02-1fcf-49f2-4f59-b7d5bbc1cf72",
+        "fromColumn": "AtualDia",
+        "fromTable": "Calendario",
+        "toColumn": "descSlicer-FiltroDiario",
+        "toTable": "Slicer-FiltroDiario"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -57357,22 +57348,12 @@
             "dataType": "dateTime",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isKey": true,
             "isNameInferred": true,
             "lineageTag": "e4f5cf4c-ae13-4c7b-bcd2-03cba8b0a70b",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
-            "type": "calculatedTableColumn",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_a3644b65-477d-436b-8626-869131112441"
-                },
-                "isDefault": true,
-                "relationship": "c3dbbce3-0131-4214-ba78-1d5e2cb6a1fc"
-              }
-            ]
+            "type": "calculatedTableColumn"
           },
           {
             "name": "Ano",
@@ -57648,18 +57629,7 @@
             "isDataTypeInferred": true,
             "lineageTag": "edd492d6-d581-42e0-86dc-100d34c292e8",
             "summarizeBy": "none",
-            "type": "calculated",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f"
-                },
-                "isDefault": true,
-                "relationship": "1c37577d-4f81-4912-8c76-300d078d17f9"
-              }
-            ]
+            "type": "calculated"
           },
           {
             "name": "AtualDia",
@@ -57670,7 +57640,12 @@
               }
             ],
             "dataType": "string",
-            "expression": "IF(Calendario[Date]= MAX(ftRegistro[data_base]), \"Último Dia\", \"Todos os Outros Dias\")",
+            "expression": [
+              "",
+              "VAR dataAtual = DATEVALUE(NOW())",
+              "return",
+              "IF(Calendario[Date] = dataAtual-1 , \"Último Dia\", \"Todos os Outros Dias\")"
+            ],
             "isDataTypeInferred": true,
             "lineageTag": "ef51e87b-c1be-4962-bfad-0d781a452b88",
             "summarizeBy": "none",
@@ -57693,6 +57668,7 @@
             "type": "calculated"
           }
         ],
+        "dataCategory": "Time",
         "lineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
         "partitions": [
           {
@@ -66189,9 +66165,9 @@
             "expression": [
               "",
               "var ano = \"2024\"",
-              "var mes = \"05\"",
-              "var dia = \"16\"",
-              "var sprint = \"231\"",
+              "var mes = \"06\"",
+              "var dia = \"14\"",
+              "var sprint = \"236\"",
               "var dados  = \"P\"",
               "return",
               "\"Versão Atual: \"& ano & \".\" & mes & \".\" & dia & \".\" & sprint & \"-\" & dados",
@@ -66513,10 +66489,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -68661,408 +68633,6 @@
             }
           }
         ]
-      },
-      {
-        "name": "LocalDateTable_a3644b65-477d-436b-8626-869131112441",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "0d85424f-2531-468d-9788-56e83c7b61ab",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "db79a3d0-d1e0-4e87-9ea2-a7dde4f1018d",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "331c0b8d-b019-471b-924c-1c27966512b2",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "f73af000-d0f1-46e8-a604-a9167c65fadf",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "bfc549f8-4c98-4936-be62-ef675f2586a1",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Trim \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "811f5715-b074-4d17-a69e-7ff101666f8e",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "246b1c88-feab-40b9-9c17-dfc055ebc302",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "ee7ef360-f414-4b21-a417-c89dd0d52330",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "4b3ef3f2-390e-422a-9fce-779553549ff0",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "d4e4ef62-1f95-4a6d-906f-b4169c2756e4",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "4caa6de9-8e3c-453b-a1ce-231919ba66bb",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "7087f299-acb3-46d1-8d82-829ec2df0ea7"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "a46df017-18ee-4440-9676-99659443048f",
-        "partitions": [
-          {
-            "name": "LocalDateTable_a3644b65-477d-436b-8626-869131112441",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('Calendario'[Date])), 1, 1), Date(Year(MAX('Calendario'[Date])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
-        "name": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "6b5e7036-b2cd-48d3-9caf-82fec12f560b",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "a03db3d1-a334-4473-b310-72a7a0067418",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "a20de9b5-b821-40fa-b06c-62b6969b4c4c",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "eceb828b-521f-4636-9f38-47864dfedae0",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "a476ce2e-3f60-4012-bf58-9775e5d24a0a",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Trim \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "790e245a-eaa9-4431-a4ce-4aafbe748b76",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "e75e19e9-e5ca-46eb-bc42-dc7484b61757",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "c0982566-0e05-48c4-9808-585a95116f09",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "332bdd9c-1a94-4842-ab5a-3e249ee2c9e0",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "a8d9e0bd-74e5-426f-a854-c1b8fa2a94d2",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "552ce761-0a50-4c92-9cbd-69c2d7855f16",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "895a7582-9517-4d40-b8ca-f12f54e13a0e"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "ea4ab30e-4834-49cc-b481-811ae7ceb8e4",
-        "partitions": [
-          {
-            "name": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('Calendario'[Dia_ultimolancamento])), 1, 1), Date(Year(MAX('Calendario'[Dia_ultimolancamento])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
       },
       {
         "name": "rankUnidades - Unidades",
@@ -73293,6 +72863,65 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "Slicer-FiltroDiario",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idSlicer-FiltroDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cbda87c8-c9c8-4d47-9054-9dfc958c1cbc",
+            "sourceColumn": "idSlicer-FiltroDiario",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "descSlicer-FiltroDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35b62c2e-f74c-483f-b117-e4364443bcd4",
+            "sourceColumn": "descSlicer-FiltroDiario",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "102ec782-0c0a-4118-ba4a-2e3e1fd5b4c0",
+        "partitions": [
+          {
+            "name": "Slicer-FiltroDiario",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUTo8K6ckMzdfwSUzUSlWJ1rJCCgWkp+SX6wARP6lJUVACihXrBQbCwA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"idSlicer-FiltroDiario\" = _t, #\"descSlicer-FiltroDiario\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"idSlicer-FiltroDiario\", Int64.Type}, {\"descSlicer-FiltroDiario\", type text}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }
