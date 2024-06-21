@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"dimUsuario\",\"dimStatus2\",\"dimTipoLançamento\",\"dimPacAgrupador\",\"dimStatus\",\"dimLocal\",\"dimPacItens\",\"dimTurno\",\"dimNCAC\",\"dimNConf\",\"dimEmpresa\",\"dimStatusConformidade\",\"dimPac\",\"dimUsuarioEmpresa\",\"dimFornecedor\",\"Banco\",\"Base\",\"agrupadorSlicer\",\"ImageIcons\",\"Ultima Atualização\",\"RangeStart\",\"RangeEnd\",\"tbPainelTempo\",\"ftRegistro\",\"ftRealizados_Previstos_Planilhas\",\"ftRealizados_Previstos\",\"ftTempoConformidade\",\"ftVer_e_Agir\",\"IN79_REC1\",\"ABT3\",\"IN79_REC3\",\"IN79_REC4\",\"Medidas Diario\",\"Medidas - Realizado x Previstos Planilhas\",\"rankLocal-painelLocal\",\"rankParetoFormularios-painelParetoPac\",\"rankAcoesCorretivas - painelUsuario\",\"rankUsuarios - painelUsuario\",\"rankLocal-painelPareto-Local\",\"rankParetoPac-painelParetoPac\",\"ftTempoOcioso\",\"dimDispositivo\",\"rankUnidade - Painel Ociosidade\",\"rankPAC - Painel Ociosidade\",\"SlicerPAC- Painel Ociosidade\",\"SlicerUnidade- Painel Ociosidade\",\"rankUnidades - Unidades\",\"rankPac - Unidades\",\"rankPlanilhas - Unidades\",\"rankUnidade - PAC - Unidade\",\"rankPac- PAC - Unidade\",\"rankPlanilhas-PAC - Unidade\",\"FtRegistro_T-Atual\",\"ftRealizados_Previstos_T-Atual\",\"ftRealizados_Previstos_Planilhas_T-Atual\",\"dimUnidade\",\"FtRegistro_T01\",\"FtRegistro_T02\",\"FtRegistro_T03\",\"FtRegistro_T04\",\"FtRegistro_T05\",\"FtRegistro_T06\",\"FtRegistro_T07\",\"FtRegistro_T08\",\"FtRegistro_T09\",\"FtRegistro_T10\",\"FtRegistro_T11\",\"FtRegistro_T12\",\"ftRealizados_Previstos_T1\",\"ftRealizados_Previstos_T2\",\"ftRealizados_Previstos_T3\",\"ftRealizados_Previstos_T4\",\"ftRealizados_Previstos_T5\",\"ftRealizados_Previstos_T6\",\"ftRealizados_Previstos_T7\",\"ftRealizados_Previstos_T8\",\"ftRealizados_Previstos_T9\",\"ftRealizados_Previstos_T10\",\"ftRealizados_Previstos_T11\",\"ftRealizados_Previstos_T12\",\"ftRealizados_Previstos_Planilhas_T1\",\"ftRealizados_Previstos_Planilhas_T2\",\"ftRealizados_Previstos_Planilhas_T3\",\"ftRealizados_Previstos_Planilhas_T4\",\"ftRealizados_Previstos_Planilhas_T5\",\"ftRealizados_Previstos_Planilhas_T6\",\"ftRealizados_Previstos_Planilhas_T7\",\"ftRealizados_Previstos_Planilhas_T8\",\"ftRealizados_Previstos_Planilhas_T9\",\"ftRealizados_Previstos_Planilhas_T10\",\"ftRealizados_Previstos_Planilhas_T11\",\"ftRealizados_Previstos_Planilhas_T12\"]"
+        "value": "[\"dimUsuario\",\"dimStatus2\",\"dimTipoLançamento\",\"dimPacAgrupador\",\"dimStatus\",\"dimLocal\",\"dimPacItens\",\"dimTurno\",\"dimNCAC\",\"dimNConf\",\"dimEmpresa\",\"dimStatusConformidade\",\"dimPac\",\"dimUsuarioEmpresa\",\"dimFornecedor\",\"Banco\",\"Base\",\"agrupadorSlicer\",\"ImageIcons\",\"Ultima Atualização\",\"RangeStart\",\"RangeEnd\",\"tbPainelTempo\",\"ftRegistro\",\"ftRealizados_Previstos_Planilhas\",\"ftRealizados_Previstos\",\"ftTempoConformidade\",\"ftVer_e_Agir\",\"IN79_REC1\",\"ABT3\",\"IN79_REC3\",\"IN79_REC4\",\"Medidas Diario\",\"Medidas - Realizado x Previstos Planilhas\",\"rankLocal-painelLocal\",\"rankParetoFormularios-painelParetoPac\",\"rankAcoesCorretivas - painelUsuario\",\"rankUsuarios - painelUsuario\",\"rankLocal-painelPareto-Local\",\"rankParetoPac-painelParetoPac\",\"ftTempoOcioso\",\"dimDispositivo\",\"rankUnidade - Painel Ociosidade\",\"rankPAC - Painel Ociosidade\",\"SlicerPAC- Painel Ociosidade\",\"SlicerUnidade- Painel Ociosidade\",\"rankUnidades - Unidades\",\"rankPac - Unidades\",\"rankPlanilhas - Unidades\",\"rankUnidade - PAC - Unidade\",\"rankPac- PAC - Unidade\",\"rankPlanilhas-PAC - Unidade\",\"FtRegistro_T-Atual\",\"ftRealizados_Previstos_T-Atual\",\"ftRealizados_Previstos_Planilhas_T-Atual\",\"dimUnidade\",\"FtRegistro_T01\",\"FtRegistro_T02\",\"FtRegistro_T03\",\"FtRegistro_T04\",\"FtRegistro_T05\",\"FtRegistro_T06\",\"FtRegistro_T07\",\"FtRegistro_T08\",\"FtRegistro_T09\",\"FtRegistro_T10\",\"FtRegistro_T11\",\"FtRegistro_T12\",\"ftRealizados_Previstos_T1\",\"ftRealizados_Previstos_T2\",\"ftRealizados_Previstos_T3\",\"ftRealizados_Previstos_T4\",\"ftRealizados_Previstos_T5\",\"ftRealizados_Previstos_T6\",\"ftRealizados_Previstos_T7\",\"ftRealizados_Previstos_T8\",\"ftRealizados_Previstos_T9\",\"ftRealizados_Previstos_T10\",\"ftRealizados_Previstos_T11\",\"ftRealizados_Previstos_T12\",\"ftRealizados_Previstos_Planilhas_T1\",\"ftRealizados_Previstos_Planilhas_T2\",\"ftRealizados_Previstos_Planilhas_T3\",\"ftRealizados_Previstos_Planilhas_T4\",\"ftRealizados_Previstos_Planilhas_T5\",\"ftRealizados_Previstos_Planilhas_T6\",\"ftRealizados_Previstos_Planilhas_T7\",\"ftRealizados_Previstos_Planilhas_T8\",\"ftRealizados_Previstos_Planilhas_T9\",\"ftRealizados_Previstos_Planilhas_T10\",\"ftRealizados_Previstos_Planilhas_T11\",\"ftRealizados_Previstos_Planilhas_T12\",\"Slicer-FiltroDiario\",\"SlicerImgDiario\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.128.1380.0 (24.04)"
+        "value": "2.130.930.0 (24.06)"
       },
       {
         "name": "PBI_ProTooling",
@@ -54698,7 +54698,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54720,7 +54720,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 5, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54742,7 +54742,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 8, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54764,7 +54764,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 11, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54786,7 +54786,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 14, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54808,7 +54808,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 17, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54830,7 +54830,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 20, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54852,7 +54852,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 23, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54874,7 +54874,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 26, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54896,7 +54896,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 29, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54918,7 +54918,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 32, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -54940,7 +54940,7 @@
         ],
         "expression": [
           "let",
-          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 38, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+          "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 38, 0) #(lf)#(tab)#(tab)and DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 35, 0)-1#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
           "in",
           "    Fonte"
         ],
@@ -55614,63 +55614,6 @@
         "toTable": "dimUsuario"
       },
       {
-        "name": "c3dbbce3-0131-4214-ba78-1d5e2cb6a1fc",
-        "fromColumn": "Date",
-        "fromTable": "Calendario",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_a3644b65-477d-436b-8626-869131112441"
-      },
-      {
-        "name": "d3599004-8e09-4ba3-9e92-a43781a904d4",
-        "fromColumn": "data_base",
-        "fromTable": "ftRegistro",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
-        "name": "b4c87efd-6088-4ada-9feb-9f8e53cddfa6",
-        "fromColumn": "data",
-        "fromTable": "ftRealizados_Previstos",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
-        "name": "db3a93b1-3187-4b94-a73e-87f6de408cce",
-        "fromColumn": "data",
-        "fromTable": "tbPainelTempo",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
-        "name": "61195fe6-3751-41f0-9d87-f7083376908a",
-        "fromColumn": "DATA",
-        "fromTable": "IN79_REC1",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
-        "name": "48843d4e-29ad-4b5d-9412-4efafad1354c",
-        "fromColumn": "DATA",
-        "fromTable": "IN79_REC3",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
-        "name": "69aa7f05-7ef5-40f5-b8e7-857b98aa09d1",
-        "fromColumn": "DATA",
-        "fromTable": "IN79_REC4",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
-        "name": "74d4c6f6-89a4-40ba-adb4-625adf5f6935",
-        "fromColumn": "DATA",
-        "fromTable": "ABT3",
-        "toColumn": "Date",
-        "toTable": "Calendario"
-      },
-      {
         "name": "e9bf6a48-6911-4709-9280-e23cbf384551",
         "crossFilteringBehavior": "bothDirections",
         "fromColumn": "id_usuario",
@@ -55678,14 +55621,6 @@
         "isActive": false,
         "toColumn": "id_Usuario",
         "toTable": "dimUsuario"
-      },
-      {
-        "name": "1c37577d-4f81-4912-8c76-300d078d17f9",
-        "fromColumn": "Dia_ultimolancamento",
-        "fromTable": "Calendario",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f"
       },
       {
         "name": "f8b367e2-6b92-493d-b92e-cedda2a26221",
@@ -56024,6 +55959,64 @@
         "toTable": "dimEmpresa"
       },
       {
+        "name": "f9830723-4049-48a2-8a5d-36abf2bfac35",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "id_Empresa",
+        "fromTable": "dimEmpresa",
+        "toColumn": "id_empresa",
+        "toTable": "UltimoAcessoEmpresa"
+      },
+      {
+        "name": "d3599004-8e09-4ba3-9e92-a43781a904d4",
+        "fromColumn": "data_base",
+        "fromTable": "ftRegistro",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
+        "name": "b4c87efd-6088-4ada-9feb-9f8e53cddfa6",
+        "fromColumn": "data",
+        "fromTable": "ftRealizados_Previstos",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
+        "name": "db3a93b1-3187-4b94-a73e-87f6de408cce",
+        "fromColumn": "data",
+        "fromTable": "tbPainelTempo",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
+        "name": "61195fe6-3751-41f0-9d87-f7083376908a",
+        "fromColumn": "DATA",
+        "fromTable": "IN79_REC1",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
+        "name": "48843d4e-29ad-4b5d-9412-4efafad1354c",
+        "fromColumn": "DATA",
+        "fromTable": "IN79_REC3",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
+        "name": "69aa7f05-7ef5-40f5-b8e7-857b98aa09d1",
+        "fromColumn": "DATA",
+        "fromTable": "IN79_REC4",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
+        "name": "74d4c6f6-89a4-40ba-adb4-625adf5f6935",
+        "fromColumn": "DATA",
+        "fromTable": "ABT3",
+        "toColumn": "Date",
+        "toTable": "Calendario"
+      },
+      {
         "name": "7e53245f-7578-4fcc-bd9c-d8c44d726874",
         "fromColumn": "Data",
         "fromTable": "ftVer_e_Agir",
@@ -56039,13 +56032,12 @@
         "toTable": "Calendario"
       },
       {
-        "name": "f9830723-4049-48a2-8a5d-36abf2bfac35",
+        "name": "a4231778-5958-6dab-f667-262676ad320e",
         "crossFilteringBehavior": "bothDirections",
-        "fromCardinality": "one",
-        "fromColumn": "id_Empresa",
-        "fromTable": "dimEmpresa",
-        "toColumn": "id_empresa",
-        "toTable": "UltimoAcessoEmpresa"
+        "fromColumn": "AtualDia",
+        "fromTable": "Calendario",
+        "toColumn": "descSlicerImgDiario",
+        "toTable": "SlicerImgDiario"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -56407,10 +56399,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -56829,7 +56817,7 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Table"
+            "value": "Exception"
           }
         ],
         "columns": [
@@ -57361,22 +57349,12 @@
             "dataType": "dateTime",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isKey": true,
             "isNameInferred": true,
             "lineageTag": "e4f5cf4c-ae13-4c7b-bcd2-03cba8b0a70b",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
-            "type": "calculatedTableColumn",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_a3644b65-477d-436b-8626-869131112441"
-                },
-                "isDefault": true,
-                "relationship": "c3dbbce3-0131-4214-ba78-1d5e2cb6a1fc"
-              }
-            ]
+            "type": "calculatedTableColumn"
           },
           {
             "name": "Ano",
@@ -57652,32 +57630,6 @@
             "isDataTypeInferred": true,
             "lineageTag": "edd492d6-d581-42e0-86dc-100d34c292e8",
             "summarizeBy": "none",
-            "type": "calculated",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f"
-                },
-                "isDefault": true,
-                "relationship": "1c37577d-4f81-4912-8c76-300d078d17f9"
-              }
-            ]
-          },
-          {
-            "name": "AtualDia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "expression": "IF(Calendario[Date]= MAX(ftRegistro[data_base]), \"Último Dia\", \"Todos os Outros Dias\")",
-            "isDataTypeInferred": true,
-            "lineageTag": "ef51e87b-c1be-4962-bfad-0d781a452b88",
-            "summarizeBy": "none",
             "type": "calculated"
           },
           {
@@ -57695,8 +57647,24 @@
             "lineageTag": "6ef45a6e-4adf-43e5-af45-77072ef1ed9f",
             "summarizeBy": "sum",
             "type": "calculated"
+          },
+          {
+            "name": "AtualDia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(Calendario[Date]= MAX(ftRegistro[data_base]), \"Último Dia\", \"Outros Dias\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "e2539cbf-9e42-4ad4-9616-4178368edfe3",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
+        "dataCategory": "Time",
         "lineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
         "partitions": [
           {
@@ -57706,7 +57674,7 @@
               "expression": [
                 "",
                 "VAR DATA_MIN = MIN(ftRegistro[data_base])",
-                "VAR DATA_MAX = NOW()",
+                "VAR DATA_MAX = NOW()-1",
                 "RETURN",
                 "\tADDCOLUMNS ( ",
                 "\t\tCALENDAR (DATA_MIN , DATA_MAX),",
@@ -60354,6 +60322,21 @@
             "lineageTag": "7560258e-1a8e-4df2-8694-aaa524287a42",
             "sourceColumn": "quando_verifica_Ciclo",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Cod_Pac - Nome Pac",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "dimPac[cod_Pac] & \" - \" & dimPac[nome_Pac]",
+            "isDataTypeInferred": true,
+            "lineageTag": "9136d2c7-1dda-44b1-bec8-243d2a678094",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "a4f59146-a03d-453a-b88b-3b95df74ea55",
@@ -60388,7 +60371,7 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Table"
+            "value": "Exception"
           }
         ],
         "columns": [
@@ -66193,9 +66176,9 @@
             "expression": [
               "",
               "var ano = \"2024\"",
-              "var mes = \"05\"",
-              "var dia = \"13\"",
-              "var sprint = \"231\"",
+              "var mes = \"06\"",
+              "var dia = \"19\"",
+              "var sprint = \"237\"",
               "var dados  = \"P\"",
               "return",
               "\"Versão Atual: \"& ano & \".\" & mes & \".\" & dia & \".\" & sprint & \"-\" & dados",
@@ -66638,7 +66621,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)) AS chave,#(lf)#(tab)tbnc.id AS id_nconf,#(lf)#(tab)tbnc.DESCRICAO AS nome_nc,#(lf)#(tab)ACC.ID AS ID_ACAO,#(lf)#(tab)ACC.DESCRICAO_RESUMIDA,#(lf)#(tab)ACC.TIPO_ACAO,#(lf)#(tab)ac.DESCRICAO,#(lf)#(tab)ac.sigla#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON c.id = reg.id_cab#(lf)INNER JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)INNER JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)LEFT JOIN TBACAOCORRETIVALANCAMENTO acl WITH (NOLOCK) ON acl.ID_REGISTRONCONF = nc.ID#(lf)LEFT JOIN TBACAOCORRETIVA acc WITH(NOLOCK) ON ACL.ID_ACAO_CORRETIVA = ACC.ID#(lf)LEFT JOIN tbacao ac WITH (NOLOCK) ON ACC.TIPO = ac.id#(lf)WHERE c.data >= '01/01/2023' AND (STATUS <= 4) AND tipo_registro IN (1, 2)#(lf)\"]),",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"SELECT CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)) AS chave,#(lf)#(tab)tbnc.id AS id_nconf,#(lf)#(tab)tbnc.DESCRICAO AS nome_nc,#(lf)#(tab)ACC.ID AS ID_ACAO,#(lf)#(tab)ACC.DESCRICAO_RESUMIDA,#(lf)#(tab)ACC.TIPO_ACAO,#(lf)#(tab)ac.DESCRICAO,#(lf)#(tab)ac.sigla#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON c.id = reg.id_cab#(lf)INNER JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)INNER JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)LEFT JOIN TBACAOCORRETIVALANCAMENTO acl WITH (NOLOCK) ON acl.ID_REGISTRONCONF = nc.ID#(lf)LEFT JOIN TBACAOCORRETIVA acc WITH(NOLOCK) ON ACL.ID_ACAO_CORRETIVA = ACC.ID#(lf)LEFT JOIN tbacao ac WITH (NOLOCK) ON ACC.TIPO = ac.id#(lf)WHERE c.data >= '01/01/2023' AND (STATUS <= 2) AND tipo_registro IN (1, 2)#(lf)\"]),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"chave\", Int64.Type}})",
                 "in",
                 "    #\"Tipo Alterado\""
@@ -68663,408 +68646,6 @@
         ]
       },
       {
-        "name": "LocalDateTable_a3644b65-477d-436b-8626-869131112441",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "0d85424f-2531-468d-9788-56e83c7b61ab",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "db79a3d0-d1e0-4e87-9ea2-a7dde4f1018d",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "331c0b8d-b019-471b-924c-1c27966512b2",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "f73af000-d0f1-46e8-a604-a9167c65fadf",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "bfc549f8-4c98-4936-be62-ef675f2586a1",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Trim \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "811f5715-b074-4d17-a69e-7ff101666f8e",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "246b1c88-feab-40b9-9c17-dfc055ebc302",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "ee7ef360-f414-4b21-a417-c89dd0d52330",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "4b3ef3f2-390e-422a-9fce-779553549ff0",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "d4e4ef62-1f95-4a6d-906f-b4169c2756e4",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "4caa6de9-8e3c-453b-a1ce-231919ba66bb",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "7087f299-acb3-46d1-8d82-829ec2df0ea7"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "a46df017-18ee-4440-9676-99659443048f",
-        "partitions": [
-          {
-            "name": "LocalDateTable_a3644b65-477d-436b-8626-869131112441",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('Calendario'[Date])), 1, 1), Date(Year(MAX('Calendario'[Date])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
-        "name": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "6b5e7036-b2cd-48d3-9caf-82fec12f560b",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "a03db3d1-a334-4473-b310-72a7a0067418",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "a20de9b5-b821-40fa-b06c-62b6969b4c4c",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "eceb828b-521f-4636-9f38-47864dfedae0",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "a476ce2e-3f60-4012-bf58-9775e5d24a0a",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Trim \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "790e245a-eaa9-4431-a4ce-4aafbe748b76",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "e75e19e9-e5ca-46eb-bc42-dc7484b61757",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "c0982566-0e05-48c4-9808-585a95116f09",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "332bdd9c-1a94-4842-ab5a-3e249ee2c9e0",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "a8d9e0bd-74e5-426f-a854-c1b8fa2a94d2",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "552ce761-0a50-4c92-9cbd-69c2d7855f16",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "895a7582-9517-4d40-b8ca-f12f54e13a0e"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "ea4ab30e-4834-49cc-b481-811ae7ceb8e4",
-        "partitions": [
-          {
-            "name": "LocalDateTable_3ee4e766-e750-40d7-9435-d8c0502f402f",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('Calendario'[Dia_ultimolancamento])), 1, 1), Date(Year(MAX('Calendario'[Dia_ultimolancamento])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
         "name": "rankUnidades - Unidades",
         "annotations": [
           {
@@ -69676,10 +69257,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -69976,7 +69553,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)data_base,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)MAX(REG.DATA_HORA) AS data_hora,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)    and GETDATE()#(lf)#(tab)AND (STATUS <= @StatusP) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)order by DATA_HORA desc#(lf)\"])",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)SELECT #(lf)#(tab)data_base,#(lf)#(tab)c.id AS id_cab,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id AS id_pac_item,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa) AS id_empresa,#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)pa.cod_pac AS cod_agrupador,#(lf)#(tab)coalesce(p.id_agrupador, - 1) AS id_agrupador,#(lf)#(tab)COALESCE(tbnc.id, - 1) AS id_nconf,#(lf)#(tab)iif(tbnc.id IS NULL, NULL, CONCAT (#(lf)#(tab)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)#(tab))) AS chave,#(lf)#(tab)status_conformidade AS id_lancamento,#(lf)#(tab)REG.ID_EMPRESA AS COD_UNIDADE,#(lf)#(tab)MAX(REG.DATA_HORA) AS data_hora,#(lf)#(tab)count(DISTINCT reg.id) QTde#(lf)FROM tbregistrocab c WITH (NOLOCK)#(lf)INNER JOIN tbpac p WITH (NOLOCK) ON c.id_pac = p.id#(lf)INNER JOIN tbpacitem it WITH (NOLOCK) ON p.id = it.id_pac#(lf)INNER JOIN tbregistro reg WITH (NOLOCK) ON reg.id_cab = c.id AND it.id = reg.id_pac_item#(lf)LEFT JOIN TBREGISTRONCONF nc WITH (NOLOCK) ON REG.ID = NC.ID_REGISTRO#(lf)LEFT JOIN tbnconf tbnc WITH (NOLOCK) ON nc.ID_NCONF = tbnc.ID#(lf)INNER JOIN TBPACAGRUPADOR pa WITH (NOLOCK) ON pa.id = p.ID_AGRUPADOR#(lf)INNER JOIN tbempresa e WITH(NOLOCK) ON reg.id_empresa = e.id#(lf)WHERE#(lf)#(tab)c.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)    and DATEADD(DAY,-1,GETDATE())#(lf)#(tab)AND (STATUS <= @StatusP) #(lf)#(tab)AND tipo_registro IN (1, 2) #(lf)#(tab)AND reg.ID_REGISTRO_EDITADO is NULL#(lf)GROUP BY #(lf)#(tab)data_base,#(lf)#(tab)p.id,#(lf)#(tab)c.id,#(lf)#(tab)id_usuario,#(lf)#(tab)it.id,#(lf)#(tab)tipo_registro,#(lf)#(tab)IIF(E.ID_EMPRESA_COLIGADA IS NOT NULL,E.ID_EMPRESA_COLIGADA,reg.id_empresa),#(lf)#(tab)e.regional,#(lf)#(tab)reg.id_turno,#(lf)#(tab)it.id_local,#(lf)#(tab)p.cod_pac,#(lf)#(tab)pa.cod_pac,#(lf)#(tab)p.id_agrupador,#(lf)#(tab)tbnc.id,#(lf)#(tab)CONCAT (#(lf)#(tab)#(tab)reg.id,#(lf)#(tab)#(tab)nc.id,#(lf)#(tab)#(tab)tbnc.id#(lf)#(tab)#(tab)),#(lf)#(tab)status_conformidade,#(lf)#(tab)REG.ID_EMPRESA#(lf)order by DATA_HORA desc#(lf)\"])",
                 "in",
                 "    Fonte"
               ],
@@ -70340,9 +69917,10 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(lf)#(tab)#(tab)(((IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS,1)))#(lf)#(tab)#(tab)*((IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR))) #(lf)#(tab)#(tab)* ((#(lf)#(tab)#(tab)#(tab)IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1) #(lf)#(tab)#(tab)#(tab)#(tab)AND docTurno.NUM_DOC <> ''#(lf)#(tab)#(tab)#(tab)#(tab)AND CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101'#(lf)#(tab)#(tab)#(tab)#(tab), DOC.QtdeDoc,1))))/docTurno.qtde  PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)#(tab)#(tab)and GETDATE()#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB#(lf)\"])",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\"DECLARE @StatusP INT;#(lf)SET @StatusP = 2; -- 4 -> Produção e Teste ; 2 Producao #(lf)#(lf)#(lf)SELECT #(lf)#(tab)P.ID_EMPRESA AS id_empresa,#(lf)#(tab)R.ID_CAB AS id_cab,#(lf)#(tab)REALIZADOS AS realizados,#(lf)#(tab)COD_PAC AS cod_pac,#(lf)#(tab)--TURNOS,#(lf)#(tab)--FREQUENCIA_MONITORAMENTO,#(lf)#(tab)--QTDE_PREV_REG_MONITOR,#(lf)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)DATA AS data,#(lf)#(tab)PREVISTOS AS previstos,#(lf)#(tab)TIPO_REGISTRO,#(lf)#(tab)P.ID_AGRUPADOR#(lf)FROM (#(lf)#(tab)SELECT X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO,#(lf)#(tab)#(tab)SUM(X.REALIZADOS) REALIZADOS#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO PREVISTOS,#(lf)#(tab)#(tab)#(tab)R.TIPO_REGISTRO,#(lf)#(tab)#(tab)#(tab)COUNT(DISTINCT R.ID) REALIZADOS#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN (#(lf)#(tab)#(tab)#(tab)SELECT R.ID_CAB,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID,#(lf)#(tab)#(tab)#(tab)#(tab)R.ID_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)#(tab)R.CONTEUDO_REGISTRO_TEXTO,#(lf)#(tab)#(tab)#(tab)#(tab)R.TIPO_REGISTRO#(lf)#(tab)#(tab)#(tab)FROM TBREGISTRO R WITH (NOLOCK)#(lf)#(tab)#(tab)#(tab)WHERE (STATUS <= @StatusP) AND TIPO_REGISTRO IN (1, 2)#(lf)#(tab)#(tab)#(tab)) R ON IT.ID = R.ID_PAC_ITEM#(lf)#(tab)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON R.ID_CAB = C.ID#(lf)#(tab)#(tab)WHERE #(lf)#(tab)#(tab)#(tab)IT.TIPO_DO_DADO <> 0 #(lf)#(tab)#(tab)#(tab)AND IT.ATIVO = 1 #(lf)#(tab)#(tab)#(tab)--AND DATEPART(DW, DATA) NOT IN (7, 1)#(lf)#(tab)#(tab)GROUP BY C.ID,#(lf)#(tab)#(tab)#(tab)R.ID_CAB,#(lf)#(tab)#(tab)#(tab)IT.ID,#(lf)#(tab)#(tab)#(tab)IT.COD_PAC_ITEM,#(lf)#(tab)#(tab)#(tab)IT.DESCRICAO,#(lf)#(tab)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)#(tab)) X#(lf)#(tab)GROUP BY X.ID_CAB,#(lf)#(tab)#(tab)TIPO_REGISTRO#(lf)#(tab)) R#(lf)INNER JOIN (#(lf)#(tab)SELECT C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID AS ID_CAB,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)CONCAT(P.ID,'-',TRIM(P.COD_PAC)) AS chavePac,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(lf)#(tab)#(tab)E.TURNOS AS TURNOS,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)doc.QtdeDoc,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(lf)#(tab)#(tab)(IIF(P.QUANDO_MONITORA_CICLO = 1, E.TURNOS, 1) -- QTDE TURNOS PLANILHA#(lf)#(tab)#(tab)#(tab)* IT.FREQUENCIA_MONITORAMENTO --IIF(EP.QTDE_PREV_REG_MONITOR IS NULL, IT.FREQUENCIA_MONITORAMENTO, EP.QTDE_PREV_REG_MONITOR)#(lf)#(tab)#(tab)#(tab)* IIF((P.QUANDO_MONITORA_CICLO = 1 OR P.QUANDO_MONITORA_FREQUENCIA = 1)#(lf)#(tab)#(tab)#(tab)#(tab)AND (docTurno.NUM_DOC <> '')#(lf)#(tab)#(tab)#(tab)#(tab)AND (CONCAT(P.QUANDO_MONITORA_CICLO, P.QUANDO_MONITORA_FREQUENCIA, P.QUANDO_VERIFICA_FREQUENCIA, P.QUANDO_VERIFICA_CICLO) <> '1101')#(lf)#(tab)#(tab)#(tab),doc.QtdeDoc,1#(lf)#(tab)#(tab))) / docTurno.qtde AS PREVISTOS#(lf)#(tab)#(tab)#(lf)#(tab)FROM (#(lf)#(tab)#(tab)SELECT ID_PAC,#(lf)#(tab)#(tab)#(tab)SUM(ISNULL(FREQUENCIA_MONITORAMENTO, 0)) AS FREQUENCIA_MONITORAMENTO#(lf)#(tab)#(tab)FROM TBPACITEM IT WITH (NOLOCK)#(lf)#(tab)#(tab)INNER JOIN TBPAC P WITH (NOLOCK) ON IT.ID_PAC = P.ID#(lf)#(tab)#(tab)WHERE EXPANDIDO <> '1'#(lf)#(tab)#(tab)#(tab)/* NÃO PEGAR CABEÇALHO*/#(lf)#(tab)#(tab)#(tab)AND IT.TIPO_DO_DADO <> 0 AND IT.ATIVO = 1#(lf)#(tab)#(tab)GROUP BY ID_PAC#(lf)#(tab)#(tab)) IT#(lf)#(tab)INNER JOIN TBPAC P ON IT.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBREGISTROCAB C WITH (NOLOCK) ON C.ID_PAC = P.ID#(lf)#(tab)INNER JOIN TBEMPRESAPAC EP ON EP.ID_EMPRESA = C.ID_EMPRESA AND EP.ID_PAC = C.ID_PAC#(lf)#(tab)INNER JOIN (#(lf)#(tab)#(tab)SELECT COUNT(ID_TURNO) TURNOS,#(lf)#(tab)#(tab)#(tab)ID_EMPRESA#(lf)#(tab)#(tab)FROM TBEMPRESATURNO WITH (NOLOCK)#(lf)#(tab)#(tab)WHERE STATUS = 1#(lf)#(lf)#(tab)#(tab)GROUP BY ID_EMPRESA#(lf)#(tab)#(tab)) E ON E.ID_EMPRESA = EP.ID_EMPRESA#(lf)#(tab)INNER JOIN TBREGISTRO R WITH (NOLOCK) ON C.ID = R.ID_CAB#(lf)#(tab)INNER JOIN #(lf)#(tab)(#(lf)#(tab)#(tab)SELECT #(lf)#(tab)#(tab)#(tab)REG.ID_CAB,#(lf)#(tab)#(tab)#(tab)MAX(NUM_REGISTRO) QtdeDoc#(lf)#(tab)#(tab)FROM TBREGISTRO REG#(lf)#(tab)#(tab)group by reg.ID_CAB#(lf)#(tab)) doc on doc.ID_CAB = R.ID_CAB#(lf)#(tab)INNER JOIN#(lf)#(tab)(#(lf)#(tab)#(tab)SELECT#(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA,#(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC,#(lf)#(tab)#(tab)#(tab)COUNT(*) qtde#(lf)#(tab)#(tab)FROM TBREGISTROCAB CAB#(lf)#(tab)#(tab)INNER JOIN TBPAC PAC ON PAC.ID = CAB.ID_PAC#(lf)#(tab)#(tab)GROUP BY #(lf)#(tab)#(tab)#(tab)CAB.ID_PAC,#(lf)#(tab)#(tab)#(tab)PAC.COD_PAC,#(lf)#(tab)#(tab)#(tab)CAB.DATA, #(lf)#(tab)#(tab)#(tab)CAB.NUM_DOC#(lf)#(tab)#(tab)HAVING CAB.NUM_DOC IS NOT NULL #(lf)#(tab)) docTurno on #(lf)#(tab)#(tab)docTurno.COD_PAC = p.COD_PAC#(lf)#(tab)#(tab)AND docTurno.DATA = C.DATA#(lf)#(tab)#(tab)AND docTurno.NUM_DOC = C.NUM_DOC#(lf)#(tab)WHERE #(lf)#(tab)#(tab)c.data between  #(lf)#(tab)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)#(tab)#(tab)and DATEADD(DAY,-1,GETDATE())#(lf)#(tab)GROUP BY C.ID_EMPRESA,#(lf)#(tab)#(tab)C.ID,#(lf)#(tab)#(tab)P.ID,#(lf)#(tab)#(tab)P.COD_PAC,#(lf)#(tab)#(tab)P.ID_AGRUPADOR,#(lf)#(tab)#(tab)DOC.QtdeDoc,#(lf)#(tab)#(tab)docTurno.NUM_DOC,#(lf)#(tab)#(tab)docTurno.qtde,#(lf)#(tab)#(tab)C.DATA,#(lf)#(tab)#(tab)C.NUM_DOC,#(lf)#(tab)#(tab)EP.QTDE_PREV_REG_MONITOR,#(lf)#(tab)#(tab)IT.FREQUENCIA_MONITORAMENTO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_CICLO,#(lf)#(tab)#(tab)P.QUANDO_MONITORA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_FREQUENCIA,#(lf)#(tab)#(tab)P.QUANDO_VERIFICA_CICLO,#(lf)#(tab)#(tab)E.TURNOS#(lf)#(tab)) P ON R.ID_CAB = P.ID_CAB\"]),",
+                "    #\"Linhas Classificadas\" = Table.Sort(Fonte,{{\"data\", Order.Descending}})",
                 "in",
-                "    Fonte"
+                "    #\"Linhas Classificadas\""
               ],
               "type": "m"
             }
@@ -70689,7 +70267,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Sql.Database(Base, Banco, [Query=\" select x.*, coalesce(c.id,0) Id_Cab from #(lf) (SELECT f.data as data_calendario, EP.ID_EMPRESA , E.FANTASIA, EP.ID_PAC, CONCAT(P.COD_PAC, '-',P.DESCRICAO) DESCRICAO , Coalesce(T.ID,0) id_turno, #(lf) coalesce(T.DESCRICAO,'Diário') Turno#(lf) FROM #(lf)#(lf)TBEMPRESAPAC EP WITH(NOLOCK)#(lf)left JOIN TBEMPRESA E WITH(NOLOCK) ON EP.ID_EMPRESA = E.ID #(lf)left JOIN TBPAC P WITH(NOLOCK) ON EP.ID_PAC = P.ID #(lf)LEFT OUTER JOIN TBEMPRESATURNO ET WITH(NOLOCK) ON EP.ID_EMPRESA = ET.ID_EMPRESA AND P.QUANDO_MONITORA_CICLO=1 /* POR TURNO */ #(lf)LEFT OUTER JOIN TBTURNO T WITH(NOLOCK) ON ET.ID_TURNO = T.ID#(lf)right outer join TBREGISTROCAB f WITH(NOLOCK) on  f.data >= p.data_criacao #(lf)WHERE #(lf)#(tab)f.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)    and GETDATE()#(lf)and p.ativo in (1,4)) x#(lf)--e.ID = 1 and f.data <= getdate()) x#(lf)left join tbregistrocab c WITH(NOLOCK) on #(lf)x.data_calendario = c.data and x.id_turno = c.id_turno and x.id_pac =c.id_pac and x.id_empresa = c.id_empresa#(lf)order by x.data_calendario desc\"])",
+                "    Fonte = Sql.Database(Base, Banco, [Query=\" select x.*, coalesce(c.id,0) Id_Cab from #(lf) (SELECT f.data as data_calendario, EP.ID_EMPRESA , E.FANTASIA, EP.ID_PAC, CONCAT(P.COD_PAC, '-',P.DESCRICAO) DESCRICAO , Coalesce(T.ID,0) id_turno, #(lf) coalesce(T.DESCRICAO,'Diário') Turno#(lf) FROM #(lf)#(lf)TBEMPRESAPAC EP WITH(NOLOCK)#(lf)left JOIN TBEMPRESA E WITH(NOLOCK) ON EP.ID_EMPRESA = E.ID #(lf)left JOIN TBPAC P WITH(NOLOCK) ON EP.ID_PAC = P.ID #(lf)LEFT OUTER JOIN TBEMPRESATURNO ET WITH(NOLOCK) ON EP.ID_EMPRESA = ET.ID_EMPRESA AND P.QUANDO_MONITORA_CICLO=1 /* POR TURNO */ #(lf)LEFT OUTER JOIN TBTURNO T WITH(NOLOCK) ON ET.ID_TURNO = T.ID#(lf)right outer join TBREGISTROCAB f WITH(NOLOCK) on  f.data >= p.data_criacao #(lf)WHERE #(lf)#(tab)f.data between  #(lf)#(tab)DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()) - 2, 0) #(lf)    and DATEADD(DAY,-1,GETDATE())#(lf)and p.ativo in (1,4)) x#(lf)--e.ID = 1 and f.data <= getdate()) x#(lf)left join tbregistrocab c WITH(NOLOCK) on #(lf)x.data_calendario = c.data and x.id_turno = c.id_turno and x.id_pac =c.id_pac and x.id_empresa = c.id_empresa#(lf)order by x.data_calendario desc\"])",
                 "in",
                 "    Fonte"
               ],
@@ -73297,6 +72875,133 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "Slicer-FiltroDiario",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idSlicer-FiltroDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cbda87c8-c9c8-4d47-9054-9dfc958c1cbc",
+            "sourceColumn": "idSlicer-FiltroDiario",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "descSlicer-FiltroDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35b62c2e-f74c-483f-b117-e4364443bcd4",
+            "sourceColumn": "descSlicer-FiltroDiario",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "102ec782-0c0a-4118-ba4a-2e3e1fd5b4c0",
+        "partitions": [
+          {
+            "name": "Slicer-FiltroDiario",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUTo8K6ckMzdfwSUzUSlWJ1rJCCgWkp+SX6wARP6lJUVACihXrBQbCwA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"idSlicer-FiltroDiario\" = _t, #\"descSlicer-FiltroDiario\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"idSlicer-FiltroDiario\", Int64.Type}, {\"descSlicer-FiltroDiario\", type text}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "SlicerImgDiario",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idSlicerImgDiarioo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7028c529-7d82-4313-96a4-2991270b8353",
+            "sourceColumn": "idSlicerImgDiarioo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "urlSlicerImgDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0e046e3a-ab9c-4bc6-8e67-42d59a8d0614",
+            "sourceColumn": "urlSlicerImgDiario",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "descSlicerImgDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c9c8ac19-f99d-43fd-872f-2433caf701bb",
+            "sourceColumn": "descSlicerImgDiario",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "7c9367bf-d3fb-497c-a9b2-47edb8eb15a3",
+        "partitions": [
+          {
+            "name": "SlicerImgDiario",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUcooKSkottLXz9TLzE0vLdJLzs/Vz/YzC80NKtcryEsHqvAvLSnKL1ZwyUwsVorViVYywqHLz8ktIjQ5AKrr8KyckszcfJA2pdhYAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [idSlicerImgDiarioo = _t, urlSlicerImgDiario = _t, descSlicerImgDiario = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"idSlicerImgDiarioo\", Int64.Type}, {\"urlSlicerImgDiario\", type text}, {\"descSlicerImgDiario\", type text}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }

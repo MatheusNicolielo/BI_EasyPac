@@ -907,6 +907,16 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Slicer-FiltroDiario",
+          "nodeLineageTag": "102ec782-0c0a-4118-ba4a-2e3e1fd5b4c0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
@@ -925,8 +935,8 @@
       "nodes": [
         {
           "location": {
-            "x": 1289,
-            "y": 403
+            "x": 1203.6745379781862,
+            "y": 317.67453797818621
           },
           "nodeIndex": "Calendario",
           "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
@@ -1065,10 +1075,23 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1691.4805690741118,
+            "y": 380.61044571418427
+          },
+          "nodeIndex": "Slicer-FiltroDiario",
+          "nodeLineageTag": "102ec782-0c0a-4118-ba4a-2e3e1fd5b4c0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Diario",
-      "zoomValue": 100,
+      "zoomValue": 63.287087723233995,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
@@ -1250,7 +1273,7 @@
     {
       "ordinal": 4,
       "scrollPosition": {
-        "x": 589.5999755859375,
+        "x": 192,
         "y": 0
       },
       "nodes": [
@@ -2646,7 +2669,7 @@
       "ordinal": 19,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 67
       },
       "nodes": [
         {
@@ -2734,8 +2757,49 @@
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
+    },
+    {
+      "ordinal": 20,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 930,
+            "y": 113
+          },
+          "nodeIndex": "SlicerImgDiario",
+          "nodeLineageTag": "7c9367bf-d3fb-497c-a9b2-47edb8eb15a3",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 553,
+            "y": 310
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
     }
   ],
-  "selectedDiagram": "UltimoAcesso",
+  "selectedDiagram": "Layout 1",
   "defaultDiagram": "Todas as tabelas"
 }
