@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"dimUsuario\",\"dimStatus2\",\"dimTipoLançamento\",\"dimPacAgrupador\",\"dimStatus\",\"dimLocal\",\"dimPacItens\",\"dimTurno\",\"dimNCAC\",\"dimNConf\",\"dimEmpresa\",\"dimStatusConformidade\",\"dimPac\",\"dimUsuarioEmpresa\",\"dimFornecedor\",\"Banco\",\"Base\",\"agrupadorSlicer\",\"ImageIcons\",\"Ultima Atualização\",\"RangeStart\",\"RangeEnd\",\"tbPainelTempo\",\"ftRegistro\",\"ftRealizados_Previstos_Planilhas\",\"ftRealizados_Previstos\",\"ftTempoConformidade\",\"ftVer_e_Agir\",\"IN79_REC1\",\"ABT3\",\"IN79_REC3\",\"IN79_REC4\",\"Medidas Diario\",\"Medidas - Realizado x Previstos Planilhas\",\"rankLocal-painelLocal\",\"rankParetoFormularios-painelParetoPac\",\"rankAcoesCorretivas - painelUsuario\",\"rankUsuarios - painelUsuario\",\"rankLocal-painelPareto-Local\",\"rankParetoPac-painelParetoPac\",\"ftTempoOcioso\",\"dimDispositivo\",\"rankUnidade - Painel Ociosidade\",\"rankPAC - Painel Ociosidade\",\"SlicerPAC- Painel Ociosidade\",\"SlicerUnidade- Painel Ociosidade\",\"rankUnidades - Unidades\",\"rankPac - Unidades\",\"rankPlanilhas - Unidades\",\"rankUnidade - PAC - Unidade\",\"rankPac- PAC - Unidade\",\"rankPlanilhas-PAC - Unidade\",\"FtRegistro_T-Atual\",\"ftRealizados_Previstos_T-Atual\",\"ftRealizados_Previstos_Planilhas_T-Atual\",\"dimUnidade\",\"FtRegistro_T01\",\"FtRegistro_T02\",\"FtRegistro_T03\",\"FtRegistro_T04\",\"FtRegistro_T05\",\"FtRegistro_T06\",\"FtRegistro_T07\",\"FtRegistro_T08\",\"FtRegistro_T09\",\"FtRegistro_T10\",\"FtRegistro_T11\",\"FtRegistro_T12\",\"ftRealizados_Previstos_T1\",\"ftRealizados_Previstos_T2\",\"ftRealizados_Previstos_T3\",\"ftRealizados_Previstos_T4\",\"ftRealizados_Previstos_T5\",\"ftRealizados_Previstos_T6\",\"ftRealizados_Previstos_T7\",\"ftRealizados_Previstos_T8\",\"ftRealizados_Previstos_T9\",\"ftRealizados_Previstos_T10\",\"ftRealizados_Previstos_T11\",\"ftRealizados_Previstos_T12\",\"ftRealizados_Previstos_Planilhas_T1\",\"ftRealizados_Previstos_Planilhas_T2\",\"ftRealizados_Previstos_Planilhas_T3\",\"ftRealizados_Previstos_Planilhas_T4\",\"ftRealizados_Previstos_Planilhas_T5\",\"ftRealizados_Previstos_Planilhas_T6\",\"ftRealizados_Previstos_Planilhas_T7\",\"ftRealizados_Previstos_Planilhas_T8\",\"ftRealizados_Previstos_Planilhas_T9\",\"ftRealizados_Previstos_Planilhas_T10\",\"ftRealizados_Previstos_Planilhas_T11\",\"ftRealizados_Previstos_Planilhas_T12\",\"Slicer-FiltroDiario\"]"
+        "value": "[\"dimUsuario\",\"dimStatus2\",\"dimTipoLançamento\",\"dimPacAgrupador\",\"dimStatus\",\"dimLocal\",\"dimPacItens\",\"dimTurno\",\"dimNCAC\",\"dimNConf\",\"dimEmpresa\",\"dimStatusConformidade\",\"dimPac\",\"dimUsuarioEmpresa\",\"dimFornecedor\",\"Banco\",\"Base\",\"agrupadorSlicer\",\"ImageIcons\",\"Ultima Atualização\",\"RangeStart\",\"RangeEnd\",\"tbPainelTempo\",\"ftRegistro\",\"ftRealizados_Previstos_Planilhas\",\"ftRealizados_Previstos\",\"ftTempoConformidade\",\"ftVer_e_Agir\",\"IN79_REC1\",\"ABT3\",\"IN79_REC3\",\"IN79_REC4\",\"Medidas Diario\",\"Medidas - Realizado x Previstos Planilhas\",\"rankLocal-painelLocal\",\"rankParetoFormularios-painelParetoPac\",\"rankAcoesCorretivas - painelUsuario\",\"rankUsuarios - painelUsuario\",\"rankLocal-painelPareto-Local\",\"rankParetoPac-painelParetoPac\",\"ftTempoOcioso\",\"dimDispositivo\",\"rankUnidade - Painel Ociosidade\",\"rankPAC - Painel Ociosidade\",\"SlicerPAC- Painel Ociosidade\",\"SlicerUnidade- Painel Ociosidade\",\"rankUnidades - Unidades\",\"rankPac - Unidades\",\"rankPlanilhas - Unidades\",\"rankUnidade - PAC - Unidade\",\"rankPac- PAC - Unidade\",\"rankPlanilhas-PAC - Unidade\",\"FtRegistro_T-Atual\",\"ftRealizados_Previstos_T-Atual\",\"ftRealizados_Previstos_Planilhas_T-Atual\",\"dimUnidade\",\"FtRegistro_T01\",\"FtRegistro_T02\",\"FtRegistro_T03\",\"FtRegistro_T04\",\"FtRegistro_T05\",\"FtRegistro_T06\",\"FtRegistro_T07\",\"FtRegistro_T08\",\"FtRegistro_T09\",\"FtRegistro_T10\",\"FtRegistro_T11\",\"FtRegistro_T12\",\"ftRealizados_Previstos_T1\",\"ftRealizados_Previstos_T2\",\"ftRealizados_Previstos_T3\",\"ftRealizados_Previstos_T4\",\"ftRealizados_Previstos_T5\",\"ftRealizados_Previstos_T6\",\"ftRealizados_Previstos_T7\",\"ftRealizados_Previstos_T8\",\"ftRealizados_Previstos_T9\",\"ftRealizados_Previstos_T10\",\"ftRealizados_Previstos_T11\",\"ftRealizados_Previstos_T12\",\"ftRealizados_Previstos_Planilhas_T1\",\"ftRealizados_Previstos_Planilhas_T2\",\"ftRealizados_Previstos_Planilhas_T3\",\"ftRealizados_Previstos_Planilhas_T4\",\"ftRealizados_Previstos_Planilhas_T5\",\"ftRealizados_Previstos_Planilhas_T6\",\"ftRealizados_Previstos_Planilhas_T7\",\"ftRealizados_Previstos_Planilhas_T8\",\"ftRealizados_Previstos_Planilhas_T9\",\"ftRealizados_Previstos_Planilhas_T10\",\"ftRealizados_Previstos_Planilhas_T11\",\"ftRealizados_Previstos_Planilhas_T12\",\"Slicer-FiltroDiario\",\"SlicerImgDiario\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -56030,6 +56030,14 @@
         "isActive": false,
         "toColumn": "Date",
         "toTable": "Calendario"
+      },
+      {
+        "name": "a4231778-5958-6dab-f667-262676ad320e",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "AtualDia",
+        "fromTable": "Calendario",
+        "toColumn": "descSlicerImgDiario",
+        "toTable": "SlicerImgDiario"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -56391,10 +56399,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -57642,6 +57646,21 @@
             "isDataTypeInferred": true,
             "lineageTag": "6ef45a6e-4adf-43e5-af45-77072ef1ed9f",
             "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "AtualDia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(Calendario[Date]= MAX(ftRegistro[data_base]), \"Último Dia\", \"Outros Dias\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "e2539cbf-9e42-4ad4-9616-4178368edfe3",
+            "summarizeBy": "none",
             "type": "calculated"
           }
         ],
@@ -69238,10 +69257,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -69754,10 +69769,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -70123,10 +70134,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
           }
         ],
         "columns": [
@@ -72916,6 +72923,78 @@
                 "let",
                 "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUTo8K6ckMzdfwSUzUSlWJ1rJCCgWkp+SX6wARP6lJUVACihXrBQbCwA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"idSlicer-FiltroDiario\" = _t, #\"descSlicer-FiltroDiario\" = _t]),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"idSlicer-FiltroDiario\", Int64.Type}, {\"descSlicer-FiltroDiario\", type text}})",
+                "in",
+                "    #\"Tipo Alterado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "SlicerImgDiario",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idSlicerImgDiarioo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7028c529-7d82-4313-96a4-2991270b8353",
+            "sourceColumn": "idSlicerImgDiarioo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "urlSlicerImgDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0e046e3a-ab9c-4bc6-8e67-42d59a8d0614",
+            "sourceColumn": "urlSlicerImgDiario",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "descSlicerImgDiario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c9c8ac19-f99d-43fd-872f-2433caf701bb",
+            "sourceColumn": "descSlicerImgDiario",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "7c9367bf-d3fb-497c-a9b2-47edb8eb15a3",
+        "partitions": [
+          {
+            "name": "SlicerImgDiario",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUcooKSkottLXz9TLzE0vLdJLzs/Vz/YzC80NKtcryEsHqvAvLSnKL1ZwyUwsVorViVYywqHLz8ktIjQ5AKrr8KyckszcfJA2pdhYAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [idSlicerImgDiarioo = _t, urlSlicerImgDiario = _t, descSlicerImgDiario = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"idSlicerImgDiarioo\", Int64.Type}, {\"urlSlicerImgDiario\", type text}, {\"descSlicerImgDiario\", type text}})",
                 "in",
                 "    #\"Tipo Alterado\""
               ],

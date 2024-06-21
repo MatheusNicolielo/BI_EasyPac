@@ -2757,8 +2757,49 @@
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
+    },
+    {
+      "ordinal": 20,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 930,
+            "y": 113
+          },
+          "nodeIndex": "SlicerImgDiario",
+          "nodeLineageTag": "7c9367bf-d3fb-497c-a9b2-47edb8eb15a3",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 553,
+            "y": 310
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "9dd1c2f5-2e89-4cbc-95ab-a5ab6be6f2b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
     }
   ],
-  "selectedDiagram": "Diario",
+  "selectedDiagram": "Layout 1",
   "defaultDiagram": "Todas as tabelas"
 }
